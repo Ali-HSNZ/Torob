@@ -1,4 +1,7 @@
 Constants
+    configs
+        package/modules configs
+
     data
         static program data
 
@@ -7,6 +10,7 @@ Constants
 
     routes
         routes of Projects
+
     ...
 
 Path: src/core/constants/*
