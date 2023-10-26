@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "incremental": true,
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "paths": {
+            "@app/*": ["./src/app/*"],
+            "@partials/*": ["./src/components/partials/*"],
+            "@atoms/*": ["./src/components/UI/atoms/*"],
+            "@molecules/*": ["./src/components/UI/molecules/*"],
+            "@organisms/*": ["./src/components/UI/organisms/*"],
+            "@templates/*": ["./src/components/templates/*"],
+            "@api/*": ["./src/core/services/api/*"],
+            "@core/*": ["./src/core/*"],
+            "@styles/*": ["./src/styles/*"],
+            "@public/*": ["./public/*"]
+        }
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        ".next/types/**/*.ts",
+        "*.js",
+        "src/core/constants/dummy/dummy-users.js"
+    ],
+    "exclude": ["node_modules"]
+}
