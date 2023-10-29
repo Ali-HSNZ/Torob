@@ -1,5 +1,31 @@
 [
-    { "id": 1, "title": "book", "href": "#" },
+    {
+        "id": 1,
+        "title": "Shoes and clothes",
+        "href": "#",
+        "sub": [
+            {
+                "id": 1,
+                "title": "Shirt",
+                "sub": [
+                    {
+                        "id": 0,
+                        "title": "mens"
+                    },
+                    {
+                        "id": 1,
+                        "title": "women"
+                    },
+                    {
+                        "id": 2,
+                        "title": "child"
+                    }
+                ]
+            },
+            { "id": 1, "title": "Books" },
+            { "id": 1, "title": "Laptop" }
+        ]
+    },
     { "id": 2, "title": "phone", "href": "#" },
     { "id": 3, "title": "Laptop", "href": "#" },
     { "id": 4, "title": "Shoes", "href": "#" }

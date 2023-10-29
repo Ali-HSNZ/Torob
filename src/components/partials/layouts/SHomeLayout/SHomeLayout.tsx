@@ -1,17 +1,18 @@
 import { type FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button, Popover } from '@mantine/core'
-import { IconShoppingBag } from '@tabler/icons-react'
+import { Button, Center, Popover } from '@mantine/core'
+import { IconCategory, IconChevronDown, IconShoppingBag } from '@tabler/icons-react'
+import { IconChevronRight } from '@tabler/icons-react'
+
+import { type ILayoutProps } from '@core/types/layouts/layouts.type'
 
 import { STATIC_HEADER_MENU_ITEM } from './resources'
 
-const SHomeLayout: FC = () => {
-    console.log('RENDER')
-
+const SHomeLayout: FC<ILayoutProps> = ({ children }) => {
     return (
         <main>
-            <header className='w-full bg-zinc-50 py-4 px-6  flex items-center justify-between '>
+            <header className='w-full z-50 relative bg-zinc-50 py-4 px-6  flex items-center justify-between '>
                 <figure className='relative w-[35px] h-[35px]'>
                     <Image
                         alt='torob logo'
@@ -22,13 +23,71 @@ const SHomeLayout: FC = () => {
                 </figure>
 
                 {/* Menu Links */}
-                <section className='flex gap-x-4'>
+                <Center>
                     {STATIC_HEADER_MENU_ITEM.map((link) => (
-                        <Link key={link.id} href={link.href} className='capitalize  rounded-lg text-gray-700 '>
-                            {link.title}
-                        </Link>
+                        <Popover key={link.id} classNames={{ dropdown: 'w-1/2' }}>
+                            <Popover.Target>
+                                <Button
+                                    color='#ccc'
+                                    variant='subtle'
+                                    rightSection={
+                                        link.sub ? (
+                                            <IconChevronDown stroke={1.5} className='text-gray-400' />
+                                        ) : undefined
+                                    }
+                                    className='capitalize  rounded-lg text-gray-700 '
+                                >
+                                    {link.title}
+                                </Button>
+                            </Popover.Target>
+                            {link.sub ? (
+                                <Popover.Dropdown
+                                    style={{
+                                        position: 'fixed',
+                                        top: '14%',
+                                        left: '50%',
+                                        transform: 'translate(-50%, -20px)',
+                                    }}
+                                >
+                                    <h3 className='font-medium'>{link.title}</h3>
+                                    <hr className='my-4' />
+                                    <section className='w-full grid grid-cols-2 gap-1'>
+                                        {link?.sub?.map((linkSub) => (
+                                            <article
+                                                className='p-3 hover:bg-[#fdf6f6] transition-all duration-200 shadow-sm hover:shadow-md rounded-md cursor-pointer'
+                                                key={linkSub.id}
+                                            >
+                                                <div className='flex w-full justify-between items-center gap-x-2 '>
+                                                    <div className='flex items-center gap-x-2'>
+                                                        <IconCategory
+                                                            stroke={1.2}
+                                                            size={'1.4rem'}
+                                                            className='text-red-400  rounded-md  '
+                                                        />
+                                                        <h3 className='font-medium'>{linkSub.title}</h3>
+                                                    </div>
+                                                    <IconChevronRight stroke={1.2} className='text-red-400' />
+                                                </div>
+                                                <div className='flex gap-x-2'>
+                                                    {/* {linkSub.sub?.map((linkSubSub) => (
+                                                    <h6 className='text-gray-500' key={linkSubSub.id}>
+                                                        {linkSubSub.title}
+                                                    </h6>
+                                                ))} */}
+                                                    <h6 className='text-gray-500 font-normal'>
+                                                        {linkSub.sub?.map((item) => item.title).join(', ')}
+                                                    </h6>
+                                                </div>
+                                            </article>
+                                        ))}
+                                    </section>
+                                </Popover.Dropdown>
+                            ) : (
+                                <></>
+                            )}
+                        </Popover>
                     ))}
-                </section>
+                </Center>
 
                 <section className='flex gap-x-4'>
                     <Button
@@ -60,6 +119,7 @@ const SHomeLayout: FC = () => {
                     </Popover>
                 </section>
             </header>
+            {children}
         </main>
     )
 }
