@@ -6,6 +6,7 @@ import '@mantine/core/styles.css'
 import { mantineThemeConfig } from '@core/constants/configs/mantine'
 
 import '@styles/globals.css'
+
 export const metadata: Metadata = {
     title: 'Torob',
 }

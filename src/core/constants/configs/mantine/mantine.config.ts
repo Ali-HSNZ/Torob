@@ -10,6 +10,6 @@ const mantineThemeConfig: MantineThemeOverride = {
     },
     fontFamily: 'unset',
     primaryColor: 'red',
-    primaryShade: { light: 5, dark: 5 },
+    primaryShade: { light: 8, dark: 5 },
 }
 export default mantineThemeConfig
