@@ -16,6 +16,7 @@ const SHomeTemplate: FC = () => {
                     <Popover offset={5} classNames={{ dropdown: 'w-full sm:w-[460px]' }} position='bottom' shadow='md'>
                         <Popover.Target>
                             <Input
+                                placeholder='search products...'
                                 classNames={{ input: 'py-4 text-lg' }}
                                 leftSection={<IconSearch size={'1.2rem'} />}
                             />
