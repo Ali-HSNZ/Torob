@@ -1,11 +1,11 @@
 import { type FC } from 'react'
 
-import { SHomeLayout } from '@partials/layouts/SHomeLayout'
+import { HomeLayout } from '@partials/layouts/HomeLayout'
 
 import { type ILayoutProps } from '@core/types/layouts/layouts.type'
 
 const RootLayout: FC<ILayoutProps> = ({ children }) => {
-    return <SHomeLayout>{children}</SHomeLayout>
+    return <HomeLayout>{children}</HomeLayout>
 }
 
 export default RootLayout
