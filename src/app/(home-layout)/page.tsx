@@ -1,9 +1,9 @@
 import { type FC } from 'react'
 
-import { SHomeTemplate } from '@templates/SHomeTemplate'
+import { HomeTemplate } from '@templates/HomeTemplate'
 
 const page: FC = () => {
-    return <SHomeTemplate />
+    return <HomeTemplate />
 }
 
 export default page

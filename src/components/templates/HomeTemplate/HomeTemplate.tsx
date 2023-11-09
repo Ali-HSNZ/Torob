@@ -3,7 +3,7 @@ import { Input, Popover } from '@mantine/core'
 import { useElementSize } from '@mantine/hooks'
 import { IconSearch } from '@tabler/icons-react'
 
-const SHomeTemplate: FC = () => {
+const HomeTemplate: FC = () => {
     const { ref, width: searchInputWidth } = useElementSize()
 
     return (
@@ -34,4 +34,4 @@ const SHomeTemplate: FC = () => {
     )
 }
 
-export default SHomeTemplate
+export default HomeTemplate

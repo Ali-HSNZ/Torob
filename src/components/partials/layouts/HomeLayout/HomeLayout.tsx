@@ -35,6 +35,7 @@ const HomeLayout: FC<ILayoutProps> = ({ children }) => {
                             <figure className='relative w-[35px] h-[35px]'>
                                 <Image
                                     alt='torob logo'
+                                    priority
                                     className='h-full w-auto'
                                     fill
                                     src={'https://torob.iran.liara.run/_next/static/media/torob_logo.e01c66b6.svg'}
