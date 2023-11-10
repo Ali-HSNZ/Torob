@@ -25,7 +25,7 @@ const HomeLayout: FC<ILayoutProps> = ({ children }) => {
                             <Button
                                 onClick={openDrawer}
                                 color='red'
-                                variant='subtle'
+                                variant='transparent'
                                 className='px-0 focus:outline-none lg:hidden'
                             >
                                 <IconMenu2 className='text-gray-700' />
