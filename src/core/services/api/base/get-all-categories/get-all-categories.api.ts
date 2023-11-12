@@ -1,12 +1,13 @@
 import { Http } from '@core/services/interceptor'
 
-const baseGetAllCategoriesApi = async () => {
+const getBaseCategoriesListQueryFn = async () => {
     try {
-        const response = await Http.get('public/categories')
-        response.data
+        const endpoint = 'public/categories'
+        const response = await Http.get(endpoint)
+        return response.data
     } catch (error) {
         return error
     }
 }
 
-export default baseGetAllCategoriesApi
+export default getBaseCategoriesListQueryFn
