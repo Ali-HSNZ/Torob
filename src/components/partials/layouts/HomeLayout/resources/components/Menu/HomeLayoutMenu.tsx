@@ -64,7 +64,7 @@ const HomeLayoutMenu: FC = () => {
                                                 variant='transparent'
                                                 component={Link}
                                                 href={'#'}
-                                                className='font-medium text-base'
+                                                className='capitalize font-medium text-base'
                                             >
                                                 {linkSub.title}
                                             </Button>
@@ -75,7 +75,7 @@ const HomeLayoutMenu: FC = () => {
                                                         href={'#'}
                                                         color='gray'
                                                         variant='transparent'
-                                                        className=' w-fit font-medium text-sm'
+                                                        className='capitalize w-fit font-medium text-sm'
                                                         key={item.id}
                                                     >
                                                         {item.title}

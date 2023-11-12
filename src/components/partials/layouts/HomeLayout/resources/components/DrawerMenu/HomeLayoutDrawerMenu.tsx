@@ -32,7 +32,7 @@ const HomeLayoutDrawerMenu: FC<THomeLayoutDrawerMenuProps> = ({ closeDrawer, ope
                     <hr className='mb-2' />
                     {categoriesList?.data.map((menu) => (
                         <section key={menu.id}>
-                            <Button color='gray' variant='subtle' className='font-medium focus:outline-none'>
+                            <Button color='gray' variant='subtle' className='capitalize font-medium focus:outline-none'>
                                 {menu.title}
                             </Button>
                             {menu.sub_categories.length > 0 && (
@@ -42,7 +42,7 @@ const HomeLayoutDrawerMenu: FC<THomeLayoutDrawerMenuProps> = ({ closeDrawer, ope
                                             key={sub.id}
                                             color='gray'
                                             variant='subtle'
-                                            className='w-fit  focus:outline-none font-medium'
+                                            className='w-fit capitalize focus:outline-none font-medium'
                                         >
                                             {sub.title}
                                         </Button>
