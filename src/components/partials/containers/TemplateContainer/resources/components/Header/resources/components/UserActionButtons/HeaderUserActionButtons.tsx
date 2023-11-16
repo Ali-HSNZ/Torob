@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Button, Popover } from '@mantine/core'
 
-const HomeLayoutUserActionButtons = () => {
+const HeaderUserActionButtons = () => {
     return (
         <div>
             <Popover position='bottom' arrowSize={13} withArrow classNames={{ arrow: 'z-10 absolute' }} shadow='xs'>
@@ -30,4 +30,4 @@ const HomeLayoutUserActionButtons = () => {
     )
 }
 
-export default HomeLayoutUserActionButtons
+export default HeaderUserActionButtons

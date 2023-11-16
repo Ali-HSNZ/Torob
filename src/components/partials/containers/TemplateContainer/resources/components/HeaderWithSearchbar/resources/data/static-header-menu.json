@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "title": "Shoes and clothes",
+        "href": "#",
+        "sub": [
+            {
+                "id": 0,
+                "title": "Shirt",
+                "sub": [
+                    {
+                        "id": 0,
+                        "title": "mens"
+                    },
+                    {
+                        "id": 1,
+                        "title": "women"
+                    },
+                    {
+                        "id": 2,
+                        "title": "child"
+                    }
+                ]
+            },
+            { "id": 1, "title": "Books", "sub": [] },
+            { "id": 2, "title": "Laptop", "sub": [] }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "phone",
+        "href": "#",
+        "sub": [
+            { "id": 0, "title": "galaxy A51", "sub": [] },
+            { "id": 1, "title": "Iphone 14 Pro", "sub": [] },
+            { "id": 2, "title": "Iphone 8 Plus", "sub": [] },
+            { "id": 3, "title": "Xiaomi 14s", "sub": [] }
+        ]
+    },
+    { "id": 2, "title": "Laptop", "href": "#", "sub": [] },
+    { "id": 3, "title": "Shoes", "href": "#", "sub": [] }
+]

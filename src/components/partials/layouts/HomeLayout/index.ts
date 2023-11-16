@@ -1,5 +1,5 @@
 'use client'
 
-import HomeLayout from './HomeLayout'
+import HomeLayout from './Home.layout'
 
 export { HomeLayout }

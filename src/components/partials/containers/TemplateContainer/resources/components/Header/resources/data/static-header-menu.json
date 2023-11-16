@@ -22,8 +22,8 @@
                     }
                 ]
             },
-            { "id": 1, "title": "Books" },
-            { "id": 2, "title": "Laptop" }
+            { "id": 1, "title": "Books", "sub": [] },
+            { "id": 2, "title": "Laptop", "sub": [] }
         ]
     },
     {
@@ -31,12 +31,12 @@
         "title": "phone",
         "href": "#",
         "sub": [
-            { "id": 0, "title": "galaxy A51" },
-            { "id": 1, "title": "Iphone 14 Pro" },
-            { "id": 2, "title": "Iphone 8 Plus" },
-            { "id": 3, "title": "Xiaomi 14s" }
+            { "id": 0, "title": "galaxy A51", "sub": [] },
+            { "id": 1, "title": "Iphone 14 Pro", "sub": [] },
+            { "id": 2, "title": "Iphone 8 Plus", "sub": [] },
+            { "id": 3, "title": "Xiaomi 14s", "sub": [] }
         ]
     },
-    { "id": 2, "title": "Laptop", "href": "#" },
-    { "id": 3, "title": "Shoes", "href": "#" }
+    { "id": 2, "title": "Laptop", "href": "#", "sub": [] },
+    { "id": 3, "title": "Shoes", "href": "#", "sub": [] }
 ]
