@@ -1,11 +1,12 @@
 import { type FC } from 'react'
-import { Button, Drawer } from '@mantine/core'
+import { ActionIcon, Drawer } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 
 import { type THeaderDrawerMenuProps } from './resources'
 import { STATIC_HEADER_MENU_ITEM } from '../..'
 
 const HeaderDrawerMenu: FC<THeaderDrawerMenuProps> = ({ closeDrawer, openedDrawer }) => {
+    // tailwind --> lg
     const matches = useMediaQuery('(min-width: 1024px)')
 
     return (
@@ -17,24 +18,30 @@ const HeaderDrawerMenu: FC<THeaderDrawerMenuProps> = ({ closeDrawer, openedDrawe
             classNames={{ title: 'text-sm', close: ' focus:outline-none' }}
             overlayProps={{ backgroundOpacity: 0.5, blur: 4 }}
         >
-            <div className='flex flex-col'>
+            <div className='flex flex-col gap-y-4'>
                 <hr className='mb-2' />
                 {STATIC_HEADER_MENU_ITEM.map((menu) => (
                     <section key={menu.id}>
-                        <Button color='gray' variant='subtle' className='capitalize font-medium focus:outline-none'>
+                        <ActionIcon
+                            size={'auto'}
+                            color='dark'
+                            variant='transparent'
+                            className='capitalize focus:outline-none text-sm font-medium'
+                        >
                             {menu.title}
-                        </Button>
+                        </ActionIcon>
                         {menu.sub.length > 0 && (
-                            <section className='pl-6 flex flex-col w-full justify-start '>
+                            <section className='pl-6 flex flex-col gap-y-3 mt-3 w-full justify-start '>
                                 {menu.sub.map((sub) => (
-                                    <Button
+                                    <ActionIcon
+                                        size={'auto'}
                                         key={sub.id}
-                                        color='gray'
-                                        variant='subtle'
-                                        className='w-fit capitalize focus:outline-none font-medium'
+                                        color='dark'
+                                        variant='transparent'
+                                        className='w-fit capitalize focus:outline-none text-sm '
                                     >
                                         {sub.title}
-                                    </Button>
+                                    </ActionIcon>
                                 ))}
                             </section>
                         )}

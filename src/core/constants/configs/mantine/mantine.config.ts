@@ -9,7 +9,7 @@ const mantineThemeObject: MantineThemeOverride = {
         xl: '1440px',
     },
     fontFamily: 'unset',
-    primaryColor: 'blue',
+    primaryColor: 'red',
     primaryShade: { light: 5, dark: 5 },
 }
 

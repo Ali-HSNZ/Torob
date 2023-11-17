@@ -1,6 +1,6 @@
 import { type FC } from 'react'
 import Link from 'next/link'
-import { Button, Popover } from '@mantine/core'
+import { ActionIcon, Popover } from '@mantine/core'
 import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
 
@@ -11,7 +11,7 @@ const HeaderMenu: FC = () => {
     const [, { toggle }] = useDisclosure(false)
 
     return (
-        <div className='hidden lg:block '>
+        <div className='hidden lg:flex gap-x-5 '>
             {STATIC_HEADER_MENU_ITEM.map((link) => (
                 <Popover
                     opened={matches ? undefined : false}
@@ -21,56 +21,65 @@ const HeaderMenu: FC = () => {
                 >
                     <Popover.Target>
                         {link.sub.length > 0 ? (
-                            <Button
-                                color='gray'
-                                variant='subtle'
+                            <ActionIcon
+                                size={'auto'}
+                                color='dark'
+                                variant='transparent'
                                 onClick={toggle}
-                                rightSection={<IconChevronDown stroke={1.5} className='text-gray-400' />}
-                                className='capitalize rounded-lg'
+                                className='capitalize text-sm flex items-center gap-x-1'
                             >
-                                {link.title}
-                            </Button>
+                                <p>{link.title}</p>
+                                <IconChevronDown stroke={1.1} className='mt-0.5' />
+                            </ActionIcon>
                         ) : (
-                            <Button
-                                color='gray'
-                                variant='subtle'
+                            <ActionIcon
+                                size={'auto'}
+                                color='dark'
+                                variant='transparent'
                                 onClick={toggle}
                                 href={'#'}
                                 component={Link}
-                                className='capitalize rounded-lg'
+                                className='capitalize text-sm  '
                             >
                                 {link.title}
-                            </Button>
+                            </ActionIcon>
                         )}
                     </Popover.Target>
+
                     {link.sub.length > 0 && (
                         <Popover.Dropdown>
-                            <h3 className='font-medium'>{link.title}</h3>
+                            {/* Menu Title */}
+                            <h3 className='font-medium text-sm'>{link.title}</h3>
+
+                            {/* Simple Line */}
                             <hr className='my-4' />
-                            <section className='w-full grid grid-cols-4 gap-1'>
+
+                            <section className='w-full grid grid-cols-4 '>
                                 {link?.sub?.map((linkSub) => (
                                     <article key={linkSub.id}>
-                                        <Button
-                                            color='gray'
+                                        <ActionIcon
+                                            size={'auto'}
+                                            color='dark'
                                             variant='transparent'
                                             component={Link}
                                             href={'#'}
-                                            className='capitalize font-medium text-base'
+                                            className='capitalize font-medium text-sm '
                                         >
                                             {linkSub.title}
-                                        </Button>
-                                        <div className='flex flex-col pl-4'>
+                                        </ActionIcon>
+                                        <div className='flex flex-col pl-4 mt-3 gap-y-3'>
                                             {linkSub.sub?.map((item) => (
-                                                <Button
+                                                <ActionIcon
+                                                    size={'auto'}
                                                     component={Link}
                                                     href={'#'}
-                                                    color='gray'
+                                                    color='dark'
                                                     variant='transparent'
-                                                    className='capitalize w-fit font-medium text-sm'
+                                                    className='capitalize w-fit text-sm'
                                                     key={item.id}
                                                 >
                                                     {item.title}
-                                                </Button>
+                                                </ActionIcon>
                                             ))}
                                         </div>
                                     </article>

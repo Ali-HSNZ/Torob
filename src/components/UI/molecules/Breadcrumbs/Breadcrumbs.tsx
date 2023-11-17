@@ -1,21 +1,22 @@
 import { type FC } from 'react'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { Breadcrumbs } from '@mantine/core'
+import { ActionIcon, Breadcrumbs } from '@mantine/core'
 
 import { type IBreadcrumbsProps } from './resources'
 
 const CustomBreadcrumbs: FC<IBreadcrumbsProps> = ({ breadcrumbsList, ...res }) => {
-    const pathname = usePathname()
-
     const breadcrumbItems = breadcrumbsList.map((item, index) => (
-        <Link
+        <ActionIcon
+            size={'auto'}
             key={index}
+            component={Link}
             href={item.href}
-            className={`text-sm ${pathname === item.href ? 'text-gray-800' : 'text-gray-500'}`}
+            color='dark'
+            variant='transparent'
+            className='text-sm'
         >
             {item.title}
-        </Link>
+        </ActionIcon>
     ))
 
     return <Breadcrumbs {...res}>{breadcrumbItems}</Breadcrumbs>

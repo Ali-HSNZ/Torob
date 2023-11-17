@@ -1,12 +1,11 @@
-import React, { type FC } from 'react'
+import { type FC } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import { Button, Input, Popover } from '@mantine/core'
 import { useDisclosure, useElementSize, useMediaQuery } from '@mantine/hooks'
-import { IconMenu2, IconShoppingBag } from '@tabler/icons-react'
+import { IconMenu2 } from '@tabler/icons-react'
 import { IconSearch } from '@tabler/icons-react'
 
-import { HeaderDrawerMenu, HeaderMenu, HeaderUserActionButtons } from './resources'
+import { HeaderCardButton, HeaderDrawerMenu, HeaderMenu, HeaderUserActionButtons } from '../resources'
 
 const HeaderWithSearchbar: FC = () => {
     const [openedDrawer, { toggle: toggleDrawer }] = useDisclosure(false)
@@ -80,14 +79,7 @@ const HeaderWithSearchbar: FC = () => {
                     {/* Card Button And User Action Buttons Parent */}
                     <section className='flex gap-x-4'>
                         {/* Card Button */}
-                        <Button
-                            href={'#'}
-                            component={Link}
-                            className='bg-white rounded-md text-sm font-medium text-black'
-                            leftSection={<IconShoppingBag className='text-gray-800' size='1.1rem' stroke={1.5} />}
-                        >
-                            Card
-                        </Button>
+                        <HeaderCardButton />
 
                         {/* User Action Buttons */}
                         <HeaderUserActionButtons />
