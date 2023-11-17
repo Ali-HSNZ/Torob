@@ -1,6 +1,6 @@
 import { type MantineThemeOverride } from '@mantine/core'
 
-const mantineThemeConfig: MantineThemeOverride = {
+const mantineThemeObject: MantineThemeOverride = {
     breakpoints: {
         xs: '576px',
         sm: '768px',
@@ -9,7 +9,8 @@ const mantineThemeConfig: MantineThemeOverride = {
         xl: '1440px',
     },
     fontFamily: 'unset',
-    primaryColor: 'red',
-    primaryShade: { light: 8, dark: 5 },
+    primaryColor: 'blue',
+    primaryShade: { light: 5, dark: 5 },
 }
-export default mantineThemeConfig
+
+export default mantineThemeObject

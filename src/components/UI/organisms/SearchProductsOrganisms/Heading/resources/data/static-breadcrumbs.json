@@ -1,0 +1,13 @@
+[
+    { "id": 0, "title": "All Categories", "href": "#" },
+    {
+        "id": 1,
+        "title": "Digital Appliances",
+        "href": "#"
+    },
+    {
+        "id": 2,
+        "title": "Phone",
+        "href": "#"
+    }
+]

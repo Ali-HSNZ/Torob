@@ -7,6 +7,7 @@ import { ReactQueryProvider } from '@partials/providers/React-query-provider'
 
 import { mantineThemeConfig } from '@core/constants/configs/mantine'
 import { quickSandFonts } from '@core/constants/fonts/quickSand'
+import { type ILayoutProps } from '@core/types/layouts/layouts.type'
 
 import '@styles/globals.css'
 
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Torob',
 }
 
-const RootLayout: FC<{ children: React.ReactNode }> = ({ children }) => {
+const RootLayout: FC<ILayoutProps> = ({ children }) => {
     return (
         <html>
             <head>
