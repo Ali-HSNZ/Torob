@@ -6,16 +6,13 @@ import { SortActions, STATIC_BREADCRUMBS_LIST } from './resources'
 
 const SearchProductsOrganismsHeading: FC = () => {
     return (
-        <main>
-            <div className='w-full mt-4 flex-col gap-y-4 md:gap-y-0 md:flex-row flex  items-center md:justify-between'>
-                <div className='w-full flex justify-start overflow-x-auto pb-2 '>
-                    <CustomBreadcrumbs breadcrumbsList={STATIC_BREADCRUMBS_LIST} />
-                </div>
-                <div className='w-full flex justify-end'>
-                    <SortActions />
-                </div>
+        <section className='w-full flex items-center gap-x-4'>
+            <div className='w-full overflow-x-auto pb-4 box-border mt-4'>
+                <CustomBreadcrumbs classNames={{ separator: ' text-xs' }} breadcrumbsList={STATIC_BREADCRUMBS_LIST} />
             </div>
-        </main>
+
+            <SortActions />
+        </section>
     )
 }
 

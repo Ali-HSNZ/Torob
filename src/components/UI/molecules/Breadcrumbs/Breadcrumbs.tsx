@@ -13,7 +13,7 @@ const CustomBreadcrumbs: FC<IBreadcrumbsProps> = ({ breadcrumbsList, ...res }) =
             href={item.href}
             color='dark'
             variant='transparent'
-            className='text-sm'
+            className='text-xs'
         >
             {item.title}
         </ActionIcon>
