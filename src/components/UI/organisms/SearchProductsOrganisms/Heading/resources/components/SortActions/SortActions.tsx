@@ -11,6 +11,7 @@ const SortActions: FC = () => {
 
     return (
         <Popover
+            width={150}
             arrowSize={10}
             classNames={{ arrow: 'z-10 absolute' }}
             opened={opened}
@@ -23,7 +24,7 @@ const SortActions: FC = () => {
                     {sortStatus.title}
                 </Button>
             </Popover.Target>
-            <Popover.Dropdown className='p-0'>
+            <Popover.Dropdown className='p-1'>
                 <Button.Group orientation='vertical'>
                     {STATIC_SORT_LIST.map((sort) => (
                         <Button

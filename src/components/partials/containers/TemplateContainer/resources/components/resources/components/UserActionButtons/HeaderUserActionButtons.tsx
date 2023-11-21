@@ -12,7 +12,7 @@ const HeaderUserActionButtons = () => {
                         09302520508
                     </Button>
                 </Popover.Target>
-                <Popover.Dropdown className='text-center p-0'>
+                <Popover.Dropdown className='text-center p-1'>
                     <Button.Group orientation='vertical' className='capitalize'>
                         {['control Panel', 'Favorites', 'Recent', 'orders', 'Logout'].map((linkName, index) => (
                             <Button

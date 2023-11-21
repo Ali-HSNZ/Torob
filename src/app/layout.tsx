@@ -22,7 +22,7 @@ const RootLayout: FC<ILayoutProps> = ({ children }) => {
                 {/* Mantine Color Scheme Script */}
                 <ColorSchemeScript />
             </head>
-            <body className={`${quickSandFonts.variable} font-sans`}>
+            <body className={`${quickSandFonts.variable} font-sans bg-gray-50`}>
                 <ReactQueryProvider>
                     <MantineProvider theme={mantineThemeConfig}>{children}</MantineProvider>
                 </ReactQueryProvider>
