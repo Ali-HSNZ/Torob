@@ -15,7 +15,7 @@ const HeaderDrawerMenu: FC<THeaderDrawerMenuProps> = ({ closeDrawer, openedDrawe
             size={'xs'}
             onClose={closeDrawer}
             title='Categories'
-            classNames={{ title: 'text-sm', close: ' focus:outline-none' }}
+            classNames={{ title: 'text-xs sm:text-sm', close: ' focus:outline-none' }}
             overlayProps={{ backgroundOpacity: 0.5, blur: 4 }}
         >
             <div className='flex flex-col gap-y-4'>
@@ -26,7 +26,7 @@ const HeaderDrawerMenu: FC<THeaderDrawerMenuProps> = ({ closeDrawer, openedDrawe
                             size={'auto'}
                             color='dark'
                             variant='transparent'
-                            className='capitalize focus:outline-none text-sm font-medium'
+                            className='capitalize text-xs sm:text-sm focus:outline-none font-medium'
                         >
                             {menu.title}
                         </ActionIcon>
@@ -38,7 +38,7 @@ const HeaderDrawerMenu: FC<THeaderDrawerMenuProps> = ({ closeDrawer, openedDrawe
                                         key={sub.id}
                                         color='dark'
                                         variant='transparent'
-                                        className='w-fit capitalize focus:outline-none text-sm '
+                                        className='w-fit capitalize focus:outline-none text-xs '
                                     >
                                         {sub.title}
                                     </ActionIcon>

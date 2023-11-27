@@ -8,6 +8,9 @@ const config: Config = {
             fontFamily: {
                 sans: ['var(--font-quickSand)'],
             },
+            colors: {
+                beetColor: '#9331B2',
+            },
         },
     },
     plugins: [],

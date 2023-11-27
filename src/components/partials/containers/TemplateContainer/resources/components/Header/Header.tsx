@@ -4,6 +4,8 @@ import { Button } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconMenu2 } from '@tabler/icons-react'
 
+import logo from '@public/images/logo.png'
+
 import { HeaderCardButton, HeaderDrawerMenu, HeaderMenu, HeaderUserActionButtons } from '../resources'
 
 const Header: FC = () => {
@@ -29,15 +31,9 @@ const Header: FC = () => {
                             <IconMenu2 className='text-gray-700' />
                         </Button>
 
-                        {/* Torob Logo */}
-                        <figure className='relative w-[35px] h-[35px]'>
-                            <Image
-                                alt='torob logo'
-                                priority
-                                className='h-full w-auto'
-                                fill
-                                src={'https://torob.iran.liara.run/_next/static/media/torob_logo.e01c66b6.svg'}
-                            />
+                        {/* Beet Logo */}
+                        <figure className='relative w-[30px] h-[35px]'>
+                            <Image alt='Beet logo' priority className='h-full object-cover w-auto' fill src={logo} />
                         </figure>
 
                         {/* Menu Links */}

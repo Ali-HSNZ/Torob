@@ -1,5 +1,5 @@
 'use client'
 
-import HomeOrganismsSearchInput from './HomeOrganismsSearchInput'
+import HomeSearchInput from './HomeSearchInput'
 
-export { HomeOrganismsSearchInput }
+export { HomeSearchInput }
