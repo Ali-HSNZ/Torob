@@ -34,7 +34,7 @@ const HeaderUserActionButtons = () => {
                     <Menu.Label classNames={{ label: 'text-left' }}>Application</Menu.Label>
 
                     <Menu.Item
-                        className='text-xs sm:text-sm'
+                        className='text-sm'
                         leftSection={<IconAdjustmentsAlt stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
                         href={'#'}
@@ -43,7 +43,7 @@ const HeaderUserActionButtons = () => {
                     </Menu.Item>
 
                     <Menu.Item
-                        className='text-xs sm:text-sm'
+                        className='text-sm'
                         leftSection={<IconHeart stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
                         href={'#'}
@@ -52,7 +52,7 @@ const HeaderUserActionButtons = () => {
                     </Menu.Item>
 
                     <Menu.Item
-                        className='text-xs sm:text-sm'
+                        className='text-sm'
                         leftSection={<IconHistory stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
                         href={'#'}
@@ -61,7 +61,7 @@ const HeaderUserActionButtons = () => {
                     </Menu.Item>
 
                     <Menu.Item
-                        className='text-xs sm:text-sm'
+                        className='text-sm'
                         leftSection={<IconTruckDelivery stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
                         href={'#'}
@@ -74,7 +74,7 @@ const HeaderUserActionButtons = () => {
 
                     <Menu.Item
                         color='red'
-                        className='text-xs sm:text-sm'
+                        className='text-sm'
                         leftSection={<IconLogout2 stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
                         href={'#'}

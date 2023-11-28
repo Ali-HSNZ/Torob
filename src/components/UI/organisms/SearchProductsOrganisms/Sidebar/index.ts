@@ -1,3 +1,3 @@
-import SearchProductsOrganismsSidebar from './Sidebar'
+import SearchProductsSidebar from './Sidebar'
 
-export { SearchProductsOrganismsSidebar }
+export { SearchProductsSidebar }

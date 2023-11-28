@@ -1,7 +1,7 @@
 import { type FC } from 'react'
 
-const SearchProductsOrganismsSidebar: FC = () => {
-    return <section className='w-full bg-white h-screen border-r border-gray-200 p-4'>Sidebar (Filters)</section>
+const SearchProductsSidebar: FC = () => {
+    return <section className='h-full w-80 bg-white overflow-hidden flex-shrink-0  '>Sidebar (Filters)</section>
 }
 
-export default SearchProductsOrganismsSidebar
+export default SearchProductsSidebar

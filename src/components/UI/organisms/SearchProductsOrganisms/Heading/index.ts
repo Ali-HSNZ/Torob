@@ -1,3 +1,3 @@
-import SearchProductsOrganismsHeading from './Heading'
+import SearchProductsHeading from './Heading'
 
-export { SearchProductsOrganismsHeading }
+export { SearchProductsHeading }

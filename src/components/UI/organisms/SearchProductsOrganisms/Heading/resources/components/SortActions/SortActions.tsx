@@ -16,18 +16,16 @@ const SortActions: FC = () => {
                     onClick={open}
                     classNames={{ label: 'text-left w-full' }}
                     rightSection={<IconChevronDown stroke={1.4} size={20} />}
-                    className='capitalize min-w-[155px] sm:min-w-[170px] text-[13px] sm:text-sm'
+                    className='capitalize min-w-[155px] sm:min-w-[170px] text-sm'
                 >
                     {sortStatus.title}
                 </Button>
             </Menu.Target>
             <Menu.Dropdown className='p-1'>
-                <Menu.Label className='text-[10px] sm:text-xs'>Sort by</Menu.Label>
+                <Menu.Label className='text-xs'>Sort by</Menu.Label>
                 {STATIC_SORT_LIST.map((sort) => (
                     <Menu.Item
-                        className={`capitalize  text-xs sm:text-sm  ${
-                            sort.title === sortStatus.title ? 'bg-gray-100' : ''
-                        }`}
+                        className={`capitalize text-sm  ${sort.title === sortStatus.title ? 'bg-gray-100' : ''}`}
                         onClick={() => {
                             setSortStatus(sort)
                         }}

@@ -4,8 +4,6 @@ import { Button } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconMenu2 } from '@tabler/icons-react'
 
-import logo from '@public/images/logo.png'
-
 import { HeaderCardButton, HeaderDrawerMenu, HeaderMenu, HeaderUserActionButtons } from '../resources'
 
 const Header: FC = () => {
@@ -17,7 +15,7 @@ const Header: FC = () => {
             <HeaderDrawerMenu closeDrawer={toggleDrawer} openedDrawer={openedDrawer} />
 
             {/* Main Header */}
-            <header className='w-full gap-y-4 bg-zinc-100 py-4 px-6 flex flex-col relative z-50 '>
+            <header className='w-full gap-y-4 shadow-sm bg-gray-50 py-4 px-6 flex flex-col relative z-50 '>
                 <div className='w-full flex items-center justify-between '>
                     {/* Left Section */}
                     <section className='flex gap-x-3'>
@@ -31,9 +29,15 @@ const Header: FC = () => {
                             <IconMenu2 className='text-gray-700' />
                         </Button>
 
-                        {/* Beet Logo */}
-                        <figure className='relative w-[30px] h-[35px]'>
-                            <Image alt='Beet logo' priority className='h-full object-cover w-auto' fill src={logo} />
+                        {/* Torob Logo */}
+                        <figure className='relative w-[40px] h-[35px]'>
+                            <Image
+                                alt='Torob logo'
+                                priority
+                                className='h-full object-cover w-auto'
+                                fill
+                                src={'https://torob.com/static/images/torob_logo.svg'}
+                            />
                         </figure>
 
                         {/* Menu Links */}

@@ -9,7 +9,7 @@ const HomeSearchInput: FC = () => {
     return (
         <section ref={ref} className='w-[460px] relative flex flex-col gap-y-4'>
             <div className='flex flex-col gap-y-2'>
-                <h1 className='text-4xl text-beetColor font-bold'>Beet</h1>
+                <h1 className='text-4xl text-red-500 font-bold'>Torob</h1>
 
                 <h6 className='text-black font-medium capitalize text-sm'>
                     Price comparison of millions of products between thousands of stores
