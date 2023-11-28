@@ -43,6 +43,7 @@ const HomeSearchInput: FC = () => {
                                 <TextInput
                                     {...field}
                                     ref={ref}
+                                    autoComplete='off'
                                     placeholder='search products...'
                                     classNames={{ input: 'py-5 ' }}
                                     leftSection={<IconSearch size={'1.2rem'} />}
