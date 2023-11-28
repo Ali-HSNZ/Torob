@@ -1,31 +1,22 @@
 import { type FC } from 'react'
-import { type Metadata } from 'next'
-import { ColorSchemeScript, MantineProvider } from '@mantine/core'
-import '@mantine/core/styles.css'
+import { ColorSchemeScript } from '@mantine/core'
 
-import { ReactQueryProvider } from '@partials/providers/React-query-provider'
-
-import { mantineThemeConfig } from '@core/constants/configs/mantine'
 import { quickSandFonts } from '@core/constants/fonts/quickSand'
 import { type ILayoutProps } from '@core/types/layouts/layouts.type'
 
 import '@styles/globals.css'
 
-export const metadata: Metadata = {
-    title: 'Torob',
-}
+import { Providers } from './Providers'
 
 const RootLayout: FC<ILayoutProps> = ({ children }) => {
     return (
         <html>
             <head>
-                {/* Mantine Color Scheme Script */}
+                <title>Torob</title>
                 <ColorSchemeScript />
             </head>
             <body className={`${quickSandFonts.variable} font-sans bg-gray-50`}>
-                <ReactQueryProvider>
-                    <MantineProvider theme={mantineThemeConfig}>{children}</MantineProvider>
-                </ReactQueryProvider>
+                <Providers>{children}</Providers>
             </body>
         </html>
     )
