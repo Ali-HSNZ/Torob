@@ -33,7 +33,7 @@ const HomeSearchInput: FC = () => {
                     Price comparison of millions of products between thousands of stores
                 </h6>
             </div>
-            <section>
+            <section ref={ref}>
                 <Controller
                     name='name'
                     control={control}
@@ -42,7 +42,6 @@ const HomeSearchInput: FC = () => {
                             <Popover.Target>
                                 <TextInput
                                     {...field}
-                                    ref={ref}
                                     autoComplete='off'
                                     placeholder='search products...'
                                     classNames={{ input: 'py-5 ' }}
