@@ -35,10 +35,10 @@ const nextConfig = {
         minimumCacheTTL: 3600,
         remotePatterns: [
             {
-                protocol: 'http',
-                hostname: '192.168.250.21',
-                port: '8002',
-                pathname: '/storage/**',
+                protocol: 'https',
+                hostname: 'image.torob.com',
+                port: '',
+                pathname: '/**',
             },
         ],
     },
