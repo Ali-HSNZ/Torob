@@ -1,13 +1,14 @@
-import { type FC, useState } from 'react'
+import { type FC } from 'react'
 import { Button, Menu } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
 
-import { STATIC_SORT_LIST } from './resources'
+import { type ISortActionsProps, STATIC_SORT_LIST } from './resources'
 
-const SortActions: FC = () => {
-    const [sortStatus, setSortStatus] = useState(STATIC_SORT_LIST[0])
+const SortActions: FC<ISortActionsProps> = ({ setQuery, query }) => {
     const [opened, { close, open }] = useDisclosure(false)
+
+    const defaultSort = query?.sort || STATIC_SORT_LIST[0].label
 
     return (
         <Menu width={170} withArrow arrowSize={10} opened={opened} position='bottom' onClose={close} shadow='md'>
@@ -18,20 +19,20 @@ const SortActions: FC = () => {
                     rightSection={<IconChevronDown stroke={1.4} size={20} />}
                     className='capitalize min-w-[155px] sm:min-w-[170px] text-sm'
                 >
-                    {sortStatus.title}
+                    {STATIC_SORT_LIST.find((sort) => sort.label.includes(defaultSort))?.label || 'Unknown'}
                 </Button>
             </Menu.Target>
             <Menu.Dropdown className='p-1'>
                 <Menu.Label className='text-xs'>Sort by</Menu.Label>
-                {STATIC_SORT_LIST.map((sort) => (
+                {STATIC_SORT_LIST.map((sort, index) => (
                     <Menu.Item
-                        className={`capitalize text-sm  ${sort.title === sortStatus.title ? 'bg-gray-100' : ''}`}
+                        className={`capitalize text-sm  ${sort.label.includes(defaultSort) ? 'bg-gray-100' : ''}`}
+                        key={index}
                         onClick={() => {
-                            setSortStatus(sort)
+                            setQuery({ sort: sort.value })
                         }}
-                        key={sort.id}
                     >
-                        {sort.title}
+                        {sort.label}
                     </Menu.Item>
                 ))}
             </Menu.Dropdown>

@@ -1,6 +1,7 @@
 import { type FC } from 'react'
 
 import { SearchProductsHeading } from '@organisms/SearchProductsOrganisms/Heading'
+import { SearchProductsList } from '@organisms/SearchProductsOrganisms/ProductsList'
 import { SearchProductsSidebar } from '@organisms/SearchProductsOrganisms/Sidebar'
 
 const ProductsTemplate: FC = () => {
@@ -14,6 +15,7 @@ const ProductsTemplate: FC = () => {
             {/* Heading */}
             <section className='flex-1 mt-3 overflow-x-auto'>
                 <SearchProductsHeading />
+                <SearchProductsList />
             </section>
         </main>
     )
