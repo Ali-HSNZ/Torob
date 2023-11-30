@@ -4,9 +4,11 @@ import { ActionIcon, Button } from '@mantine/core'
 import { IconBell, IconHeart, IconShoppingBagPlus } from '@tabler/icons-react'
 import { IconShare } from '@tabler/icons-react'
 
-import { type IProductCardProps } from './resources'
+import { type IColumnProductCardProps } from './resources'
 
-const ProductCard: FC<IProductCardProps> = ({ product }) => {
+const ColumnProductCard: FC<IColumnProductCardProps> = ({ product }) => {
+    const productTitle = product.title.length > 100 ? `${product.title.substring(0, 100)}...` : product.title
+
     return (
         <section className='bg-white flex flex-col justify-between items-start shadow-sm h-auto w-full p-4'>
             {/* image */}
@@ -24,15 +26,15 @@ const ProductCard: FC<IProductCardProps> = ({ product }) => {
 
             <div className='w-full h-full flex justify-between flex-col '>
                 {/* name */}
-                <p className='text-sm mt-4   text-gray-700 font-bold'>{product.title}</p>
+                <p className='text-sm mt-5   text-gray-700 font-bold'>{productTitle}</p>
 
                 <div className='w-full'>
                     {/* price */}
                     <p className='text-xs mt-4 text-gray-500  font-bold'>From ${product.price}</p>
 
-                    <div className='flex mt-2 justify-between items-center'>
+                    <div className='flex mt-3 justify-between items-center'>
                         {/* store count */}
-                        <p className='text-sm text-gray-400  font-medium'>in {product.storeCount} store</p>
+                        <p className='text-sm text-gray-400 font-medium'>in {product.storeCount} store</p>
 
                         {/* Actions */}
                         <div className='flex items-center gap-x-2'>
@@ -68,4 +70,4 @@ const ProductCard: FC<IProductCardProps> = ({ product }) => {
     )
 }
 
-export default ProductCard
+export default ColumnProductCard

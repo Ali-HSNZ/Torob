@@ -45,6 +45,7 @@ const SearchProductsHeading: FC = () => {
                 {/* Sort Popup */}
                 <SortActions setQuery={setQuery} query={query} />
             </div>
+            <hr className='mt-4' />
 
             <div className='w-full flex justify-between mt-6'>
                 {/* Num of products in api result */}
@@ -56,12 +57,22 @@ const SearchProductsHeading: FC = () => {
                 {/* Switch product list view */}
                 <div className='flex gap-x-2'>
                     {/* Row button */}
-                    <ActionIcon variant='transparent' color='dark' className='text-gray-600' onClick={() => viewQueryParams('row')}>
+                    <ActionIcon
+                        variant='transparent'
+                        color='dark'
+                        className='text-gray-600'
+                        onClick={() => viewQueryParams('row')}
+                    >
                         <IconLayoutRows />
                     </ActionIcon>
 
                     {/* Column button */}
-                    <ActionIcon variant='transparent' color='dark' className='text-gray-600' onClick={() => viewQueryParams('column')}>
+                    <ActionIcon
+                        variant='transparent'
+                        color='dark'
+                        className='text-gray-600'
+                        onClick={() => viewQueryParams('column')}
+                    >
                         <IconColumns2 />
                     </ActionIcon>
                 </div>

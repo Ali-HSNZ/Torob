@@ -6,8 +6,8 @@ type TProductType = {
     image: string
 }
 
-interface IProductCardProps {
+interface IColumnProductCardProps {
     product: TProductType
 }
 
-export default IProductCardProps
+export default IColumnProductCardProps
