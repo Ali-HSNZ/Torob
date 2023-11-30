@@ -1,0 +1,58 @@
+[
+    {
+        "id": 0,
+        "title": "lap top",
+        "price": 1000,
+        "storeCount": 1,
+        "image": "https://image.torob.com/base/images/b8/KZ/b8KZ2XutsxJOVVR3.jpg_/280x280.webp"
+    },
+    {
+        "id": 6,
+        "title": "Realme C55 256/8 GB",
+        "price": 720,
+        "storeCount": 1,
+        "image": "https://image.torob.com/base/images/8X/6q/8X6qUtUonY3sIe7-.webp_/280x280.webp"
+    },
+    {
+        "id": 1,
+        "title": "8GB RAM | 256GB SSD | M1 | MGN63 ا Macbook Air MGN63",
+        "price": 1520,
+        "storeCount": 8,
+        "image": "https://image.torob.com/base/images/8v/kg/8vkgL6h5SmhLTRai.jpg_/280x280.webp"
+    },
+    {
+        "id": 2,
+        "title": "Apple MacBook Air 2022 Midnight MLY33 SSD ا",
+        "price": 1600,
+        "storeCount": 2,
+        "image": "https://image.torob.com/base/images/3I/k8/3Ik8FyfdN0i-rYVR.jpg_/280x280.webp"
+    },
+    {
+        "id": 3,
+        "title": "Apple MacBook 256GB SSD ا Apple ا",
+        "price": 2200,
+        "storeCount": 13,
+        "image": "https://image.torob.com/base/images/gv/4o/gv4oNnNi8dn24foo.jpg_/280x280.webp"
+    },
+    {
+        "id": 4,
+        "title": " Mac Book Pro 2023 14inch 512GB SSD",
+        "price": 2200,
+        "storeCount": 2,
+        "image": "https://image.torob.com/base/images/Km/-O/Km-ObtfYgsxsGqxT.jpg_/280x280.webp"
+    },
+    {
+        "id": 5,
+        "title": "Gplus Q20S 64/4 GB",
+        "price": 560,
+        "storeCount": 3,
+        "image": "https://image.torob.com/base/images/7w/R9/7wR9teZo7n--bdk6.webp_/280x280.webp"
+    },
+    {
+        "id": 7,
+        "title": "Xiaomi Redmi 12C 128/6 GB",
+        "price": 820,
+        "storeCount": 7,
+        "image": "https://image.torob.com/base/images/gJ/qQ/gJqQ-nv_hTzojJ3L.jpg_/280x280.webp"
+    }
+]

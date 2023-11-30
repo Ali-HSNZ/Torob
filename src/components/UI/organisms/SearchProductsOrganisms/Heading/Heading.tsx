@@ -56,12 +56,12 @@ const SearchProductsHeading: FC = () => {
                 {/* Switch product list view */}
                 <div className='flex gap-x-2'>
                     {/* Row button */}
-                    <ActionIcon variant='subtle' color='dark' onClick={() => viewQueryParams('row')}>
+                    <ActionIcon variant='transparent' color='dark' className='text-gray-600' onClick={() => viewQueryParams('row')}>
                         <IconLayoutRows />
                     </ActionIcon>
 
                     {/* Column button */}
-                    <ActionIcon variant='subtle' color='dark' onClick={() => viewQueryParams('column')}>
+                    <ActionIcon variant='transparent' color='dark' className='text-gray-600' onClick={() => viewQueryParams('column')}>
                         <IconColumns2 />
                     </ActionIcon>
                 </div>
