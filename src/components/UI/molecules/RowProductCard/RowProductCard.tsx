@@ -7,10 +7,8 @@ import { IconShare } from '@tabler/icons-react'
 import { type IRowProductCardProps } from './resources'
 
 const RowProductCard: FC<IRowProductCardProps> = ({ product }) => {
-    const productTitle = product.title.length > 100 ? `${product.title.substring(0, 100)}...` : product.title
-
     return (
-        <section className='bg-white flex flex-col gap-4 justify-between items-start shadow-sm h-auto w-full p-4'>
+        <section className='bg-white flex flex-col gap-x-4 gap-y-2 justify-between items-start shadow-sm h-auto w-full p-4'>
             <div className='w-full flex justify-between gap-x-4'>
                 {/* image */}
                 <div className=' w-fit flex justify-center items-center '>
@@ -26,13 +24,13 @@ const RowProductCard: FC<IRowProductCardProps> = ({ product }) => {
                 </div>
 
                 <div className='w-full flex flex-col gap-y-2'>
-                    <div className='w-full h-full  flex justify-between flex-col '>
+                    <div className='w-full h-full flex justify-between flex-col '>
                         {/* name */}
-                        <p className='text-sm text-gray-700 font-bold'>{productTitle}</p>
+                        <p className='text-sm text-gray-700 font-bold line-clamp-3'>{product.title}</p>
 
                         <div className='w-full mt-2'>
                             {/* price */}
-                            <p className='text-xs  text-gray-500  font-bold'>From ${product.price}</p>
+                            <p className='text-xs text-gray-500  font-bold'>From ${product.price}</p>
 
                             {/* store count */}
                             <p className='text-sm text-gray-400 mt-1 font-medium'>in {product.storeCount} store</p>

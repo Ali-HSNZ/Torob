@@ -7,8 +7,6 @@ import { IconShare } from '@tabler/icons-react'
 import { type IColumnProductCardProps } from './resources'
 
 const ColumnProductCard: FC<IColumnProductCardProps> = ({ product }) => {
-    const productTitle = product.title.length > 100 ? `${product.title.substring(0, 100)}...` : product.title
-
     return (
         <section className='bg-white flex flex-col justify-between items-start shadow-sm h-auto w-full p-4'>
             {/* image */}
@@ -26,7 +24,7 @@ const ColumnProductCard: FC<IColumnProductCardProps> = ({ product }) => {
 
             <div className='w-full h-full flex justify-between flex-col '>
                 {/* name */}
-                <p className='text-sm mt-5   text-gray-700 font-bold'>{productTitle}</p>
+                <p className='text-sm mt-5 text-gray-700 font-bold line-clamp-3'>{product.title}</p>
 
                 <div className='w-full'>
                     {/* price */}
