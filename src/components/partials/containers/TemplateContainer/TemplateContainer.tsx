@@ -5,21 +5,14 @@ import { Header } from './resources/components/Header'
 import { HeaderWithSearchbar } from './resources/components/HeaderWithSearchbar'
 
 const TemplateContainer: FC<ITemplateContainerProps> = ({ withSearchbar, children }) => {
-    if (withSearchbar) {
-        return (
-            <>
-                <HeaderWithSearchbar />
-                {children}
-            </>
-        )
-    } else {
-        return (
-            <>
-                <Header />
-                {children}
-            </>
-        )
-    }
+    const HeaderComponent = withSearchbar ? HeaderWithSearchbar : Header
+
+    return (
+        <>
+            <HeaderComponent />
+            {children}
+        </>
+    )
 }
 
 export default TemplateContainer
