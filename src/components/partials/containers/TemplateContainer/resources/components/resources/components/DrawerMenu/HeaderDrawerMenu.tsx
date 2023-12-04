@@ -15,7 +15,10 @@ const HeaderDrawerMenu: FC<THeaderDrawerMenuProps> = ({ closeDrawer, openedDrawe
             size={'xs'}
             onClose={closeDrawer}
             title='Categories'
-            classNames={{ title: 'text-sm  font-medium', close: ' focus:outline-none' }}
+            classNames={{
+                title: 'text-sm  font-medium',
+                close: ' focus:outline-none',
+            }}
             overlayProps={{ backgroundOpacity: 0.5, blur: 4 }}
         >
             <div className='flex flex-col gap-y-4'>
