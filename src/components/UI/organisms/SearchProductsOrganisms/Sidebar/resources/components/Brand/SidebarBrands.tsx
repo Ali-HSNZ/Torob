@@ -1,7 +1,7 @@
 'use client'
 
 import React, { type FC, useMemo, useState } from 'react'
-import { Button, Input } from '@mantine/core'
+import { Button, Highlight, Input } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconSearch } from '@tabler/icons-react'
 
@@ -32,23 +32,25 @@ const SidebarBrands: FC<ISidebarBrandsProps> = ({ setQuery }) => {
     }, [inputValue])
 
     return (
-        <section className='px-4 '>
+        <section className='px-4'>
             <Input
                 color='gray'
                 leftSection={<IconSearch size={20} stroke={1.5} />}
                 placeholder='Search brand'
                 onChange={(input) => setInputValue(input.target.value)}
             />
-            <div className='flex flex-col px-1  h-[400px] overflow-y-auto gap-y-2 mt-5'>
+            <div className='flex flex-col px-1 min-h-[400px] max-h-[400px] overflow-y-auto gap-y-2 mt-5'>
                 {brandList.length > 0 ? (
-                    brandList.slice(0, isShow ? brandList.length : 7).map((brand) => (
+                    brandList.slice(0, isShow ? brandList.length : 9).map((brand) => (
                         <div key={brand.id}>
                             <CButton
                                 onClick={() => setBrandQueryParams(brand.title)}
                                 variant='transparent'
                                 className='font-medium text-sm text-gray-500'
                             >
-                                {brand.title}
+                                <Highlight color='gray' highlight={inputValue}>
+                                    {brand.title}
+                                </Highlight>
                             </CButton>
                         </div>
                     ))
@@ -57,7 +59,7 @@ const SidebarBrands: FC<ISidebarBrandsProps> = ({ setQuery }) => {
                 )}
             </div>
 
-            {brandList.length > 7 && (
+            {brandList.length > 9 && (
                 <Button onClick={toggle} fullWidth color='gray' className='mt-4 ' variant='outline'>
                     {isShow ? 'View less' : 'View more'}
                 </Button>
