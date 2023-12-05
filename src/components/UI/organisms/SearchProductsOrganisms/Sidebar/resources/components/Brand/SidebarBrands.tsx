@@ -46,9 +46,9 @@ const SidebarBrands: FC<ISidebarBrandsProps> = ({ setQuery }) => {
                             <CButton
                                 onClick={() => setBrandQueryParams(brand.title)}
                                 variant='transparent'
-                                className='font-medium text-sm text-gray-500'
+                                className='font-medium p-0 text-sm text-gray-500'
                             >
-                                <Highlight color='gray' highlight={inputValue}>
+                                <Highlight classNames={{ root: 'text-sm' }} color='gray' highlight={inputValue}>
                                     {brand.title}
                                 </Highlight>
                             </CButton>
