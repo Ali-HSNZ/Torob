@@ -39,9 +39,9 @@ const SidebarBrands: FC<ISidebarBrandsProps> = ({ setQuery }) => {
                 placeholder='Search brand'
                 onChange={(input) => setInputValue(input.target.value)}
             />
-            <div className='flex flex-col px-1 min-h-[400px] max-h-[400px] overflow-y-auto gap-y-2 mt-5'>
+            <div className='flex flex-col px-1 min-h-[310px] max-h-[310px] overflow-y-auto gap-y-2 mt-5'>
                 {brandList.length > 0 ? (
-                    brandList.slice(0, isShow ? brandList.length : 9).map((brand) => (
+                    brandList.slice(0, isShow ? brandList.length : 7).map((brand) => (
                         <div key={brand.id}>
                             <CButton
                                 onClick={() => setBrandQueryParams(brand.title)}
@@ -59,7 +59,7 @@ const SidebarBrands: FC<ISidebarBrandsProps> = ({ setQuery }) => {
                 )}
             </div>
 
-            {brandList.length > 9 && (
+            {brandList.length > 7 && (
                 <Button onClick={toggle} fullWidth color='gray' className='mt-4 ' variant='outline'>
                     {isShow ? 'View less' : 'View more'}
                 </Button>
