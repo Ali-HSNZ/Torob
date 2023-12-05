@@ -5,6 +5,7 @@ import { Button, Input } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconSearch } from '@tabler/icons-react'
 
+import { CButton } from '@atoms/Button'
 import NoData from '@atoms/NoData/NoData'
 
 import { type ISidebarBrandsProps, STATIC_BRANDS_LIST } from './resources'
@@ -38,13 +39,17 @@ const SidebarBrands: FC<ISidebarBrandsProps> = ({ setQuery }) => {
                 placeholder='Search brand'
                 onChange={(input) => setInputValue(input.target.value)}
             />
-            <div className='flex flex-col px-1 max-h-[400px] overflow-y-auto gap-y-2 mt-5'>
+            <div className='flex flex-col px-1  h-[400px] overflow-y-auto gap-y-2 mt-5'>
                 {brandList.length > 0 ? (
                     brandList.slice(0, isShow ? brandList.length : 7).map((brand) => (
                         <div key={brand.id}>
-                            <Button onClick={() => setBrandQueryParams(brand.title)} variant='transparent' color='dark'>
+                            <CButton
+                                onClick={() => setBrandQueryParams(brand.title)}
+                                variant='transparent'
+                                className='font-medium text-sm text-gray-500'
+                            >
                                 {brand.title}
-                            </Button>
+                            </CButton>
                         </div>
                     ))
                 ) : (
@@ -53,7 +58,7 @@ const SidebarBrands: FC<ISidebarBrandsProps> = ({ setQuery }) => {
             </div>
 
             {brandList.length > 7 && (
-                <Button onClick={toggle} fullWidth color='#333' className='mt-4' variant='outline'>
+                <Button onClick={toggle} fullWidth color='gray' className='mt-4 ' variant='outline'>
                     {isShow ? 'View less' : 'View more'}
                 </Button>
             )}
