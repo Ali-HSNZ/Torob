@@ -12,7 +12,7 @@ import { textToSlug } from '@core/utils/common/textToSlug'
 
 import { type ISidebarBrandsProps, STATIC_BRANDS_LIST } from './resources'
 
-const SidebarBrands: FC<ISidebarBrandsProps> = ({ brandQuery, setQuery }) => {
+const SidebarBrands: FC<ISidebarBrandsProps> = ({ query, setQuery }) => {
     const [isShow, { toggle }] = useDisclosure(false)
 
     const [inputValue, setInputValue] = useState<string>('')
@@ -52,7 +52,7 @@ const SidebarBrands: FC<ISidebarBrandsProps> = ({ brandQuery, setQuery }) => {
                             >
                                 <Highlight
                                     classNames={{
-                                        root: `text-sm ${textToSlug(brand.title) === brandQuery ? 'text-red-500' : ''}`,
+                                        root: `text-sm ${textToSlug(brand.title) === query ? 'text-red-600' : ''}`,
                                     }}
                                     color='gray'
                                     highlight={inputValue}
