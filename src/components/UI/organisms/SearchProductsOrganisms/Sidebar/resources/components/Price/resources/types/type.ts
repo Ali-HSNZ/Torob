@@ -7,6 +7,7 @@ type TPriceRangeType = {
 
 interface ISidebarPriceProps {
     setQuery: TCriticalAny
+    query: (number | null | undefined)[]
 }
 
 export type { ISidebarPriceProps, TPriceRangeType }
