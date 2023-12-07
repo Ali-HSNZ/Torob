@@ -1,4 +1,4 @@
 import STATIC_CATEGORIES from './data/static-categories.json'
-import type { ISidebarCategoryProps, TSidebarCategoriesType } from './types/type'
+import type { IRenderCategoryProps, ISidebarCategoryProps } from './types/type'
 
-export { STATIC_CATEGORIES, type ISidebarCategoryProps, type TSidebarCategoriesType }
+export { STATIC_CATEGORIES, type ISidebarCategoryProps, type IRenderCategoryProps }

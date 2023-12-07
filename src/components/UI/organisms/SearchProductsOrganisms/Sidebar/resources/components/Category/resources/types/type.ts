@@ -12,8 +12,15 @@ type TSidebarCategoriesType = {
     sub: SubCategory[]
 }
 
-interface ISidebarCategoryProps {
+interface IRenderCategoryProps {
+    category: TSidebarCategoriesType
     setQuery: TCriticalAny
+    query: string | null | undefined
 }
 
-export type { ISidebarCategoryProps, TSidebarCategoriesType }
+interface ISidebarCategoryProps {
+    setQuery: TCriticalAny
+    query: string | null | undefined
+}
+
+export type { ISidebarCategoryProps, IRenderCategoryProps }
