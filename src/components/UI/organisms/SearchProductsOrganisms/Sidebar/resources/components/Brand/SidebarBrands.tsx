@@ -8,16 +8,18 @@ import { IconSearch } from '@tabler/icons-react'
 import { CButton } from '@atoms/Button'
 import NoData from '@atoms/NoData/NoData'
 
+import { textToSlug } from '@core/utils/common/textToSlug'
+
 import { type ISidebarBrandsProps, STATIC_BRANDS_LIST } from './resources'
 
-const SidebarBrands: FC<ISidebarBrandsProps> = ({ setQuery }) => {
+const SidebarBrands: FC<ISidebarBrandsProps> = ({ brandQuery, setQuery }) => {
     const [isShow, { toggle }] = useDisclosure(false)
 
     const [inputValue, setInputValue] = useState<string>('')
 
     const setBrandQueryParams = (brandTitle: string): void => {
         setQuery({
-            brand: brandTitle.replace(/\s+/g, '-').toLowerCase(),
+            brand: textToSlug(brandTitle),
         })
     }
 
@@ -48,7 +50,13 @@ const SidebarBrands: FC<ISidebarBrandsProps> = ({ setQuery }) => {
                                 variant='transparent'
                                 className='font-medium p-0 text-sm text-gray-700'
                             >
-                                <Highlight classNames={{ root: 'text-sm' }} color='gray' highlight={inputValue}>
+                                <Highlight
+                                    classNames={{
+                                        root: `text-sm ${textToSlug(brand.title) === brandQuery ? 'text-red-500' : ''}`,
+                                    }}
+                                    color='gray'
+                                    highlight={inputValue}
+                                >
                                     {brand.title}
                                 </Highlight>
                             </CButton>
