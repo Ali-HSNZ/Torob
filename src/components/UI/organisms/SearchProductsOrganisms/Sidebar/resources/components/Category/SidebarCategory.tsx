@@ -1,59 +1,35 @@
-import { type FC } from 'react'
-import Link from 'next/link'
-import { Button } from '@mantine/core'
+import React, { type FC } from 'react'
 
-const SidebarCategory: FC = () => {
+import { CButton } from '@atoms/Button'
+
+import { type TCriticalAny } from '@core/types/critical-any'
+
+import { type ISidebarCategoryProps, STATIC_CATEGORIES, type TSidebarCategoriesType } from './resources'
+
+const renderCategory = (category: TSidebarCategoriesType, setQuery: TCriticalAny) => {
+    const categoryTitle = category.title.replace(/\s+/g, '-')
+
+    const handleClick = () => {
+        setQuery({ category: categoryTitle })
+    }
+
     return (
-        <section className='pl-4'>
-            <Button
-                component={Link}
-                href={'#'}
+        <section key={category.id} className='pl-6'>
+            <CButton
+                onClick={handleClick}
                 variant='transparent'
-                className='pl-0 font-medium text-sm text-[#303030] capitalize'
+                className='px-0 truncate  text-sm text-gray-700 font-medium    capitalize'
             >
-                Digital
-            </Button>
-            <div className='pl-6'>
-                <Button
-                    component={Link}
-                    href={'#'}
-                    variant='transparent'
-                    className='pl-0 font-medium text-sm text-[#303030] capitalize'
-                >
-                    Phone
-                </Button>
-                <div className='pl-6'>
-                    <Button
-                        component={Link}
-                        href={'#'}
-                        variant='transparent'
-                        className='pl-0 font-medium text-sm text-[#303030] capitalize'
-                    >
-                        Smart phone
-                    </Button>
+                {category.title}
+            </CButton>
 
-                    <div className='pl-6 flex flex-col w-fit'>
-                        <Button
-                            component={Link}
-                            href={'#'}
-                            variant='transparent'
-                            className='pl-0 font-medium text-sm text-[#303030] capitalize'
-                        >
-                            Iphone
-                        </Button>
-                        <Button
-                            component={Link}
-                            href={'#'}
-                            variant='transparent'
-                            className='pl-0 font-medium text-sm text-[#303030] capitalize'
-                        >
-                            Tablet
-                        </Button>
-                    </div>
-                </div>
-            </div>
+            {category?.sub?.length > 0 && category.sub.map((subCategory) => renderCategory(subCategory, setQuery))}
         </section>
     )
+}
+
+const SidebarCategory: FC<ISidebarCategoryProps> = ({ setQuery }) => {
+    return STATIC_CATEGORIES.map((category) => renderCategory(category, setQuery))
 }
 
 export default SidebarCategory

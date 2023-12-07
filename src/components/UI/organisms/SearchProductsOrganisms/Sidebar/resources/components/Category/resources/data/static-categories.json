@@ -1,0 +1,56 @@
+[
+    {
+        "id": 0,
+        "title": "digital",
+        "sub": [
+            {
+                "id": 0,
+                "title": "phone",
+                "sub": [
+                    {
+                        "id": 0,
+                        "title": "smart phone",
+                        "sub": [
+                            {
+                                "id": 0,
+                                "title": "cover",
+                                "sub": []
+                            },
+                            {
+                                "id": 1,
+                                "title": "display",
+                                "sub": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "title": "battery",
+                        "sub": []
+                    },
+                    {
+                        "id": 2,
+                        "title": "handsfree",
+                        "sub": [
+                            {
+                                "id": 0,
+                                "title": "headset",
+                                "sub": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "title": "book",
+                "sub": []
+            },
+            {
+                "id": 2,
+                "title": "laptop",
+                "sub": []
+            }
+        ]
+    }
+]
