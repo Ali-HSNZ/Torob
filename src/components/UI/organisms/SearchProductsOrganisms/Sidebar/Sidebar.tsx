@@ -1,17 +1,21 @@
 import { type FC } from 'react'
 import { NavLink } from '@mantine/core'
-import { StringParam, useQueryParams } from 'use-query-params'
+import { NumberParam, StringParam, useQueryParams } from 'use-query-params'
 import { IconChevronRight } from '@tabler/icons-react'
 
 import { SidebarAvailable, SidebarBrands, SidebarCategory, SidebarPrice } from './resources'
 
 const SearchProductsSidebar: FC = () => {
-    const [, setQuery] = useQueryParams({
+    const [query, setQuery] = useQueryParams({
         brand: StringParam,
+        category: StringParam,
+        min: NumberParam,
+        max: NumberParam,
+        available: StringParam,
     })
 
     return (
-        <section className='h-screen overflow-y-auto sticky top-0 space-y-2 w-80 bg-white'>
+        <section className='h-screen overflow-y-auto sticky pb-4 top-0 space-y-2 w-80 bg-white'>
             {/* Brand */}
             <NavLink
                 defaultOpened
@@ -21,7 +25,7 @@ const SearchProductsSidebar: FC = () => {
                 label='Brand'
                 rightSection={<IconChevronRight size={23} color='#303030' stroke={1.5} />}
             >
-                <SidebarBrands setQuery={setQuery} />
+                <SidebarBrands query={query.brand} setQuery={setQuery} />
             </NavLink>
 
             <hr className='border-gray-100' />
@@ -35,7 +39,7 @@ const SearchProductsSidebar: FC = () => {
                 label='More detailed categories'
                 rightSection={<IconChevronRight size={23} color='#575757' stroke={1.5} />}
             >
-                <SidebarCategory />
+                <SidebarCategory query={query.category} setQuery={setQuery} />
             </NavLink>
 
             <hr className='border-gray-100' />
@@ -48,7 +52,7 @@ const SearchProductsSidebar: FC = () => {
                 childrenOffset={0}
                 rightSection={<IconChevronRight size={23} color='#575757' stroke={1.5} />}
             >
-                <SidebarPrice />
+                <SidebarPrice query={[query.min, query.max]} setQuery={setQuery} />
             </NavLink>
 
             <hr className='border-gray-100' />
@@ -61,7 +65,7 @@ const SearchProductsSidebar: FC = () => {
                 label='Available'
                 rightSection={<IconChevronRight size={23} color='#575757' stroke={1.5} />}
             >
-                <SidebarAvailable />
+                <SidebarAvailable query={query.available} setQuery={setQuery} />
             </NavLink>
         </section>
     )
