@@ -5,6 +5,8 @@ import { IconColumns2, IconLayoutRows } from '@tabler/icons-react'
 
 import { CustomBreadcrumbs } from '@molecules/Breadcrumbs'
 
+import { textToSlug } from '@core/utils/common/textToSlug'
+
 import { SortActions, STATIC_BREADCRUMBS_LIST } from './resources'
 
 const SearchProductsHeading: FC = () => {
@@ -21,8 +23,7 @@ const SearchProductsHeading: FC = () => {
         if (categoryName.toLowerCase() === 'all categories') {
             setQuery({ category: null })
         } else {
-            const removedSpaces = categoryName.replace(/\s+/g, '-').toLowerCase()
-            setQuery({ category: removedSpaces })
+            setQuery({ category: textToSlug(categoryName) })
         }
     }
 
