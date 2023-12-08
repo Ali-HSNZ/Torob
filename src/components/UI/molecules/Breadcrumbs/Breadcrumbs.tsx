@@ -10,7 +10,7 @@ const CustomBreadcrumbs: FC<IBreadcrumbsProps> = ({ breadcrumbsList, handleCLick
             key={index}
             color='dark'
             variant='transparent'
-            className='text-sm'
+            className='text-xs'
             onClick={() => handleCLick(item.title)}
         >
             {item.title}

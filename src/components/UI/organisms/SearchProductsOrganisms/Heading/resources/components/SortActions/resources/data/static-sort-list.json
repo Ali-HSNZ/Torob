@@ -1,18 +1,18 @@
 [
     {
-        "value": "popular",
-        "label": "most popular"
+        "id": 0,
+        "label": "popular"
     },
     {
-        "value": "newest",
-        "label": "most newest"
+        "id": 1,
+        "label": "newest"
     },
     {
-        "value": "cheapest",
-        "label": "most cheapest"
+        "id": 2,
+        "label": "cheapest"
     },
     {
-        "value": "expensive",
-        "label": "most expensive"
+        "id": 3,
+        "label": "expensive"
     }
 ]

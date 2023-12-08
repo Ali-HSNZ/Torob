@@ -1,16 +1,13 @@
 import { type FC } from 'react'
-import { ActionIcon } from '@mantine/core'
 import { StringParam, useQueryParams } from 'use-query-params'
-import { IconColumns2, IconLayoutRows } from '@tabler/icons-react'
 
 import { CustomBreadcrumbs } from '@molecules/Breadcrumbs'
 
 import { textToSlug } from '@core/utils/common/textToSlug'
 
-import { SortActions, STATIC_BREADCRUMBS_LIST } from './resources'
+import { SearchProductsListView, SortActions, STATIC_BREADCRUMBS_LIST } from './resources'
 
 const SearchProductsHeading: FC = () => {
-    // All url params
     const [query, setQuery] = useQueryParams({
         search: StringParam,
         view: StringParam,
@@ -18,8 +15,8 @@ const SearchProductsHeading: FC = () => {
         sort: StringParam,
     })
 
-    // Set breadCrump param
-    const setBreadCrumpQueryParams = (categoryName: string) => {
+    // Set breadCrump query param
+    const setBreadCrumpQueryParams = (categoryName: string): void => {
         if (categoryName.toLowerCase() === 'all categories') {
             setQuery({ category: null })
         } else {
@@ -27,14 +24,9 @@ const SearchProductsHeading: FC = () => {
         }
     }
 
-    // Switch product list view
-    const viewQueryParams = (view: 'row' | 'column') => {
-        setQuery({ view })
-    }
-
     return (
         <section className='w-full'>
-            <div className='w-full flex flex-col xl:flex-row items-end gap-y-4 xl:gap-y-0 xl:items-center justify-between gap-x-4'>
+            <div className='w-full flex flex-col  '>
                 <section className='w-full pb-2 box-border overflow-x-auto'>
                     <CustomBreadcrumbs
                         handleCLick={setBreadCrumpQueryParams}
@@ -43,10 +35,10 @@ const SearchProductsHeading: FC = () => {
                     />
                 </section>
 
-                {/* Sort Popup */}
-                <SortActions setQuery={setQuery} query={query} />
+                <hr />
+
+                <SortActions query={query.sort} setQuery={setQuery} />
             </div>
-            <hr className='mt-4' />
 
             <div className='w-full flex justify-between mt-6'>
                 {/* Num of products in api result */}
@@ -56,27 +48,7 @@ const SearchProductsHeading: FC = () => {
                 </div>
 
                 {/* Switch product list view */}
-                <div className='flex gap-x-2'>
-                    {/* Row button */}
-                    <ActionIcon
-                        variant='transparent'
-                        color='dark'
-                        className='text-gray-600'
-                        onClick={() => viewQueryParams('row')}
-                    >
-                        <IconLayoutRows />
-                    </ActionIcon>
-
-                    {/* Column button */}
-                    <ActionIcon
-                        variant='transparent'
-                        color='dark'
-                        className='text-gray-600'
-                        onClick={() => viewQueryParams('column')}
-                    >
-                        <IconColumns2 />
-                    </ActionIcon>
-                </div>
+                <SearchProductsListView setQuery={setQuery} />
             </div>
         </section>
     )

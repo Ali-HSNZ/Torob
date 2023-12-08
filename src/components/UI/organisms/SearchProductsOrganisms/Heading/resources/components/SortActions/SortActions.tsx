@@ -1,42 +1,38 @@
 import { type FC } from 'react'
-import { Button, Menu } from '@mantine/core'
-import { useDisclosure } from '@mantine/hooks'
-import { IconChevronDown } from '@tabler/icons-react'
+import { ActionIcon } from '@mantine/core'
+import { IconSortDescending } from '@tabler/icons-react'
 
 import { type ISortActionsProps, STATIC_SORT_LIST } from './resources'
 
 const SortActions: FC<ISortActionsProps> = ({ setQuery, query }) => {
-    const [opened, { close, open }] = useDisclosure(false)
+    const defaultSort: string = query || STATIC_SORT_LIST[0].label
 
-    const defaultSort = query?.sort || STATIC_SORT_LIST[0].label
+    const handleSortQueryParam = (value: string): void => {
+        setQuery({ sort: value })
+    }
 
     return (
-        <Menu width={170} withArrow arrowSize={10} opened={opened} position='bottom' onClose={close} shadow='md'>
-            <Menu.Target>
-                <Button
-                    onClick={open}
-                    classNames={{ label: 'text-left w-full' }}
-                    rightSection={<IconChevronDown stroke={1.4} size={20} />}
-                    className='capitalize min-w-[155px] sm:min-w-[170px] text-sm'
-                >
-                    {STATIC_SORT_LIST.find((sort) => sort.label.includes(defaultSort))?.label || 'Unknown'}
-                </Button>
-            </Menu.Target>
-            <Menu.Dropdown className='p-1'>
-                <Menu.Label className='text-xs'>Sort by</Menu.Label>
-                {STATIC_SORT_LIST.map((sort, index) => (
-                    <Menu.Item
-                        className={`capitalize text-sm  ${sort.label.includes(defaultSort) ? 'bg-gray-100' : ''}`}
-                        key={index}
-                        onClick={() => {
-                            setQuery({ sort: sort.value })
-                        }}
+        <div className='flex gap-x-2 mt-4'>
+            <div className='text-gray-800 text-sm font-medium flex items-center gap-x-1'>
+                <IconSortDescending size={21} stroke={1.7} />
+                <p>order by: </p>
+            </div>
+
+            <div className='flex gap-x-2 '>
+                {STATIC_SORT_LIST.map((sort) => (
+                    <ActionIcon
+                        key={sort.id}
+                        color='dark'
+                        className={`text-sm ${defaultSort === sort.label ? 'text-red-600' : 'text-gray-600'}`}
+                        variant='transparent'
+                        size={'auto'}
+                        onClick={() => handleSortQueryParam(sort.label)}
                     >
                         {sort.label}
-                    </Menu.Item>
+                    </ActionIcon>
                 ))}
-            </Menu.Dropdown>
-        </Menu>
+            </div>
+        </div>
     )
 }
 
