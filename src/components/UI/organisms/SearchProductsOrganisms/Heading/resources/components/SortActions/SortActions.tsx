@@ -2,37 +2,42 @@ import { type FC } from 'react'
 import { ActionIcon } from '@mantine/core'
 import { IconSortDescending } from '@tabler/icons-react'
 
-import { type ISortActionsProps, STATIC_SORT_LIST } from './resources'
+import { type ISortActionsProps, SearchProductsMobileSort, STATIC_SORT_LIST } from './resources'
 
 const SortActions: FC<ISortActionsProps> = ({ setQuery, query }) => {
-    const defaultSort: string = query || STATIC_SORT_LIST[0].label
+    const currentSort: string = query || STATIC_SORT_LIST[0].label
 
     const handleSortQueryParam = (value: string): void => {
         setQuery({ sort: value })
     }
 
     return (
-        <div className='flex gap-x-2 mt-4'>
-            <div className='text-gray-800 text-sm font-medium flex items-center gap-x-1'>
-                <IconSortDescending size={21} stroke={1.7} />
-                <p>order by: </p>
-            </div>
+        <>
+            {/* Mobile Sort Filter */}
+            <SearchProductsMobileSort setQuery={handleSortQueryParam} sort={currentSort} />
 
-            <div className='flex gap-x-2 '>
-                {STATIC_SORT_LIST.map((sort) => (
-                    <ActionIcon
-                        key={sort.id}
-                        color='dark'
-                        className={`text-sm ${defaultSort === sort.label ? 'text-red-600' : 'text-gray-600'}`}
-                        variant='transparent'
-                        size={'auto'}
-                        onClick={() => handleSortQueryParam(sort.label)}
-                    >
-                        {sort.label}
-                    </ActionIcon>
-                ))}
+            <div className='hidden lg:flex gap-x-2 mt-4 '>
+                <div className='text-gray-800 text-sm font-medium flex items-center gap-x-1'>
+                    <IconSortDescending size={21} stroke={1.7} />
+                    <p>order by: </p>
+                </div>
+
+                <div className='flex gap-x-2 '>
+                    {STATIC_SORT_LIST.map((sort) => (
+                        <ActionIcon
+                            key={sort.id}
+                            color='dark'
+                            className={`text-sm ${currentSort === sort.label ? 'text-red-600' : 'text-gray-600'}`}
+                            variant='transparent'
+                            size={'auto'}
+                            onClick={() => handleSortQueryParam(sort.label)}
+                        >
+                            {sort.label}
+                        </ActionIcon>
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
