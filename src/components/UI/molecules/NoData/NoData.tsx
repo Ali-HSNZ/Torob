@@ -1,6 +1,7 @@
 import { type FC } from 'react'
-import { type INoDataProps } from '.'
 import { IconDatabaseX } from '@tabler/icons-react'
+
+import { type INoDataProps } from './resources'
 
 const NoData: FC<INoDataProps> = ({ className, ...rest }) => {
     return (

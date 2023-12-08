@@ -5,8 +5,9 @@ import { Button, Highlight, Input } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconSearch } from '@tabler/icons-react'
 
+import { CNoData } from '@molecules/NoData'
+
 import { CButton } from '@atoms/Button'
-import NoData from '@atoms/NoData/NoData'
 
 import { textToSlug } from '@core/utils/common/textToSlug'
 
@@ -65,7 +66,7 @@ const SidebarBrands: FC<ISidebarBrandsProps> = ({ query, setQuery }) => {
                         </div>
                     ))
                 ) : (
-                    <NoData className='border-none' />
+                    <CNoData className='border-none' />
                 )}
             </div>
 
