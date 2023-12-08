@@ -47,7 +47,7 @@ const HeaderWithSearchbar: FC = () => {
 
                     {/* Search Input */}
                     <div className='w-full order-4 lg:order-2 '>
-                        <section ref={inputRef} className='fl:ml-4 w-full sm:w-[460px] relative   flex-col gap-y-4'>
+                        <section ref={inputRef} className='xl:ml-2 w-full sm:w-[460px] relative   flex-col gap-y-4'>
                             <Popover
                                 opened={undefined}
                                 offset={5}

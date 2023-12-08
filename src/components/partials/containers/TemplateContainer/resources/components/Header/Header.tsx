@@ -1,4 +1,4 @@
-import React, { type FC } from 'react'
+import { type FC } from 'react'
 import Image from 'next/image'
 import { Button } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
@@ -44,7 +44,6 @@ const Header: FC = () => {
                         <HeaderMenu />
                     </section>
 
-                    {/* Card Button And User Action Buttons Parent*/}
                     <section className='flex gap-x-4'>
                         {/* Card Button */}
                         <HeaderCardButton />
