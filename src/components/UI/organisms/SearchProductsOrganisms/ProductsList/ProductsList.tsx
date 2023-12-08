@@ -13,7 +13,7 @@ const SearchProductsList = () => {
     const listView = useMemo(() => {
         const validViews = ['row', 'column']
 
-        return validViews.includes(view) ? view : 'column'
+        return validViews.includes(view) ? view : 'row'
     }, [view])
 
     if (listView === 'row') {
