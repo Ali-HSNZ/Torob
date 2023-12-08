@@ -29,6 +29,7 @@ const SearchProductsMobileSort: FC<ISearchProductsMobileSortProps> = ({ sort, se
                 opened={lgMatches ? false : openedDrawer}
                 classNames={{ title: 'text-sm' }}
                 onClose={close}
+                size={'xs'}
                 position='bottom'
                 title='order by'
             >
