@@ -29,12 +29,13 @@ const SearchProductsMobileSort: FC<ISearchProductsMobileSortProps> = ({ sort, se
                 opened={lgMatches ? false : openedDrawer}
                 classNames={{ title: 'text-sm' }}
                 onClose={close}
+                withCloseButton={false}
                 size={'xs'}
                 position='bottom'
-                title='order by'
+                title=''
             >
                 {/* Drawer content */}
-                <div className=' w-full flex flex-col gap-y-2'>
+                <div className='w-full flex flex-col gap-y-2'>
                     {STATIC_SORT_LIST.map((item) => (
                         <CButton
                             rightSection={sort === item.label ? <IconCheck stroke={1.1} color='gray' /> : undefined}
