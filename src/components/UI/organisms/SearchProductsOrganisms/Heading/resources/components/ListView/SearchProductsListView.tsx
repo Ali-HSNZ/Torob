@@ -20,7 +20,7 @@ const SearchProductsListView: FC<ISearchProductsListViewProps> = ({ setQuery }) 
                 className='text-gray-600'
                 onClick={() => viewQueryParams('row')}
             >
-                <IconLayoutRows />
+                <IconLayoutRows size={28} />
             </ActionIcon>
 
             {/* Column button */}

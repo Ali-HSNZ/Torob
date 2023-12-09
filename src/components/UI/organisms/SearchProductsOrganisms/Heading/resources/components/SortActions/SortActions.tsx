@@ -16,7 +16,7 @@ const SortActions: FC<ISortActionsProps> = ({ setQuery, query }) => {
             {/* Mobile Sort Filter */}
             <SearchProductsMobileSort setQuery={handleSortQueryParam} sort={currentSort} />
 
-            <div className='hidden lg:flex gap-x-2 mt-4 '>
+            <div className='hidden lg:flex gap-x-2'>
                 <div className='text-gray-800 text-sm font-medium flex items-center gap-x-1'>
                     <IconSortDescending size={21} stroke={1.7} />
                     <p>order by: </p>

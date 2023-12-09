@@ -5,7 +5,7 @@ import { CustomBreadcrumbs } from '@molecules/Breadcrumbs'
 
 import { textToSlug } from '@core/utils/common/textToSlug'
 
-import { SearchProductsListView, SortActions, STATIC_BREADCRUMBS_LIST } from './resources'
+import { FilterDrawer, SearchProductsListView, SortActions, STATIC_BREADCRUMBS_LIST } from './resources'
 
 const SearchProductsHeading: FC = () => {
     const [query, setQuery] = useQueryParams({
@@ -37,7 +37,12 @@ const SearchProductsHeading: FC = () => {
 
                 <hr />
 
-                <SortActions query={query.sort} setQuery={setQuery} />
+                <div className='flex mt-4 items-center gap-x-4'>
+                    <div className='lg:hidden'>
+                        <FilterDrawer />
+                    </div>
+                    <SortActions query={query.sort} setQuery={setQuery} />
+                </div>
             </div>
 
             <div className='w-full flex justify-between mt-6'>

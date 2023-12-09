@@ -19,13 +19,17 @@ const SearchProductsMobileSort: FC<ISearchProductsMobileSortProps> = ({ sort, se
     }, [close, sort])
 
     return (
-        <div className='mt-4 lg:hidden'>
+        <div className=' lg:hidden'>
             <ActionIcon variant='transparent' size={'auto'} color='dark' onClick={open} className='  space-x-1  p-0  '>
                 <IconSortDescending size={24} stroke={1.7} />
                 <p className='text-sm font-medium capitalize'>{sort}</p>
             </ActionIcon>
 
             <Drawer
+                radius={'10px 10px 0 0'}
+                transitionProps={{
+                    duration: 400,
+                }}
                 opened={lgMatches ? false : openedDrawer}
                 classNames={{ title: 'text-sm' }}
                 onClose={close}
