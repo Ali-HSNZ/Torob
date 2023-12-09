@@ -83,9 +83,11 @@ const BrandsFilter: FC<IBrandsFilterProps> = ({ setStep }) => {
                         brandList.map((brand) => (
                             <div key={brand.id}>
                                 <CButton
+                                    fullWidth
+                                    justify='start'
                                     onClick={() => setBrandQueryParams(brand.title)}
                                     variant='transparent'
-                                    className={`p-0`}
+                                    className={`px-0`}
                                 >
                                     <Highlight
                                         classNames={{
