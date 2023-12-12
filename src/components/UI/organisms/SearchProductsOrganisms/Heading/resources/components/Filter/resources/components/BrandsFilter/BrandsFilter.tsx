@@ -78,7 +78,7 @@ const BrandsFilter: FC<IBrandsFilterProps> = ({ setStep }) => {
 
             {/* Content */}
             <section className='px-4'>
-                <div className='flex flex-col z-0 gap-y-2 mp-4'>
+                <div className='flex flex-col z-0 gap-y-2'>
                     {brandList.length > 0 ? (
                         brandList.map((brand) => (
                             <div key={brand.id}>

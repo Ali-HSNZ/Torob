@@ -11,7 +11,7 @@ const MainFilters: FC<IMainFiltersProps> = ({ setQuery, closeDrawer, setStep, qu
     const isAvailableQueryParams = Object.entries(removeUndefinedObj).length > 0 ? true : false
 
     const removeFiltersQueryParams = () => {
-        setQuery({ brand: null, category: null, price: null, available: null })
+        setQuery({ brand: null, category: null, min: null, max: null, available: null })
     }
 
     return (

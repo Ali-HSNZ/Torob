@@ -4,7 +4,12 @@ import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import { NumberParam, StringParam, useQueryParams } from 'use-query-params'
 import { IconFilter } from '@tabler/icons-react'
 
-import { SidebarDrawerBrandsFilter, SidebarDrawerCategoriesFilter, SidebarDrawerMainFilters } from './resources'
+import {
+    SidebarDrawerBrandsFilter,
+    SidebarDrawerCategoriesFilter,
+    SidebarDrawerMainFilters,
+    SidebarDrawerPriceFilters,
+} from './resources'
 
 const FilterDrawer = () => {
     const [openedDrawer, { open, close }] = useDisclosure()
@@ -35,7 +40,7 @@ const FilterDrawer = () => {
                 return <SidebarDrawerCategoriesFilter setStep={setStep} />
             }
             case 3: {
-                return 'price'
+                return <SidebarDrawerPriceFilters setStep={setStep} />
             }
             case 4: {
                 return 'available'
