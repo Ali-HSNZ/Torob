@@ -4,7 +4,7 @@ import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import { NumberParam, StringParam, useQueryParams } from 'use-query-params'
 import { IconFilter } from '@tabler/icons-react'
 
-import { SidebarDrawerBrandsFilter, SidebarDrawerMainFilters } from './resources'
+import { SidebarDrawerBrandsFilter, SidebarDrawerCategoriesFilter, SidebarDrawerMainFilters } from './resources'
 
 const FilterDrawer = () => {
     const [openedDrawer, { open, close }] = useDisclosure()
@@ -32,7 +32,7 @@ const FilterDrawer = () => {
                 return <SidebarDrawerBrandsFilter setStep={setStep} />
             }
             case 2: {
-                return 'categories'
+                return <SidebarDrawerCategoriesFilter setStep={setStep} />
             }
             case 3: {
                 return 'price'
@@ -41,10 +41,12 @@ const FilterDrawer = () => {
                 return 'available'
             }
             default: {
-                return <SidebarDrawerMainFilters setQuery={setQuery} setStep={setStep} closeDrawer={close} />
+                return (
+                    <SidebarDrawerMainFilters query={query} setQuery={setQuery} setStep={setStep} closeDrawer={close} />
+                )
             }
         }
-    }, [close, setQuery, step])
+    }, [close, query, setQuery, step])
     return (
         <section>
             <ActionIcon onClick={open} variant='transparent' size={'auto'} color='dark' className='space-x-1'>

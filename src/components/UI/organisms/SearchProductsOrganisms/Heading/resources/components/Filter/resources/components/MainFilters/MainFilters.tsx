@@ -6,7 +6,10 @@ import { CButton } from '@atoms/Button'
 
 import { type IMainFiltersProps } from './resources'
 
-const MainFilters: FC<IMainFiltersProps> = ({ setQuery, closeDrawer, setStep }) => {
+const MainFilters: FC<IMainFiltersProps> = ({ setQuery, closeDrawer, setStep, query }) => {
+    const removeUndefinedObj = JSON.parse(JSON.stringify(query))
+    const isAvailableQueryParams = Object.entries(removeUndefinedObj).length > 0 ? true : false
+
     const removeFiltersQueryParams = () => {
         setQuery({ brand: null, category: null, price: null, available: null })
     }
@@ -26,15 +29,17 @@ const MainFilters: FC<IMainFiltersProps> = ({ setQuery, closeDrawer, setStep }) 
                     <p className='font-medium'>Filters</p>
                 </ActionIcon>
 
-                <ActionIcon
-                    onClick={removeFiltersQueryParams}
-                    variant='transparent'
-                    className='flex gap-x-1'
-                    color='red'
-                    size='auto'
-                >
-                    <p className='font-medium text-sm'>Remove filters</p>
-                </ActionIcon>
+                {isAvailableQueryParams && (
+                    <ActionIcon
+                        onClick={removeFiltersQueryParams}
+                        variant='transparent'
+                        className='flex gap-x-1'
+                        color='red'
+                        size='auto'
+                    >
+                        <p className='font-medium text-sm'>Remove filters</p>
+                    </ActionIcon>
+                )}
             </div>
 
             <div>
