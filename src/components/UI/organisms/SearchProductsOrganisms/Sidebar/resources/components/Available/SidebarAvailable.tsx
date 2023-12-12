@@ -1,13 +1,14 @@
 import { type FC } from 'react'
 import { Checkbox } from '@mantine/core'
+import { useQueryParam } from 'use-query-params'
 
-import { type ISidebarAvailableProps } from './resources'
+const SidebarAvailable: FC = () => {
+    const [query, setQuery] = useQueryParam<string>('available')
 
-const SidebarAvailable: FC<ISidebarAvailableProps> = ({ setQuery, query }) => {
     const isDefaultChecked: boolean = query && query === 'true' ? true : false
 
     const handleCheckbox = (status: boolean) => {
-        setQuery({ available: status })
+        setQuery(status ? 'true' : 'false')
     }
 
     return (

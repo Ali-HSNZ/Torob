@@ -11,12 +11,12 @@ const PriceFilters: FC<IPriceFiltersProps> = ({ setStep }) => {
         max: NumberParam,
     })
 
+    // from query params
+    const { min: minPriceQuery, max: maxPriceQuery } = query
+
     const isQuery = query.min !== undefined || query.max !== undefined
 
     const maxPrice = 1000000
-
-    // from query params
-    const { min: minPriceQuery, max: maxPriceQuery } = query
 
     let initialMinPrice = 0 // default min price
     let initialMaxPrice = maxPrice // default max price

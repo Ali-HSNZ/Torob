@@ -1,3 +1,3 @@
-import { type ISidebarPriceProps, type TPriceRangeType } from './types/type'
+import { type TPriceRangeType } from './types/type'
 
-export type { ISidebarPriceProps, TPriceRangeType }
+export type { TPriceRangeType }

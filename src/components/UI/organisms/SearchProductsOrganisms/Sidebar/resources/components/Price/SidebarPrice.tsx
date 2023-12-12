@@ -1,14 +1,20 @@
 import { type FC, useCallback, useState } from 'react'
 import { Button, NumberInput, RangeSlider } from '@mantine/core'
+import { NumberParam, useQueryParams } from 'use-query-params'
 import { IconCurrencyDollar } from '@tabler/icons-react'
 
-import { type ISidebarPriceProps, type TPriceRangeType } from './resources'
+import { type TPriceRangeType } from './resources'
 
-const SidebarPrice: FC<ISidebarPriceProps> = ({ setQuery, query }) => {
+const SidebarPrice: FC = () => {
     const maxPrice = 1000000
 
+    const [query, setQuery] = useQueryParams({
+        min: NumberParam,
+        max: NumberParam,
+    })
+
     // from query params
-    const [minPriceQuery, maxPriceQuery] = query
+    const { min: minPriceQuery, max: maxPriceQuery } = query
 
     let initialMinPrice = 0 // default min price
     let initialMaxPrice = maxPrice // default max price

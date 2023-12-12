@@ -18,9 +18,4 @@ interface IRenderCategoryProps {
     query: string | null | undefined
 }
 
-interface ISidebarCategoryProps {
-    setQuery: TCriticalAny
-    query: string | null | undefined
-}
-
-export type { ISidebarCategoryProps, IRenderCategoryProps }
+export type { IRenderCategoryProps }

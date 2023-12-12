@@ -3,6 +3,7 @@
 import React, { type FC, useMemo, useState } from 'react'
 import { Button, Highlight, Input } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
+import { useQueryParam } from 'use-query-params'
 import { IconSearch } from '@tabler/icons-react'
 
 import { CNoData } from '@molecules/NoData'
@@ -11,17 +12,17 @@ import { CButton } from '@atoms/Button'
 
 import { textToSlug } from '@core/utils/common/textToSlug'
 
-import { type ISidebarBrandsProps, STATIC_BRANDS_LIST } from './resources'
+import { STATIC_BRANDS_LIST } from './resources'
 
-const SidebarBrands: FC<ISidebarBrandsProps> = ({ query, setQuery }) => {
+const SidebarBrands: FC = () => {
+    const [query, setQuery] = useQueryParam<string>('brand')
+
     const [isShow, { toggle }] = useDisclosure(false)
 
     const [inputValue, setInputValue] = useState<string>('')
 
     const setBrandQueryParams = (brandTitle: string): void => {
-        setQuery({
-            brand: textToSlug(brandTitle),
-        })
+        setQuery(textToSlug(brandTitle))
     }
 
     const brandList = useMemo(() => {
