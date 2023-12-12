@@ -5,6 +5,7 @@ import { NumberParam, StringParam, useQueryParams } from 'use-query-params'
 import { IconFilter } from '@tabler/icons-react'
 
 import {
+    SidebarDrawerAvailableFilter,
     SidebarDrawerBrandsFilter,
     SidebarDrawerCategoriesFilter,
     SidebarDrawerMainFilters,
@@ -43,7 +44,7 @@ const FilterDrawer = () => {
                 return <SidebarDrawerPriceFilters setStep={setStep} />
             }
             case 4: {
-                return 'available'
+                return <SidebarDrawerAvailableFilter setStep={setStep} />
             }
             default: {
                 return (
