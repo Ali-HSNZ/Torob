@@ -28,7 +28,7 @@ const AvailableFilter: FC<IAvailableFilterProps> = ({ setStep }) => {
                     size='auto'
                 >
                     <IconChevronLeft size={20} />
-                    <p className='font-medium'>Price</p>
+                    <p className='font-medium'>Available</p>
                 </ActionIcon>
 
                 {query && (
