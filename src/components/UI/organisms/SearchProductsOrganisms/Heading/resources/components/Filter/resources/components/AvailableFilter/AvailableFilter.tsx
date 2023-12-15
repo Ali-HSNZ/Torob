@@ -13,6 +13,7 @@ const AvailableFilter: FC<IAvailableFilterProps> = ({ setStep }) => {
     const handleCheckbox = (status: boolean) => {
         setQuery(status ? 'true' : 'false')
     }
+
     const removeQueryParams = () => {
         setQuery(null)
     }
@@ -45,7 +46,7 @@ const AvailableFilter: FC<IAvailableFilterProps> = ({ setStep }) => {
             </div>
 
             <Checkbox
-                defaultChecked={isDefaultChecked}
+                checked={isDefaultChecked}
                 onChange={(checkbox) => handleCheckbox(checkbox.target.checked)}
                 label='Display available products'
             />

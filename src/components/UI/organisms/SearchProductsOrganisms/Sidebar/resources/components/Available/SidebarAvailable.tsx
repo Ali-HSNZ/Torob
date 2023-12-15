@@ -14,7 +14,7 @@ const SidebarAvailable: FC = () => {
     return (
         <section className='px-4 select-none'>
             <Checkbox
-                defaultChecked={isDefaultChecked}
+                checked={isDefaultChecked}
                 onChange={(checkbox) => handleCheckbox(checkbox.target.checked)}
                 label='Display available products'
             />

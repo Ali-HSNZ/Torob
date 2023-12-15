@@ -5,7 +5,13 @@ import { CustomBreadcrumbs } from '@molecules/Breadcrumbs'
 
 import { textToSlug } from '@core/utils/common/textToSlug'
 
-import { FilterDrawer, SearchProductsListView, SortActions, STATIC_BREADCRUMBS_LIST } from './resources'
+import {
+    AvailableFilters,
+    FilterDrawer,
+    SearchProductsListView,
+    SortActions,
+    STATIC_BREADCRUMBS_LIST,
+} from './resources'
 
 const SearchProductsHeading: FC = () => {
     const [query, setQuery] = useQueryParams({
@@ -27,15 +33,19 @@ const SearchProductsHeading: FC = () => {
     return (
         <section className='w-full'>
             <div className='w-full flex flex-col  '>
-                <section className='w-full pb-2 box-border overflow-x-auto'>
-                    <CustomBreadcrumbs
-                        handleCLick={setBreadCrumpQueryParams}
-                        classNames={{ separator: ' text-xs' }}
-                        breadcrumbsList={STATIC_BREADCRUMBS_LIST}
-                    />
+                <section className='w-full flex gap-y-2 gap-x-4 xl:gap-y-0  flex-col xl:flex-row xl:items-center justify-between '>
+                    <div className=' box-border pb-1 overflow-x-auto'>
+                        <CustomBreadcrumbs
+                            handleCLick={setBreadCrumpQueryParams}
+                            classNames={{ separator: ' text-xs' }}
+                            breadcrumbsList={STATIC_BREADCRUMBS_LIST}
+                        />
+                    </div>
+
+                    <AvailableFilters />
                 </section>
 
-                <hr />
+                <hr className='mt-2' />
 
                 <div className='flex mt-4 items-center gap-x-4'>
                     <div className='lg:hidden'>
