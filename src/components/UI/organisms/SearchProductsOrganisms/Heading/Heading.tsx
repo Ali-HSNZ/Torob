@@ -32,8 +32,8 @@ const SearchProductsHeading: FC = () => {
 
     return (
         <section className='w-full'>
-            <div className='w-full flex flex-col  '>
-                <section className='w-full flex gap-y-2 gap-x-4 xl:gap-y-0  flex-col xl:flex-row xl:items-center justify-between '>
+            <div className='w-full flex flex-col'>
+                <section className='w-full flex gap-y-3 gap-x-4 xl:gap-y-0  flex-col xl:flex-row xl:items-center justify-between '>
                     <div className=' box-border pb-1 overflow-x-auto'>
                         <CustomBreadcrumbs
                             handleCLick={setBreadCrumpQueryParams}
