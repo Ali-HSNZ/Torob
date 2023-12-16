@@ -34,14 +34,13 @@ const SearchProductsHeading: FC = () => {
         <section className='w-full'>
             <div className='w-full flex flex-col'>
                 <section className='w-full flex gap-y-3 gap-x-4 xl:gap-y-0  flex-col xl:flex-row xl:items-center justify-between '>
-                    <div className=' box-border pb-1 overflow-x-auto'>
+                    <div className='box-border  pb-2 overflow-x-auto'>
                         <CustomBreadcrumbs
                             handleCLick={setBreadCrumpQueryParams}
-                            classNames={{ separator: ' text-xs' }}
+                            classNames={{ separator: 'text-xs' }}
                             breadcrumbsList={STATIC_BREADCRUMBS_LIST}
                         />
                     </div>
-
                     <AvailableFilters />
                 </section>
 

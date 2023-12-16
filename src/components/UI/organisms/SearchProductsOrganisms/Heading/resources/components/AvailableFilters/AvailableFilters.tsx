@@ -42,7 +42,7 @@ const AvailableFilters: FC = () => {
 
     if (isAvailableFilter) {
         return (
-            <section className='flex gap-x-4 pb-2 overflow-x-auto'>
+            <section className='flex gap-x-4 overflow-x-auto overflow-y-hidden'>
                 {/* price */}
                 {min && max && (
                     <ActionIcon
@@ -51,9 +51,9 @@ const AvailableFilters: FC = () => {
                         size='auto'
                         variant='white'
                         color='dark'
-                        className='rounded-full'
+                        className='rounded-full border border-gray-200 shadow-sm'
                     >
-                        <div className='flex gap-x-1 px-2 whitespace-nowrap items-center text-xs'>
+                        <div className='flex gap-x-1 px-2 font-medium whitespace-nowrap items-center text-xs'>
                             <IconX stroke={1} size={16} />
                             <span>From</span>
                             <span>{Intl.NumberFormat('en-us').format(Number(min))}</span>
@@ -71,11 +71,11 @@ const AvailableFilters: FC = () => {
                         size='auto'
                         variant='white'
                         color='dark'
-                        className='rounded-full'
+                        className='rounded-full border border-gray-200 shadow-sm'
                     >
-                        <div className='flex whitespace-nowrap gap-x-1 px-2 items-center text-xs'>
+                        <div className='flex  whitespace-nowrap gap-x-1 px-2 items-center text-xs'>
                             <IconX stroke={1} size={16} />
-                            <span className='capitalize'>{slugToText(category)}</span>
+                            <span className='capitalize font-medium'>{slugToText(category)}</span>
                         </div>
                     </ActionIcon>
                 )}
@@ -88,11 +88,11 @@ const AvailableFilters: FC = () => {
                         size='auto'
                         variant='white'
                         color='dark'
-                        className='rounded-full'
+                        className='rounded-full border border-gray-200 shadow-sm'
                     >
                         <div className='flex whitespace-nowrap gap-x-1 px-2 items-center text-xs'>
                             <IconX stroke={1} size={16} />
-                            <span className='capitalize'>{slugToText(brand)}</span>
+                            <span className='capitalize font-medium'>{slugToText(brand)}</span>
                         </div>
                     </ActionIcon>
                 )}
@@ -105,11 +105,11 @@ const AvailableFilters: FC = () => {
                         size='auto'
                         variant='white'
                         color='dark'
-                        className='rounded-full'
+                        className='rounded-full border border-gray-200 shadow-sm'
                     >
                         <div className='flex gap-x-1 px-2 items-center text-xs'>
                             <IconX stroke={1} size={16} />
-                            <span className='capitalize whitespace-nowrap'>Available products</span>
+                            <span className='capitalize font-medium whitespace-nowrap'>Available products</span>
                         </div>
                     </ActionIcon>
                 )}
