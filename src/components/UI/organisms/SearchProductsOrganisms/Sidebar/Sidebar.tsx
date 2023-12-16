@@ -6,7 +6,7 @@ import { SidebarAvailable, SidebarBrands, SidebarCategory, SidebarPrice } from '
 
 const SearchProductsSidebar: FC = () => {
     return (
-        <section className='h-screen overflow-y-auto sticky pb-4 top-0 space-y-2 w-80 bg-white'>
+        <section className='w-96 h-screen  overflow-y-auto sticky pb-4 top-0 space-y-2  bg-white'>
             {/* Brand */}
             <NavLink
                 defaultOpened
