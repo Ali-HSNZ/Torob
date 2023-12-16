@@ -1,8 +1,12 @@
 import React, { type FC } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { ActionIcon, Button } from '@mantine/core'
 import { IconBell, IconHeart, IconShoppingBagPlus } from '@tabler/icons-react'
 import { IconShare } from '@tabler/icons-react'
+
+import { Routes } from '@core/constants/routes'
+import { textToSlug } from '@core/utils/common/textToSlug'
 
 import { type IRowProductCardProps } from './resources'
 
@@ -23,7 +27,7 @@ const RowProductCard: FC<IRowProductCardProps> = ({ product }) => {
                     </figure>
                 </div>
 
-                <div className='w-full flex flex-col gap-y-2'>
+                <Link href={Routes.ProductDetail(textToSlug(product.title))} className='w-full flex flex-col gap-y-2'>
                     <div className='w-full h-full flex justify-between flex-col '>
                         {/* name */}
                         <p className='text-sm text-gray-700 font-bold line-clamp-3'>{product.title}</p>
@@ -36,7 +40,7 @@ const RowProductCard: FC<IRowProductCardProps> = ({ product }) => {
                             <p className='text-sm text-gray-400 mt-1 font-medium'>in {product.storeCount} store</p>
                         </div>
                     </div>
-                </div>
+                </Link>
             </div>
 
             {/* Actions */}
