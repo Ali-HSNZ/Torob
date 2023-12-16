@@ -1,26 +1,5 @@
 [
     {
-        "id": 0,
-        "title": "SAMSUNG Galaxy Tab S9 FE Wi-Fi 10.9” 128GB Android Tablet, IP68 Water- and Dust-Resistant, Long Battery Life, Powerful Processor, S Pen, 8MP Camera, Lightweight Design, US Version, 2023, Silver",
-        "price": 510,
-        "storeCount": 9,
-        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61E9CNYUoeL._AC_SL1500_.jpg"
-    },
-    {
-        "id": 1,
-        "title": "VOSAREA Wall Hanging Mirror Flowers Bedroom Wall Art Mirror Round Handmade Mirror Indoor Wall Adornament Woven Wall Mounted Mirror White Vanity Round Mirror Flower Mirror Rattan Large",
-        "price": 360,
-        "storeCount": 19,
-        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61S7pZOph4L._AC_SL1500_.jpg"
-    },
-    {
-        "id": 2,
-        "title": "ANJ White Power Recliner Chair Electric Home Theater Seating Soft Leather Movie Chair for Living Room Overstuffed Single Reclining Sofa with Hidden Arm Storage, Cup Holders and USB Ports (Cream White)",
-        "price": 760,
-        "storeCount": 31,
-        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71DXh-G3M7L._AC_SL1500_.jpg"
-    },
-    {
         "id": 3,
         "title": "ACEMAGIC Laptop, Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Laptop Windows 11",
         "price": 1000,
@@ -77,13 +56,6 @@
         "image": "https://image.torob.com/base/images/gJ/qQ/gJqQ-nv_hTzojJ3L.jpg_/280x280.webp"
     },
     {
-        "id": 11,
-        "title": "Amazon Fire Max 11 tablet, vivid 11” display, all-in-one for streaming, reading, and gaming, 14-hour battery life, optional stylus and keyboard, 64 GB, Gray, without lockscreen ads",
-        "price": 320,
-        "storeCount": 27,
-        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71troH2aUJL._AC_SY300_SX300_.jpg"
-    },
-    {
         "id": 12,
         "title": "ACEMAGIC Laptop, Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Laptop Windows 11",
         "price": 1000,
@@ -124,33 +96,5 @@
         "price": 2200,
         "storeCount": 2,
         "image": "https://image.torob.com/base/images/Km/-O/Km-ObtfYgsxsGqxT.jpg_/280x280.webp"
-    },
-    {
-        "id": 18,
-        "title": "ASUS ROG Strix G16 (2023) Gaming Laptop, 16” 16:10 QHD 240Hz, GeForce RTX 4060, Intel Core i9-13980HX, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6E, Windows 11, G614JV-ES94",
-        "price": 1020,
-        "storeCount": 4,
-        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61ct-mT0jfL._AC_SL1500_.jpg"
-    },
-    {
-        "id": 19,
-        "title": "SAMSUNG Galaxy Tab S9 FE Wi-Fi 10.9” 128GB Android Tablet, IP68 Water- and Dust-Resistant, Long Battery Life, Powerful Processor, S Pen, 8MP Camera, Lightweight Design, US Version, 2023, Silver",
-        "price": 510,
-        "storeCount": 9,
-        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61E9CNYUoeL._AC_SL1500_.jpg"
-    },
-    {
-        "id": 20,
-        "title": "VOSAREA Wall Hanging Mirror Flowers Bedroom Wall Art Mirror Round Handmade Mirror Indoor Wall Adornament Woven Wall Mounted Mirror White Vanity Round Mirror Flower Mirror Rattan Large",
-        "price": 360,
-        "storeCount": 19,
-        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61S7pZOph4L._AC_SL1500_.jpg"
-    },
-    {
-        "id": 21,
-        "title": "ANJ White Power Recliner Chair Electric Home Theater Seating Soft Leather Movie Chair for Living Room Overstuffed Single Reclining Sofa with Hidden Arm Storage, Cup Holders and USB Ports (Cream White)",
-        "price": 760,
-        "storeCount": 31,
-        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71DXh-G3M7L._AC_SL1500_.jpg"
     }
 ]
