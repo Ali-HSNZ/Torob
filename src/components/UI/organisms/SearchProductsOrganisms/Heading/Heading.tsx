@@ -34,7 +34,7 @@ const SearchProductsHeading: FC = () => {
         <section className='w-full'>
             <div className='w-full flex flex-col'>
                 <section className='w-full flex gap-y-3 gap-x-4 xl:gap-y-0  flex-col xl:flex-row xl:items-center justify-between '>
-                    <div className='box-border  pb-2 overflow-x-auto'>
+                    <div className='box-border pb-2 overflow-x-auto'>
                         <CustomBreadcrumbs
                             handleCLick={setBreadCrumpQueryParams}
                             classNames={{ separator: 'text-xs' }}
@@ -47,9 +47,7 @@ const SearchProductsHeading: FC = () => {
                 <hr className='mt-2' />
 
                 <div className='flex mt-4 items-center gap-x-4'>
-                    <div className='lg:hidden'>
-                        <FilterDrawer />
-                    </div>
+                    <FilterDrawer className='lg:hidden' />
                     <SortActions query={query.sort} setQuery={setQuery} />
                 </div>
             </div>

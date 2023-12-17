@@ -37,7 +37,7 @@ const BrandsFilter: FC<IBrandsFilterProps> = ({ setStep }) => {
     }, [inputValue])
 
     return (
-        <section>
+        <section className='h-screen'>
             {/* head */}
             <div className='p-4 sticky top-0 space-y-4 z-10 bg-white'>
                 <div className='flex justify-between'>
@@ -77,37 +77,35 @@ const BrandsFilter: FC<IBrandsFilterProps> = ({ setStep }) => {
             </div>
 
             {/* Content */}
-            <section className='px-4'>
-                <div className='flex flex-col z-0 gap-y-2'>
-                    {brandList.length > 0 ? (
-                        brandList.map((brand) => (
-                            <div key={brand.id}>
-                                <CButton
-                                    fullWidth
-                                    justify='start'
-                                    onClick={() => setBrandQueryParams(brand.title)}
-                                    variant='transparent'
-                                    className={`px-0`}
+            <div className='flex px-4 flex-col h-full overflow-y-auto gap-y-2'>
+                {brandList.length > 0 ? (
+                    brandList.map((brand) => (
+                        <div key={brand.id}>
+                            <CButton
+                                fullWidth
+                                justify='start'
+                                onClick={() => setBrandQueryParams(brand.title)}
+                                variant='transparent'
+                                className={`px-0`}
+                            >
+                                <Highlight
+                                    classNames={{
+                                        root: `text-sm font-medium ${
+                                            textToSlug(brand.title) === query ? 'text-red-600' : 'text-gray-700'
+                                        }`,
+                                    }}
+                                    color='gray'
+                                    highlight={inputValue}
                                 >
-                                    <Highlight
-                                        classNames={{
-                                            root: `text-sm font-medium ${
-                                                textToSlug(brand.title) === query ? 'text-red-600' : 'text-gray-700'
-                                            }`,
-                                        }}
-                                        color='gray'
-                                        highlight={inputValue}
-                                    >
-                                        {brand.title}
-                                    </Highlight>
-                                </CButton>
-                            </div>
-                        ))
-                    ) : (
-                        <CNoData className='border-none' />
-                    )}
-                </div>
-            </section>
+                                    {brand.title}
+                                </Highlight>
+                            </CButton>
+                        </div>
+                    ))
+                ) : (
+                    <CNoData className='border-none' />
+                )}
+            </div>
         </section>
     )
 }

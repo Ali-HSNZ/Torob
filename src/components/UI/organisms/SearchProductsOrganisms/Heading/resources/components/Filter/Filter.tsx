@@ -1,10 +1,11 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { type FC, useCallback, useEffect, useState } from 'react'
 import { ActionIcon, Drawer } from '@mantine/core'
 import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import { NumberParam, StringParam, useQueryParams } from 'use-query-params'
 import { IconFilter } from '@tabler/icons-react'
 
 import {
+    type IFilterDrawerProps,
     SidebarDrawerAvailableFilter,
     SidebarDrawerBrandsFilter,
     SidebarDrawerCategoriesFilter,
@@ -12,7 +13,7 @@ import {
     SidebarDrawerPriceFilters,
 } from './resources'
 
-const FilterDrawer = () => {
+const FilterDrawer: FC<IFilterDrawerProps> = ({ className }) => {
     const [openedDrawer, { open, close }] = useDisclosure()
 
     const lgMatches = useMediaQuery('(min-width: 1024px)')
@@ -46,15 +47,11 @@ const FilterDrawer = () => {
             case 4: {
                 return <SidebarDrawerAvailableFilter setStep={setStep} />
             }
-            default: {
-                return (
-                    <SidebarDrawerMainFilters query={query} setQuery={setQuery} setStep={setStep} closeDrawer={close} />
-                )
-            }
         }
-    }, [close, query, setQuery, step])
+    }, [step])
+
     return (
-        <section>
+        <section className={className}>
             <ActionIcon onClick={open} variant='transparent' size={'auto'} color='dark' className='space-x-1'>
                 <IconFilter size={24} stroke={1.7} />
                 <p className='text-sm font-medium capitalize'>Filters</p>
@@ -62,8 +59,12 @@ const FilterDrawer = () => {
 
             <Drawer
                 opened={lgMatches ? false : openedDrawer}
-                classNames={{ title: 'text-sm' }}
+                classNames={{
+                    title: 'text-sm',
+                    content: `overflow-hidden`,
+                }}
                 onClose={close}
+                className='relative'
                 transitionProps={{ duration: 400 }}
                 styles={{
                     body: {
@@ -75,7 +76,31 @@ const FilterDrawer = () => {
                 position='bottom'
                 title=''
             >
-                {renderStep()}
+                {/* Main Filter */}
+                <div className={`flex`}>
+                    {/* Main */}
+                    <div
+                        className={`w-full absolute  transition-all duration-1000 ${
+                            step === 0 ? 'right-0' : 'right-full'
+                        } `}
+                    >
+                        <SidebarDrawerMainFilters
+                            query={query}
+                            setQuery={setQuery}
+                            setStep={setStep}
+                            closeDrawer={close}
+                        />
+                    </div>
+
+                    {/* Brand */}
+                    <div
+                        className={`w-full absolute transition-all duration-1000 ${
+                            step !== 0 ? 'left-0' : 'left-full'
+                        }   `}
+                    >
+                        {renderStep()}
+                    </div>
+                </div>
             </Drawer>
         </section>
     )
