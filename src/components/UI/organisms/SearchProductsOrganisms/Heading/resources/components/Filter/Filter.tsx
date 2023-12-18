@@ -18,6 +18,9 @@ const FilterDrawer: FC<IFilterDrawerProps> = ({ className }) => {
 
     const lgMatches = useMediaQuery('(min-width: 1024px)')
 
+    // render show parent or children component ~~> left or right position
+    const [isMainFilter, setIsMainFilter] = useState<boolean>(true)
+
     const [step, setStep] = useState(0)
 
     const [query, setQuery] = useQueryParams({
@@ -31,21 +34,28 @@ const FilterDrawer: FC<IFilterDrawerProps> = ({ className }) => {
     useEffect(() => {
         close()
         setStep(0)
+        setIsMainFilter(true)
     }, [close, query])
 
     const renderStep = useCallback(() => {
+        /**
+         * case 1 --> render Brand Component
+         * case 2 --> render Category Component
+         * case 3 --> render Price Component
+         * case 4 --> render Available Component
+         */
         switch (step) {
             case 1: {
-                return <SidebarDrawerBrandsFilter setStep={setStep} />
+                return <SidebarDrawerBrandsFilter setIsMainFilter={setIsMainFilter} />
             }
             case 2: {
-                return <SidebarDrawerCategoriesFilter setStep={setStep} />
+                return <SidebarDrawerCategoriesFilter setIsMainFilter={setIsMainFilter} />
             }
             case 3: {
-                return <SidebarDrawerPriceFilters setStep={setStep} />
+                return <SidebarDrawerPriceFilters setIsMainFilter={setIsMainFilter} />
             }
             case 4: {
-                return <SidebarDrawerAvailableFilter setStep={setStep} />
+                return <SidebarDrawerAvailableFilter setIsMainFilter={setIsMainFilter} />
             }
         }
     }, [step])
@@ -64,7 +74,6 @@ const FilterDrawer: FC<IFilterDrawerProps> = ({ className }) => {
                     content: `overflow-hidden`,
                 }}
                 onClose={close}
-                className='relative'
                 transitionProps={{ duration: 400 }}
                 styles={{
                     body: {
@@ -77,26 +86,26 @@ const FilterDrawer: FC<IFilterDrawerProps> = ({ className }) => {
                 title=''
             >
                 {/* Main Filter */}
-                <div className={`flex`}>
+                <div className={`relative`}>
                     {/* Main */}
                     <div
-                        className={`w-full absolute  transition-all duration-1000 ${
-                            step === 0 ? 'right-0' : 'right-full'
-                        } `}
+                        className={`w-full absolute  transition-all duration-500 ${
+                            isMainFilter ? 'right-0' : 'right-full'
+                        }`}
                     >
                         <SidebarDrawerMainFilters
                             query={query}
                             setQuery={setQuery}
                             setStep={setStep}
+                            setIsMainFilter={setIsMainFilter}
                             closeDrawer={close}
                         />
                     </div>
 
-                    {/* Brand */}
                     <div
-                        className={`w-full absolute transition-all duration-1000 ${
-                            step !== 0 ? 'left-0' : 'left-full'
-                        }   `}
+                        className={`w-full absolute transition-all duration-500 ${
+                            !isMainFilter ? 'left-0' : 'left-full'
+                        }`}
                     >
                         {renderStep()}
                     </div>

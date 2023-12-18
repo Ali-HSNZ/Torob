@@ -5,7 +5,7 @@ import { IconChevronLeft, IconCurrencyDollar } from '@tabler/icons-react'
 
 import { type IPriceFiltersProps, type TPriceRangeType } from './resources'
 
-const PriceFilters: FC<IPriceFiltersProps> = ({ setStep }) => {
+const PriceFilters: FC<IPriceFiltersProps> = ({ setIsMainFilter }) => {
     const [query, setQuery] = useQueryParams({
         min: NumberParam,
         max: NumberParam,
@@ -71,11 +71,11 @@ const PriceFilters: FC<IPriceFiltersProps> = ({ setStep }) => {
     }, [priceRange.max, priceRange.min, setQuery])
 
     return (
-        <section className='p-4 flex w-full  h-screen flex-col justify-between'>
-            <div className='w-full'>
-                <div className='sticky  flex justify-between  top-0 z-10 bg-white'>
+        <section className='p-4 flex flex-col w-full h-[100dvh] '>
+            <div className=' h-full'>
+                <div className='flex justify-between  bg-white'>
                     <ActionIcon
-                        onClick={() => setStep(0)}
+                        onClick={() => setIsMainFilter(true)}
                         variant='transparent'
                         className='flex gap-x-1'
                         color='dark'

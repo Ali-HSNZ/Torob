@@ -6,7 +6,7 @@ import { CButton } from '@atoms/Button'
 
 import { type IMainFiltersProps } from './resources'
 
-const MainFilters: FC<IMainFiltersProps> = ({ setQuery, closeDrawer, setStep, query }) => {
+const MainFilters: FC<IMainFiltersProps> = ({ query, setQuery, closeDrawer, setStep, setIsMainFilter }) => {
     const removeUndefinedObj = JSON.parse(JSON.stringify(query))
     const isAvailableQueryParams = Object.entries(removeUndefinedObj).length > 0 ? true : false
 
@@ -49,7 +49,10 @@ const MainFilters: FC<IMainFiltersProps> = ({ setQuery, closeDrawer, setStep, qu
                     variant='transparent'
                     className='h-12'
                     fullWidth
-                    onClick={() => setStep(1)}
+                    onClick={() => {
+                        setStep(1)
+                        setIsMainFilter(false)
+                    }}
                     rightSection={<IconChevronRight stroke={1.5} />}
                 >
                     Brands
@@ -61,7 +64,10 @@ const MainFilters: FC<IMainFiltersProps> = ({ setQuery, closeDrawer, setStep, qu
                     variant='transparent'
                     className='h-12'
                     fullWidth
-                    onClick={() => setStep(2)}
+                    onClick={() => {
+                        setStep(2)
+                        setIsMainFilter(false)
+                    }}
                     rightSection={<IconChevronRight stroke={1.5} />}
                 >
                     Categories
@@ -73,7 +79,10 @@ const MainFilters: FC<IMainFiltersProps> = ({ setQuery, closeDrawer, setStep, qu
                     variant='transparent'
                     className='h-12'
                     fullWidth
-                    onClick={() => setStep(3)}
+                    onClick={() => {
+                        setStep(3)
+                        setIsMainFilter(false)
+                    }}
                     rightSection={<IconChevronRight stroke={1.5} />}
                 >
                     Price
@@ -85,7 +94,10 @@ const MainFilters: FC<IMainFiltersProps> = ({ setQuery, closeDrawer, setStep, qu
                     variant='transparent'
                     className='h-12'
                     fullWidth
-                    onClick={() => setStep(4)}
+                    onClick={() => {
+                        setStep(4)
+                        setIsMainFilter(false)
+                    }}
                     rightSection={<IconChevronRight stroke={1.5} />}
                 >
                     Available

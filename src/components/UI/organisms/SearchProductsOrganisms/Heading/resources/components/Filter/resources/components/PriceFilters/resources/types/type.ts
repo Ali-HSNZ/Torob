@@ -6,7 +6,7 @@ type TPriceRangeType = {
 }
 
 interface IPriceFiltersProps {
-    setStep: Dispatch<SetStateAction<number>>
+    setIsMainFilter: Dispatch<SetStateAction<boolean>>
 }
 
 export type { IPriceFiltersProps, TPriceRangeType }

@@ -42,7 +42,7 @@ const AvailableFilters: FC = () => {
 
     if (isAvailableFilter) {
         return (
-            <section className='flex gap-x-4 overflow-x-auto overflow-y-hidden'>
+            <section className='flex gap-x-2 overflow-x-auto overflow-y-hidden'>
                 {/* price */}
                 {min && max && (
                     <ActionIcon

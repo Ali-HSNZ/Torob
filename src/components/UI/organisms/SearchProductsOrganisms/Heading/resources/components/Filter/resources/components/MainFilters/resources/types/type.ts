@@ -12,6 +12,7 @@ interface IMainFiltersProps {
         available: string | null | undefined
     }
     setStep: Dispatch<SetStateAction<number>>
+    setIsMainFilter: Dispatch<SetStateAction<boolean>>
     setQuery: TCriticalAny
 }
 

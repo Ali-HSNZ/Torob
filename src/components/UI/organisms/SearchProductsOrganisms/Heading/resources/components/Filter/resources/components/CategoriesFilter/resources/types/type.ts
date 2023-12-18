@@ -21,7 +21,7 @@ interface IRenderCategoryProps {
 }
 
 interface ICategoriesFilterProps {
-    setStep: Dispatch<SetStateAction<number>>
+    setIsMainFilter: Dispatch<SetStateAction<boolean>>
 }
 
 export type { ICategoriesFilterProps, IRenderCategoryProps }

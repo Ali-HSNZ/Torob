@@ -28,7 +28,7 @@ const renderCategory: FC<IRenderCategoryProps> = ({ category, query, setQuery })
     )
 }
 
-const SidebarCategory: FC<ICategoriesFilterProps> = ({ setStep }) => {
+const SidebarCategory: FC<ICategoriesFilterProps> = ({ setIsMainFilter }) => {
     const [query, setQuery] = useQueryParam<string | null>('category')
 
     // Remove query param
@@ -37,10 +37,10 @@ const SidebarCategory: FC<ICategoriesFilterProps> = ({ setStep }) => {
     }
 
     return (
-        <section>
-            <div className='p-4 sticky flex justify-between  top-0 z-10 bg-white'>
+        <section className='flex flex-col h-screen  '>
+            <div className='  flex justify-between p-4  bg-white'>
                 <ActionIcon
-                    onClick={() => setStep(0)}
+                    onClick={() => setIsMainFilter(true)}
                     variant='transparent'
                     className='flex gap-x-1'
                     color='dark'
@@ -62,8 +62,9 @@ const SidebarCategory: FC<ICategoriesFilterProps> = ({ setStep }) => {
                     </ActionIcon>
                 )}
             </div>
-
-            {STATIC_CATEGORIES.map((category) => renderCategory({ category, setQuery, query }))}
+            <div className='overflow-y-auto'>
+                {STATIC_CATEGORIES.map((category) => renderCategory({ category, setQuery, query }))}
+            </div>
         </section>
     )
 }

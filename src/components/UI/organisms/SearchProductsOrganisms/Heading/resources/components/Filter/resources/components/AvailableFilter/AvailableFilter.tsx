@@ -5,7 +5,7 @@ import { IconChevronLeft } from '@tabler/icons-react'
 
 import { type IAvailableFilterProps } from './resources'
 
-const AvailableFilter: FC<IAvailableFilterProps> = ({ setStep }) => {
+const AvailableFilter: FC<IAvailableFilterProps> = ({ setIsMainFilter }) => {
     const [query, setQuery] = useQueryParam<string | null>('available')
 
     const isDefaultChecked: boolean = query && query === 'true' ? true : false
@@ -22,7 +22,7 @@ const AvailableFilter: FC<IAvailableFilterProps> = ({ setStep }) => {
         <section className='p-4 flex flex-col gap-y-5 select-none'>
             <div className='sticky  flex justify-between  top-0 z-10 bg-white'>
                 <ActionIcon
-                    onClick={() => setStep(0)}
+                    onClick={() => setIsMainFilter(true)}
                     variant='transparent'
                     className='flex gap-x-1'
                     color='dark'

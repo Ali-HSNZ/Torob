@@ -1,9 +1,7 @@
 import { type FC, useMemo, useState } from 'react'
-import { ActionIcon, Highlight, TextInput } from '@mantine/core'
+import { ActionIcon, TextInput } from '@mantine/core'
 import { useQueryParam } from 'use-query-params'
 import { IconChevronLeft, IconSearch } from '@tabler/icons-react'
-
-import { CNoData } from '@molecules/NoData'
 
 import { CButton } from '@atoms/Button'
 
@@ -11,7 +9,7 @@ import { textToSlug } from '@core/utils/common/textToSlug'
 
 import { type IBrandsFilterProps, STATIC_BRANDS_LIST } from './resources'
 
-const BrandsFilter: FC<IBrandsFilterProps> = ({ setStep }) => {
+const BrandsFilter: FC<IBrandsFilterProps> = ({ setIsMainFilter }) => {
     const [query, setQuery] = useQueryParam<string | null>('brand')
 
     const [inputValue, setInputValue] = useState<string>('')
@@ -37,12 +35,12 @@ const BrandsFilter: FC<IBrandsFilterProps> = ({ setStep }) => {
     }, [inputValue])
 
     return (
-        <section className='h-screen'>
+        <section className='flex flex-col h-screen p-4'>
             {/* head */}
-            <div className='p-4 sticky top-0 space-y-4 z-10 bg-white'>
+            <div className=' space-y-4 bg-white'>
                 <div className='flex justify-between'>
                     <ActionIcon
-                        onClick={() => setStep(0)}
+                        onClick={() => setIsMainFilter(true)}
                         variant='transparent'
                         className='flex gap-x-1'
                         color='dark'
@@ -77,7 +75,7 @@ const BrandsFilter: FC<IBrandsFilterProps> = ({ setStep }) => {
             </div>
 
             {/* Content */}
-            <div className='flex px-4 flex-col h-full overflow-y-auto gap-y-2'>
+            <div className='flex mt-4 flex-col overflow-y-auto gap-y-2'>
                 {brandList.length > 0 ? (
                     brandList.map((brand) => (
                         <div key={brand.id}>
@@ -86,24 +84,16 @@ const BrandsFilter: FC<IBrandsFilterProps> = ({ setStep }) => {
                                 justify='start'
                                 onClick={() => setBrandQueryParams(brand.title)}
                                 variant='transparent'
-                                className={`px-0`}
+                                className={`px-0 ${
+                                    textToSlug(brand.title) === query ? 'text-red-600' : 'text-gray-700'
+                                }`}
                             >
-                                <Highlight
-                                    classNames={{
-                                        root: `text-sm font-medium ${
-                                            textToSlug(brand.title) === query ? 'text-red-600' : 'text-gray-700'
-                                        }`,
-                                    }}
-                                    color='gray'
-                                    highlight={inputValue}
-                                >
-                                    {brand.title}
-                                </Highlight>
+                                {brand.title}
                             </CButton>
                         </div>
                     ))
                 ) : (
-                    <CNoData className='border-none' />
+                    <h6 className='text-sm font-medium'>Not Found!</h6>
                 )}
             </div>
         </section>
