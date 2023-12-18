@@ -15,7 +15,7 @@ const RootLayout: FC<ILayoutProps> = ({ children }) => {
                 <title>Torob</title>
                 <ColorSchemeScript />
             </head>
-            <body className={`${quickSandFonts.variable} font-sans bg-gray-50`}>
+            <body className={`${quickSandFonts.variable} font-sans bg-gray-100`}>
                 <Providers>{children}</Providers>
             </body>
         </html>

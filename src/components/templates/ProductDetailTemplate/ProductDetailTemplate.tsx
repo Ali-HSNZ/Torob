@@ -4,8 +4,8 @@ import { ProductDetail, ProductDetailAnalytics, ProductDetailStores } from '@org
 
 const ProductDetailTemplate: FC = () => {
     return (
-        <section>
-            <div>
+        <section className='p-4 flex flex-col gap-y-4 h-auto '>
+            <div className='flex gap-4 justify-between'>
                 <ProductDetail />
                 <ProductDetailAnalytics />
             </div>
