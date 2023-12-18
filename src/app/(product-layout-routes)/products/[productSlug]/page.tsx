@@ -1,7 +1,9 @@
-import React from 'react'
+import { type FC } from 'react'
 
-const productSlug = () => {
-    return <div>productSlug</div>
+import { ProductDetailTemplate } from '@templates/ProductDetailTemplate'
+
+const productSlug: FC = () => {
+    return <ProductDetailTemplate />
 }
 
 export default productSlug
