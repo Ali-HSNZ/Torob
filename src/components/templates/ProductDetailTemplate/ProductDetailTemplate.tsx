@@ -1,6 +1,11 @@
 import { type FC } from 'react'
 
-import { ProductDetail, ProductDetailAnalytics, ProductDetailStores } from '@organisms/ProductDetailOrganisms'
+import {
+    ProductDescription,
+    ProductDetail,
+    ProductDetailAnalytics,
+    ProductDetailStores,
+} from '@organisms/ProductDetailOrganisms'
 
 const ProductDetailTemplate: FC = () => {
     return (
@@ -9,6 +14,9 @@ const ProductDetailTemplate: FC = () => {
                 <ProductDetail />
                 <ProductDetailAnalytics />
             </div>
+
+            <ProductDescription />
+
             <ProductDetailStores />
         </section>
     )
