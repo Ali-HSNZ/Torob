@@ -1,8 +1,12 @@
 import React, { type FC } from 'react'
 import Image from 'next/image'
-import { ActionIcon, Button } from '@mantine/core'
+import Link from 'next/link'
+import { ActionIcon, Button, Rating } from '@mantine/core'
 import { IconBell, IconHeart, IconShoppingBagPlus } from '@tabler/icons-react'
 import { IconShare } from '@tabler/icons-react'
+
+import { Routes } from '@core/constants/routes'
+import { textToSlug } from '@core/utils/common/textToSlug'
 
 import { type IColumnProductCardProps } from './resources'
 
@@ -10,50 +14,61 @@ const ColumnProductCard: FC<IColumnProductCardProps> = ({ product }) => {
     return (
         <section className='bg-white flex flex-col justify-between items-start shadow-sm h-auto w-full p-4'>
             {/* image */}
-            <div className=' w-full flex justify-center items-center '>
-                <figure className='h-28 w-28 relative '>
-                    <Image
-                        sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                        alt={product.title}
-                        fill
-                        className='object-contain'
-                        src={product.image}
-                    />
-                </figure>
-            </div>
+            <Link className='flex flex-col' href={Routes.ProductDetail(textToSlug(product.title))}>
+                <div className=' w-full flex justify-center items-center '>
+                    <figure className='h-28 w-28 relative '>
+                        <Image
+                            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                            alt={product.title}
+                            fill
+                            className='object-contain'
+                            src={product.image}
+                        />
+                    </figure>
+                </div>
 
-            <div className='w-full h-full flex justify-between flex-col '>
-                {/* name */}
-                <p className='text-sm mt-5 text-gray-700 font-bold line-clamp-3'>{product.title}</p>
+                <div className='w-full h-full flex justify-between flex-col '>
+                    {/* name */}
+                    <p className='text-sm mt-5 text-gray-700 font-bold line-clamp-3'>{product.title}</p>
 
-                <div className='w-full'>
-                    {/* price */}
-                    <p className='text-xs mt-4 text-gray-500  font-bold'>From ${product.price}</p>
+                    <div className='w-full'>
+                        {/* Rating */}
+                        <Rating
+                            className='mt-4'
+                            classNames={{ label: 'cursor-pointer' }}
+                            readOnly
+                            value={1.5}
+                            fractions={2}
+                        />
 
-                    <div className='flex mt-3 justify-between items-center'>
-                        {/* store count */}
-                        <p className='text-sm text-gray-400 font-medium'>in {product.storeCount} store</p>
+                        {/* price */}
+                        <p className='text-xs mt-4 text-gray-500  font-bold'>From ${product.price}</p>
 
-                        {/* Actions */}
-                        <div className='flex items-center gap-x-2'>
-                            {/* Share */}
-                            <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
-                                <IconShare />
-                            </ActionIcon>
+                        <div className='flex mt-3 justify-between items-center'>
+                            {/* store count */}
+                            <p className='text-sm text-gray-400 font-medium'>in {product.storeCount} store</p>
 
-                            {/* Like */}
-                            <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
-                                <IconHeart />
-                            </ActionIcon>
+                            {/* Actions */}
+                            <div className='flex items-center gap-x-2'>
+                                {/* Share */}
+                                <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
+                                    <IconShare />
+                                </ActionIcon>
 
-                            {/* Analyze */}
-                            <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
-                                <IconBell />
-                            </ActionIcon>
+                                {/* Like */}
+                                <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
+                                    <IconHeart />
+                                </ActionIcon>
+
+                                {/* Analyze */}
+                                <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
+                                    <IconBell />
+                                </ActionIcon>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </Link>
 
             <Button
                 className='mt-4 text-gray-500 flex-shrink-0'
