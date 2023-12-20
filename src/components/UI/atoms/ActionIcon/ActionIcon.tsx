@@ -9,7 +9,7 @@ const CustomActionIcon = forwardRef<HTMLButtonElement, ActionIconProps>(({ child
     )
 })
 
-CustomActionIcon.displayName = 'CustomActionIcon'
+CustomActionIcon.displayName = 'ActionIcon'
 
 const CActionIcon = createPolymorphicComponent<'button', ActionIconProps>(CustomActionIcon)
 

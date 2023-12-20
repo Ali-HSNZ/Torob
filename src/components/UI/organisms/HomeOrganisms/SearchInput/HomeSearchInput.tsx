@@ -1,9 +1,11 @@
 import { type FC } from 'react'
 import { useRouter } from 'next/navigation'
 import { Controller, useForm } from 'react-hook-form'
-import { Popover, TextInput } from '@mantine/core'
+import { Popover } from '@mantine/core'
 import { useElementSize } from '@mantine/hooks'
 import { IconSearch } from '@tabler/icons-react'
+
+import { CTextInput } from '@atoms/TextInput'
 
 import { Routes } from '@core/constants/routes'
 import { type THomeSearchProductFormSchemaType } from '@core/types/forms-schema/home-search-product-form'
@@ -40,7 +42,7 @@ const HomeSearchInput: FC = () => {
                     render={({ field }) => (
                         <Popover width={searchInputWidth} offset={5} position='bottom' shadow='md'>
                             <Popover.Target>
-                                <TextInput
+                                <CTextInput
                                     {...field}
                                     autoComplete='off'
                                     placeholder='search products...'

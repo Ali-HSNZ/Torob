@@ -1,10 +1,10 @@
 import { type FC, useMemo, useState } from 'react'
-import { TextInput } from '@mantine/core'
 import { useQueryParam } from 'use-query-params'
 import { IconChevronLeft, IconSearch } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
+import { CTextInput } from '@atoms/TextInput'
 
 import { textToSlug } from '@core/utils/common/textToSlug'
 
@@ -65,7 +65,7 @@ const BrandsFilter: FC<IBrandsFilterProps> = ({ setIsMainFilter }) => {
                 </div>
 
                 <div className='sticky top-16 z-10  bg-white'>
-                    <TextInput
+                    <CTextInput
                         classNames={{ input: 'h-10 ' }}
                         color='gray'
                         leftSection={<IconSearch size={20} stroke={1.5} />}

@@ -1,7 +1,7 @@
 'use client'
 
 import React, { type FC, useMemo, useState } from 'react'
-import { Highlight, Input } from '@mantine/core'
+import { Highlight } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { useQueryParam } from 'use-query-params'
 import { IconSearch } from '@tabler/icons-react'
@@ -9,6 +9,7 @@ import { IconSearch } from '@tabler/icons-react'
 import { CNoData } from '@molecules/NoData'
 
 import { CButton } from '@atoms/Button'
+import { CTextInput } from '@atoms/TextInput'
 
 import { textToSlug } from '@core/utils/common/textToSlug'
 
@@ -37,7 +38,7 @@ const SidebarBrands: FC = () => {
 
     return (
         <section className='px-4'>
-            <Input
+            <CTextInput
                 color='gray'
                 leftSection={<IconSearch size={20} stroke={1.5} />}
                 placeholder='Search brand'

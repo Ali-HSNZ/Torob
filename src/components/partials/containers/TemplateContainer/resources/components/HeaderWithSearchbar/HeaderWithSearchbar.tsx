@@ -1,11 +1,12 @@
 import { type FC } from 'react'
 import Image from 'next/image'
-import { Input, Popover } from '@mantine/core'
+import { Popover } from '@mantine/core'
 import { useDisclosure, useElementSize } from '@mantine/hooks'
 import { IconMenu2 } from '@tabler/icons-react'
 import { IconSearch } from '@tabler/icons-react'
 
 import { CButton } from '@atoms/Button'
+import { CTextInput } from '@atoms/TextInput'
 
 import { HeaderCardButton, HeaderDrawerMenu, HeaderMenu, HeaderUserActionButtons } from '../resources'
 
@@ -58,7 +59,7 @@ const HeaderWithSearchbar: FC = () => {
                                 shadow='md'
                             >
                                 <Popover.Target>
-                                    <Input
+                                    <CTextInput
                                         placeholder='search products...'
                                         classNames={{ input: 'py-5 ' }}
                                         leftSection={<IconSearch size={'1.2rem'} />}

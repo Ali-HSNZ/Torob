@@ -9,7 +9,7 @@ const CustomButton = forwardRef<HTMLButtonElement, ButtonProps>(({ className, cl
     )
 })
 
-CustomButton.displayName = 'CButton'
+CustomButton.displayName = 'Button'
 const CButton = createPolymorphicComponent<'button', ButtonProps>(CustomButton)
 
 export default CButton
