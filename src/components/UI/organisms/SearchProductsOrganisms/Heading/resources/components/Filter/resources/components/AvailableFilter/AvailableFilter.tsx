@@ -1,9 +1,9 @@
 import { type FC } from 'react'
-import { Checkbox } from '@mantine/core'
 import { useQueryParam } from 'use-query-params'
 import { IconChevronLeft } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
+import { CCheckbox } from '@atoms/Checkbox'
 
 import { type IAvailableFilterProps } from './resources'
 
@@ -47,7 +47,7 @@ const AvailableFilter: FC<IAvailableFilterProps> = ({ setIsMainFilter }) => {
                 )}
             </div>
 
-            <Checkbox
+            <CCheckbox
                 checked={isDefaultChecked}
                 onChange={(checkbox) => handleCheckbox(checkbox.target.checked)}
                 label='Display available products'

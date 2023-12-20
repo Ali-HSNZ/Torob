@@ -1,6 +1,7 @@
 import { type FC } from 'react'
-import { Checkbox } from '@mantine/core'
 import { useQueryParam } from 'use-query-params'
+
+import { CCheckbox } from '@atoms/Checkbox'
 
 const SidebarAvailable: FC = () => {
     const [query, setQuery] = useQueryParam<string>('available')
@@ -13,7 +14,7 @@ const SidebarAvailable: FC = () => {
 
     return (
         <section className='px-4 select-none'>
-            <Checkbox
+            <CCheckbox
                 checked={isDefaultChecked}
                 onChange={(checkbox) => handleCheckbox(checkbox.target.checked)}
                 label='Display available products'
