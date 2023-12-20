@@ -1,8 +1,10 @@
 import React, { type FC, useCallback, useEffect, useState } from 'react'
-import { ActionIcon, Drawer } from '@mantine/core'
+import { Drawer } from '@mantine/core'
 import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import { NumberParam, StringParam, useQueryParams } from 'use-query-params'
 import { IconFilter } from '@tabler/icons-react'
+
+import { CActionIcon } from '@atoms/ActionIcon'
 
 import {
     type IFilterDrawerProps,
@@ -62,10 +64,10 @@ const FilterDrawer: FC<IFilterDrawerProps> = ({ className }) => {
 
     return (
         <section className={className}>
-            <ActionIcon onClick={open} variant='transparent' size={'auto'} color='dark' className='space-x-1'>
+            <CActionIcon onClick={open} variant='transparent' size={'auto'} color='dark' className='space-x-1'>
                 <IconFilter size={24} stroke={1.7} />
                 <p className='text-sm font-medium capitalize'>Filters</p>
-            </ActionIcon>
+            </CActionIcon>
 
             <Drawer
                 opened={lgMatches ? false : openedDrawer}

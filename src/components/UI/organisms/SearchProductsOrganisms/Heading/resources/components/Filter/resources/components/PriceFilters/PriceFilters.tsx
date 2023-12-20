@@ -1,7 +1,10 @@
 import { type FC, useCallback, useState } from 'react'
-import { ActionIcon, Button, NumberInput, RangeSlider } from '@mantine/core'
+import { NumberInput, RangeSlider } from '@mantine/core'
 import { NumberParam, useQueryParams } from 'use-query-params'
 import { IconChevronLeft, IconCurrencyDollar } from '@tabler/icons-react'
+
+import { CActionIcon } from '@atoms/ActionIcon'
+import { CButton } from '@atoms/Button'
 
 import { type IPriceFiltersProps, type TPriceRangeType } from './resources'
 
@@ -74,7 +77,7 @@ const PriceFilters: FC<IPriceFiltersProps> = ({ setIsMainFilter }) => {
         <section className='p-4 flex flex-col w-full h-[100dvh] '>
             <div className=' h-full'>
                 <div className='flex justify-between  bg-white'>
-                    <ActionIcon
+                    <CActionIcon
                         onClick={() => setIsMainFilter(true)}
                         variant='transparent'
                         className='flex gap-x-1'
@@ -83,10 +86,10 @@ const PriceFilters: FC<IPriceFiltersProps> = ({ setIsMainFilter }) => {
                     >
                         <IconChevronLeft size={20} />
                         <p className='font-medium'>Price</p>
-                    </ActionIcon>
+                    </CActionIcon>
 
                     {isQuery && (
-                        <ActionIcon
+                        <CActionIcon
                             onClick={removeQueryParams}
                             variant='transparent'
                             className='flex gap-x-1'
@@ -94,7 +97,7 @@ const PriceFilters: FC<IPriceFiltersProps> = ({ setIsMainFilter }) => {
                             size='auto'
                         >
                             <p className='font-medium text-sm'>Remove</p>
-                        </ActionIcon>
+                        </CActionIcon>
                     )}
                 </div>
 
@@ -147,9 +150,9 @@ const PriceFilters: FC<IPriceFiltersProps> = ({ setIsMainFilter }) => {
                 </div>
             </div>
 
-            <Button onClick={submitPriceRange} variant='outline' color='dark' fullWidth>
+            <CButton onClick={submitPriceRange} variant='outline' color='dark' fullWidth>
                 Submit
-            </Button>
+            </CButton>
         </section>
     )
 }

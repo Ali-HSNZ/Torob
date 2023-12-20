@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { Button, Menu } from '@mantine/core'
+import { Menu } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import {
     IconAdjustmentsAlt,
@@ -12,6 +12,8 @@ import {
 } from '@tabler/icons-react'
 import { IconHeart } from '@tabler/icons-react'
 
+import { CButton } from '@atoms/Button'
+
 const HeaderUserActionButtons = () => {
     const smMatchesMediaQuery = useMediaQuery('(min-width: 640px)')
 
@@ -19,7 +21,7 @@ const HeaderUserActionButtons = () => {
         <div>
             <Menu position='bottom' width={170} arrowSize={10} withArrow shadow='sm'>
                 <Menu.Target>
-                    <Button
+                    <CButton
                         rightSection={<IconChevronDown stroke={1.4} size={20} />}
                         leftSection={<IconUser stroke={1.4} size={20} />}
                         color='dark'
@@ -27,7 +29,7 @@ const HeaderUserActionButtons = () => {
                         className='text-[13px] sm:text-sm'
                     >
                         09302520508
-                    </Button>
+                    </CButton>
                 </Menu.Target>
                 <Menu.Dropdown className='text-center sm:text-base'>
                     {/* Label */}

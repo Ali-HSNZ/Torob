@@ -1,8 +1,10 @@
 import { type FC } from 'react'
 import Link from 'next/link'
-import { ActionIcon, Popover } from '@mantine/core'
+import { Popover } from '@mantine/core'
 import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
+
+import { CActionIcon } from '@atoms/ActionIcon'
 
 import { STATIC_HEADER_MENU_ITEM } from '../..'
 
@@ -21,7 +23,7 @@ const HeaderMenu: FC = () => {
                 >
                     <Popover.Target>
                         {link.sub.length > 0 ? (
-                            <ActionIcon
+                            <CActionIcon
                                 size={'auto'}
                                 color='dark'
                                 variant='transparent'
@@ -30,9 +32,9 @@ const HeaderMenu: FC = () => {
                             >
                                 <p>{link.title}</p>
                                 <IconChevronDown stroke={1.1} className='mt-0.5' />
-                            </ActionIcon>
+                            </CActionIcon>
                         ) : (
-                            <ActionIcon
+                            <CActionIcon
                                 size={'auto'}
                                 color='dark'
                                 variant='transparent'
@@ -42,7 +44,7 @@ const HeaderMenu: FC = () => {
                                 className='capitalize text-sm  '
                             >
                                 {link.title}
-                            </ActionIcon>
+                            </CActionIcon>
                         )}
                     </Popover.Target>
 
@@ -57,7 +59,7 @@ const HeaderMenu: FC = () => {
                             <section className='w-full grid grid-cols-4 '>
                                 {link?.sub?.map((linkSub) => (
                                     <article key={linkSub.id}>
-                                        <ActionIcon
+                                        <CActionIcon
                                             size={'auto'}
                                             color='dark'
                                             variant='transparent'
@@ -66,10 +68,10 @@ const HeaderMenu: FC = () => {
                                             className='capitalize font-medium text-sm '
                                         >
                                             {linkSub.title}
-                                        </ActionIcon>
+                                        </CActionIcon>
                                         <div className='flex flex-col pl-4 mt-3 gap-y-3'>
                                             {linkSub.sub?.map((item) => (
-                                                <ActionIcon
+                                                <CActionIcon
                                                     size={'auto'}
                                                     component={Link}
                                                     href={'#'}
@@ -79,7 +81,7 @@ const HeaderMenu: FC = () => {
                                                     key={item.id}
                                                 >
                                                     {item.title}
-                                                </ActionIcon>
+                                                </CActionIcon>
                                             ))}
                                         </div>
                                     </article>

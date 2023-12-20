@@ -1,9 +1,12 @@
 import React, { type FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ActionIcon, Button, Rating } from '@mantine/core'
+import { Rating } from '@mantine/core'
 import { IconBell, IconHeart, IconShoppingBagPlus } from '@tabler/icons-react'
 import { IconShare } from '@tabler/icons-react'
+
+import { CActionIcon } from '@atoms/ActionIcon'
+import { CButton } from '@atoms/Button'
 
 import { Routes } from '@core/constants/routes'
 import { textToSlug } from '@core/utils/common/textToSlug'
@@ -51,26 +54,26 @@ const ColumnProductCard: FC<IColumnProductCardProps> = ({ product }) => {
                             {/* Actions */}
                             <div className='flex items-center gap-x-2'>
                                 {/* Share */}
-                                <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
+                                <CActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
                                     <IconShare />
-                                </ActionIcon>
+                                </CActionIcon>
 
                                 {/* Like */}
-                                <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
+                                <CActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
                                     <IconHeart />
-                                </ActionIcon>
+                                </CActionIcon>
 
                                 {/* Analyze */}
-                                <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
+                                <CActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
                                     <IconBell />
-                                </ActionIcon>
+                                </CActionIcon>
                             </div>
                         </div>
                     </div>
                 </div>
             </Link>
 
-            <Button
+            <CButton
                 className='mt-4 text-gray-500 flex-shrink-0'
                 leftSection={<IconShoppingBagPlus size={20} />}
                 variant='outline'
@@ -78,7 +81,7 @@ const ColumnProductCard: FC<IColumnProductCardProps> = ({ product }) => {
                 fullWidth
             >
                 Add to cart
-            </Button>
+            </CButton>
         </section>
     )
 }

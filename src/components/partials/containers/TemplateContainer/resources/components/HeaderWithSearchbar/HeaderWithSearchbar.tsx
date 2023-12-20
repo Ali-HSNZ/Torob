@@ -1,9 +1,11 @@
 import { type FC } from 'react'
 import Image from 'next/image'
-import { Button, Input, Popover } from '@mantine/core'
+import { Input, Popover } from '@mantine/core'
 import { useDisclosure, useElementSize } from '@mantine/hooks'
 import { IconMenu2 } from '@tabler/icons-react'
 import { IconSearch } from '@tabler/icons-react'
+
+import { CButton } from '@atoms/Button'
 
 import { HeaderCardButton, HeaderDrawerMenu, HeaderMenu, HeaderUserActionButtons } from '../resources'
 
@@ -22,14 +24,14 @@ const HeaderWithSearchbar: FC = () => {
                 <section className='w-full flex gap-y-4 justify-between lg:gap-y-0 flex-wrap lg:flex-nowrap  items-center gap-x-3'>
                     <div className='flex items-center order-1'>
                         {/* Menu Button --> Showed in responsive   */}
-                        <Button
+                        <CButton
                             onClick={toggleDrawer}
                             color='red'
                             variant='transparent'
                             className='px-0 focus:outline-none mr-4 lg:hidden'
                         >
                             <IconMenu2 className='text-gray-700' />
-                        </Button>
+                        </CButton>
                         {/* Torob Logo */}
                         <figure className='relative w-[40px] h-[35px]'>
                             <Image

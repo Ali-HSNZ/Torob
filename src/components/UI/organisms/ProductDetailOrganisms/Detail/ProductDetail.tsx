@@ -1,9 +1,9 @@
 import { type FC } from 'react'
 import Image from 'next/image'
-import { ActionIcon } from '@mantine/core'
 import { STATIC_PRODUCT_DETAIL } from '..'
 import { IconBell, IconHeart, IconPlus, IconShare } from '@tabler/icons-react'
 
+import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
 
 const ProductDetail: FC = () => {
@@ -54,19 +54,19 @@ const ProductDetail: FC = () => {
                     {/* Actions */}
                     <div className='flex  '>
                         {/* Share */}
-                        <ActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
+                        <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
                             <IconShare />
-                        </ActionIcon>
+                        </CActionIcon>
 
                         {/* Like */}
-                        <ActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
+                        <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
                             <IconHeart />
-                        </ActionIcon>
+                        </CActionIcon>
 
                         {/* Analyze */}
-                        <ActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
+                        <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
                             <IconBell />
-                        </ActionIcon>
+                        </CActionIcon>
                     </div>
                 </div>
             </div>

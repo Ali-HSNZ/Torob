@@ -1,7 +1,8 @@
 import { type FC } from 'react'
-import { ActionIcon } from '@mantine/core'
 import { IconColumns2 } from '@tabler/icons-react'
 import { IconLayoutRows } from '@tabler/icons-react'
+
+import { CActionIcon } from '@atoms/ActionIcon'
 
 import { type ISearchProductsListViewProps } from './resources'
 
@@ -14,24 +15,24 @@ const SearchProductsListView: FC<ISearchProductsListViewProps> = ({ setQuery }) 
     return (
         <div className='flex gap-x-2'>
             {/* Row button */}
-            <ActionIcon
+            <CActionIcon
                 variant='transparent'
                 color='dark'
                 className='text-gray-600'
                 onClick={() => viewQueryParams('row')}
             >
                 <IconLayoutRows size={28} />
-            </ActionIcon>
+            </CActionIcon>
 
             {/* Column button */}
-            <ActionIcon
+            <CActionIcon
                 variant='transparent'
                 color='dark'
                 className='text-gray-600'
                 onClick={() => viewQueryParams('column')}
             >
                 <IconColumns2 />
-            </ActionIcon>
+            </CActionIcon>
         </div>
     )
 }

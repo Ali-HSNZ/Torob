@@ -1,7 +1,7 @@
 import { type FC } from 'react'
-import { ActionIcon } from '@mantine/core'
 import { IconChevronRight, IconX } from '@tabler/icons-react'
 
+import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
 
 import { type IMainFiltersProps } from './resources'
@@ -18,7 +18,7 @@ const MainFilters: FC<IMainFiltersProps> = ({ query, setQuery, closeDrawer, setS
         <section>
             {/* head */}
             <div className='p-4 flex justify-between'>
-                <ActionIcon
+                <CActionIcon
                     onClick={closeDrawer}
                     variant='transparent'
                     className='flex gap-x-1'
@@ -27,10 +27,10 @@ const MainFilters: FC<IMainFiltersProps> = ({ query, setQuery, closeDrawer, setS
                 >
                     <IconX size={20} />
                     <p className='font-medium'>Filters</p>
-                </ActionIcon>
+                </CActionIcon>
 
                 {isAvailableQueryParams && (
-                    <ActionIcon
+                    <CActionIcon
                         onClick={removeFiltersQueryParams}
                         variant='transparent'
                         className='flex gap-x-1'
@@ -38,7 +38,7 @@ const MainFilters: FC<IMainFiltersProps> = ({ query, setQuery, closeDrawer, setS
                         size='auto'
                     >
                         <p className='font-medium text-sm'>Remove filters</p>
-                    </ActionIcon>
+                    </CActionIcon>
                 )}
             </div>
 

@@ -1,9 +1,11 @@
 import React, { type FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ActionIcon, Button } from '@mantine/core'
 import { IconBell, IconHeart, IconShoppingBagPlus } from '@tabler/icons-react'
 import { IconShare } from '@tabler/icons-react'
+
+import { CActionIcon } from '@atoms/ActionIcon'
+import { CButton } from '@atoms/Button'
 
 import { Routes } from '@core/constants/routes'
 import { textToSlug } from '@core/utils/common/textToSlug'
@@ -47,29 +49,29 @@ const RowProductCard: FC<IRowProductCardProps> = ({ product }) => {
             <div className='flex w-full justify-between  flex-row items-end gap-x-2'>
                 <div className='flex justify-end gap-x-2'>
                     {/* Share */}
-                    <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
+                    <CActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
                         <IconShare />
-                    </ActionIcon>
+                    </CActionIcon>
 
                     {/* Like */}
-                    <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
+                    <CActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
                         <IconHeart />
-                    </ActionIcon>
+                    </CActionIcon>
 
                     {/* Analyze */}
-                    <ActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
+                    <CActionIcon size={'sm'} className='text-gray-400' variant='transparent' color='dark'>
                         <IconBell />
-                    </ActionIcon>
+                    </CActionIcon>
                 </div>
 
-                <Button
+                <CButton
                     className='text-gray-500'
                     leftSection={<IconShoppingBagPlus size={20} />}
                     variant='outline'
                     color='gray'
                 >
                     Add to cart
-                </Button>
+                </CButton>
             </div>
         </section>
     )

@@ -1,11 +1,12 @@
 import { type FC } from 'react'
 import Link from 'next/link'
-import { ActionIcon } from '@mantine/core'
 import { IconShoppingBag } from '@tabler/icons-react'
+
+import { CActionIcon } from '@atoms/ActionIcon'
 
 const HeaderCardButton: FC = () => {
     return (
-        <ActionIcon
+        <CActionIcon
             size={'auto'}
             variant='white'
             href={'#'}
@@ -14,7 +15,7 @@ const HeaderCardButton: FC = () => {
             className='rounded-md px-3 py-1.5 flex gap-x-2 border border-gray-700 text-sm font-medium '
         >
             <IconShoppingBag size='1.3rem' stroke={1.5} />
-        </ActionIcon>
+        </CActionIcon>
     )
 }
 

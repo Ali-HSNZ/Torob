@@ -1,6 +1,7 @@
 import { type FC } from 'react'
-import { ActionIcon } from '@mantine/core'
 import { IconSortDescending } from '@tabler/icons-react'
+
+import { CActionIcon } from '@atoms/ActionIcon'
 
 import { type ISortActionsProps, SearchProductsMobileSort, STATIC_SORT_LIST } from './resources'
 
@@ -24,7 +25,7 @@ const SortActions: FC<ISortActionsProps> = ({ setQuery, query }) => {
 
                 <div className='flex gap-x-2 '>
                     {STATIC_SORT_LIST.map((sort) => (
-                        <ActionIcon
+                        <CActionIcon
                             key={sort.id}
                             color='dark'
                             className={`text-sm ${currentSort === sort.label ? 'text-red-600' : 'text-gray-600'}`}
@@ -33,7 +34,7 @@ const SortActions: FC<ISortActionsProps> = ({ setQuery, query }) => {
                             onClick={() => handleSortQueryParam(sort.label)}
                         >
                             {sort.label}
-                        </ActionIcon>
+                        </CActionIcon>
                     ))}
                 </div>
             </div>

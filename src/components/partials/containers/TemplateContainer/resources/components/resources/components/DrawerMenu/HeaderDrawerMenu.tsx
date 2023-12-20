@@ -1,6 +1,8 @@
 import { type FC } from 'react'
-import { ActionIcon, Drawer } from '@mantine/core'
+import { Drawer } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
+
+import { CActionIcon } from '@atoms/ActionIcon'
 
 import { type THeaderDrawerMenuProps } from './resources'
 import { STATIC_HEADER_MENU_ITEM } from '../..'
@@ -25,18 +27,18 @@ const HeaderDrawerMenu: FC<THeaderDrawerMenuProps> = ({ closeDrawer, openedDrawe
                 <hr className='mb-2' />
                 {STATIC_HEADER_MENU_ITEM.map((menu) => (
                     <section key={menu.id}>
-                        <ActionIcon
+                        <CActionIcon
                             size={'auto'}
                             color='dark'
                             variant='transparent'
                             className='capitalize text-sm focus:outline-none font-medium'
                         >
                             {menu.title}
-                        </ActionIcon>
+                        </CActionIcon>
                         {menu.sub.length > 0 && (
                             <section className='pl-6 flex flex-col gap-y-3 mt-3 w-full justify-start '>
                                 {menu.sub.map((sub) => (
-                                    <ActionIcon
+                                    <CActionIcon
                                         size={'auto'}
                                         key={sub.id}
                                         color='dark'
@@ -44,7 +46,7 @@ const HeaderDrawerMenu: FC<THeaderDrawerMenuProps> = ({ closeDrawer, openedDrawe
                                         className='w-fit capitalize focus:outline-none text-sm '
                                     >
                                         {sub.title}
-                                    </ActionIcon>
+                                    </CActionIcon>
                                 ))}
                             </section>
                         )}

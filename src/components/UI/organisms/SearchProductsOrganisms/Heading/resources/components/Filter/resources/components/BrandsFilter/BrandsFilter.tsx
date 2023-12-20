@@ -1,8 +1,9 @@
 import { type FC, useMemo, useState } from 'react'
-import { ActionIcon, TextInput } from '@mantine/core'
+import { TextInput } from '@mantine/core'
 import { useQueryParam } from 'use-query-params'
 import { IconChevronLeft, IconSearch } from '@tabler/icons-react'
 
+import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
 
 import { textToSlug } from '@core/utils/common/textToSlug'
@@ -39,7 +40,7 @@ const BrandsFilter: FC<IBrandsFilterProps> = ({ setIsMainFilter }) => {
             {/* head */}
             <div className=' space-y-4 bg-white'>
                 <div className='flex justify-between'>
-                    <ActionIcon
+                    <CActionIcon
                         onClick={() => setIsMainFilter(true)}
                         variant='transparent'
                         className='flex gap-x-1'
@@ -48,10 +49,10 @@ const BrandsFilter: FC<IBrandsFilterProps> = ({ setIsMainFilter }) => {
                     >
                         <IconChevronLeft size={20} />
                         <p className='font-medium'>Brands</p>
-                    </ActionIcon>
+                    </CActionIcon>
 
                     {query && (
-                        <ActionIcon
+                        <CActionIcon
                             onClick={removeBrandQueryParams}
                             variant='transparent'
                             className='flex gap-x-1'
@@ -59,7 +60,7 @@ const BrandsFilter: FC<IBrandsFilterProps> = ({ setIsMainFilter }) => {
                             size='auto'
                         >
                             <p className='font-medium text-sm'>Remove</p>
-                        </ActionIcon>
+                        </CActionIcon>
                     )}
                 </div>
 

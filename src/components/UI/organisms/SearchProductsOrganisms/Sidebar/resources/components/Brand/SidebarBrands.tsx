@@ -1,7 +1,7 @@
 'use client'
 
 import React, { type FC, useMemo, useState } from 'react'
-import { Button, Highlight, Input } from '@mantine/core'
+import { Highlight, Input } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { useQueryParam } from 'use-query-params'
 import { IconSearch } from '@tabler/icons-react'
@@ -72,9 +72,9 @@ const SidebarBrands: FC = () => {
             </div>
 
             {brandList.length > 7 && (
-                <Button onClick={toggle} fullWidth color='gray' className='mt-4 ' variant='outline'>
+                <CButton onClick={toggle} fullWidth color='gray' className='mt-4 ' variant='outline'>
                     {isShow ? 'View less' : 'View more'}
-                </Button>
+                </CButton>
             )}
         </section>
     )

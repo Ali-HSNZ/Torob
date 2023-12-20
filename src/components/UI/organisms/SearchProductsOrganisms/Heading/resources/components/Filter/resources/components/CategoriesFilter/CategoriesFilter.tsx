@@ -1,8 +1,8 @@
 import React, { type FC } from 'react'
-import { ActionIcon } from '@mantine/core'
 import { useQueryParam } from 'use-query-params'
 import { IconChevronLeft } from '@tabler/icons-react'
 
+import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
 
 import { textToSlug } from '@core/utils/common/textToSlug'
@@ -39,7 +39,7 @@ const SidebarCategory: FC<ICategoriesFilterProps> = ({ setIsMainFilter }) => {
     return (
         <section className='flex flex-col h-screen  '>
             <div className='  flex justify-between p-4  bg-white'>
-                <ActionIcon
+                <CActionIcon
                     onClick={() => setIsMainFilter(true)}
                     variant='transparent'
                     className='flex gap-x-1'
@@ -48,10 +48,10 @@ const SidebarCategory: FC<ICategoriesFilterProps> = ({ setIsMainFilter }) => {
                 >
                     <IconChevronLeft size={20} />
                     <p className='font-medium'>Categories</p>
-                </ActionIcon>
+                </CActionIcon>
 
                 {query && (
-                    <ActionIcon
+                    <CActionIcon
                         onClick={removeQueryParams}
                         variant='transparent'
                         className='flex gap-x-1'
@@ -59,7 +59,7 @@ const SidebarCategory: FC<ICategoriesFilterProps> = ({ setIsMainFilter }) => {
                         size='auto'
                     >
                         <p className='font-medium text-sm'>Remove</p>
-                    </ActionIcon>
+                    </CActionIcon>
                 )}
             </div>
             <div className='overflow-y-auto'>

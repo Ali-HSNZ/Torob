@@ -1,8 +1,9 @@
 import { type FC } from 'react'
 import Image from 'next/image'
-import { Button } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconMenu2 } from '@tabler/icons-react'
+
+import { CButton } from '@atoms/Button'
 
 import { HeaderCardButton, HeaderDrawerMenu, HeaderMenu, HeaderUserActionButtons } from '../resources'
 
@@ -20,14 +21,14 @@ const Header: FC = () => {
                     {/* Left Section */}
                     <section className='flex gap-x-3'>
                         {/* Menu Button --> Showed in responsive   */}
-                        <Button
+                        <CButton
                             onClick={toggleDrawer}
                             color='red'
                             variant='transparent'
                             className='px-0 focus:outline-none lg:hidden'
                         >
                             <IconMenu2 className='text-gray-700' />
-                        </Button>
+                        </CButton>
 
                         {/* Torob Logo */}
                         <figure className='relative w-[40px] h-[35px]'>

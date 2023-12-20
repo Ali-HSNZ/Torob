@@ -1,11 +1,13 @@
 import { type FC } from 'react'
-import { ActionIcon, Breadcrumbs } from '@mantine/core'
+import { Breadcrumbs } from '@mantine/core'
+
+import { CActionIcon } from '@atoms/ActionIcon'
 
 import { type IBreadcrumbsProps } from './resources'
 
 const CustomBreadcrumbs: FC<IBreadcrumbsProps> = ({ breadcrumbsList, handleCLick, ...res }) => {
     const breadcrumbItems = breadcrumbsList.map((item, index) => (
-        <ActionIcon
+        <CActionIcon
             size={'auto'}
             key={index}
             color='dark'
@@ -14,7 +16,7 @@ const CustomBreadcrumbs: FC<IBreadcrumbsProps> = ({ breadcrumbsList, handleCLick
             onClick={() => handleCLick(item.title)}
         >
             {item.title}
-        </ActionIcon>
+        </CActionIcon>
     ))
 
     return <Breadcrumbs {...res}>{breadcrumbItems}</Breadcrumbs>

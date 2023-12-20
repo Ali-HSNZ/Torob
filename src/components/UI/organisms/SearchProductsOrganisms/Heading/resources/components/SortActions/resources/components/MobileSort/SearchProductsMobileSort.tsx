@@ -1,8 +1,9 @@
 import { type FC, useEffect } from 'react'
-import { ActionIcon, Drawer } from '@mantine/core'
+import { Drawer } from '@mantine/core'
 import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import { IconCheck, IconSortDescending } from '@tabler/icons-react'
 
+import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
 
 import type ISearchProductsMobileSortProps from './types/type'
@@ -20,10 +21,10 @@ const SearchProductsMobileSort: FC<ISearchProductsMobileSortProps> = ({ sort, se
 
     return (
         <div className=' lg:hidden'>
-            <ActionIcon variant='transparent' size={'auto'} color='dark' onClick={open} className='  space-x-1  p-0  '>
+            <CActionIcon variant='transparent' size={'auto'} color='dark' onClick={open} className='  space-x-1  p-0  '>
                 <IconSortDescending size={24} stroke={1.7} />
                 <p className='text-sm font-medium capitalize'>{sort}</p>
-            </ActionIcon>
+            </CActionIcon>
 
             <Drawer
                 radius={'10px 10px 0 0'}

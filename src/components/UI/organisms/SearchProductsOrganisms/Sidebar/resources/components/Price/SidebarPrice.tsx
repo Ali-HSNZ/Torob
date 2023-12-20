@@ -1,7 +1,9 @@
 import { type FC, useCallback, useState } from 'react'
-import { Button, NumberInput, RangeSlider } from '@mantine/core'
+import { NumberInput, RangeSlider } from '@mantine/core'
 import { NumberParam, useQueryParams } from 'use-query-params'
 import { IconCurrencyDollar } from '@tabler/icons-react'
+
+import { CButton } from '@atoms/Button'
 
 import { type TPriceRangeType } from './resources'
 
@@ -111,9 +113,9 @@ const SidebarPrice: FC = () => {
                 </div>
             </div>
 
-            <Button onClick={submitPriceRange} variant='outline' color='dark' fullWidth>
+            <CButton onClick={submitPriceRange} variant='outline' color='dark' fullWidth>
                 Submit
-            </Button>
+            </CButton>
         </section>
     )
 }

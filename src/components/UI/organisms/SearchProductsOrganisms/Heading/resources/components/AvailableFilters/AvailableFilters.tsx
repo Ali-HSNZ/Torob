@@ -1,7 +1,8 @@
 import { type FC } from 'react'
-import { ActionIcon } from '@mantine/core'
 import { StringParam, useQueryParams } from 'use-query-params'
 import { IconX } from '@tabler/icons-react'
+
+import { CActionIcon } from '@atoms/ActionIcon'
 
 import { slugToText } from '@core/utils/common/slugToText'
 
@@ -45,7 +46,7 @@ const AvailableFilters: FC = () => {
             <section className='flex gap-x-2 overflow-x-auto overflow-y-hidden'>
                 {/* price */}
                 {min && max && (
-                    <ActionIcon
+                    <CActionIcon
                         p={4}
                         onClick={removePriceQueryParam}
                         size='auto'
@@ -60,12 +61,12 @@ const AvailableFilters: FC = () => {
                             <span>to</span>
                             <span>{Intl.NumberFormat('en-us').format(Number(max))}</span>
                         </div>
-                    </ActionIcon>
+                    </CActionIcon>
                 )}
 
                 {/* Category */}
                 {category && (
-                    <ActionIcon
+                    <CActionIcon
                         onClick={removeCategoryQueryParam}
                         p={4}
                         size='auto'
@@ -77,12 +78,12 @@ const AvailableFilters: FC = () => {
                             <IconX stroke={1} size={16} />
                             <span className='capitalize font-medium'>{slugToText(category)}</span>
                         </div>
-                    </ActionIcon>
+                    </CActionIcon>
                 )}
 
                 {/* Brand */}
                 {brand && (
-                    <ActionIcon
+                    <CActionIcon
                         onClick={removeBrandQueryParam}
                         p={4}
                         size='auto'
@@ -94,12 +95,12 @@ const AvailableFilters: FC = () => {
                             <IconX stroke={1} size={16} />
                             <span className='capitalize font-medium'>{slugToText(brand)}</span>
                         </div>
-                    </ActionIcon>
+                    </CActionIcon>
                 )}
 
                 {/* Available */}
                 {available === 'true' && (
-                    <ActionIcon
+                    <CActionIcon
                         onClick={removeAvailableQueryParam}
                         p={4}
                         size='auto'
@@ -111,7 +112,7 @@ const AvailableFilters: FC = () => {
                             <IconX stroke={1} size={16} />
                             <span className='capitalize font-medium whitespace-nowrap'>Available products</span>
                         </div>
-                    </ActionIcon>
+                    </CActionIcon>
                 )}
             </section>
         )
