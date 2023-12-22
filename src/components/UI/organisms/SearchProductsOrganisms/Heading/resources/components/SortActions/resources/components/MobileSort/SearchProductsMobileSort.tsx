@@ -1,10 +1,10 @@
 import { type FC, useEffect } from 'react'
-import { Drawer } from '@mantine/core'
 import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import { IconCheck, IconSortDescending } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
+import { CDrawer } from '@atoms/Drawer'
 
 import type ISearchProductsMobileSortProps from './types/type'
 import { STATIC_SORT_LIST } from '../..'
@@ -26,7 +26,7 @@ const SearchProductsMobileSort: FC<ISearchProductsMobileSortProps> = ({ sort, se
                 <p className='text-sm font-medium capitalize'>{sort}</p>
             </CActionIcon>
 
-            <Drawer
+            <CDrawer
                 radius={'10px 10px 0 0'}
                 transitionProps={{
                     duration: 400,
@@ -57,7 +57,7 @@ const SearchProductsMobileSort: FC<ISearchProductsMobileSortProps> = ({ sort, se
                         </CButton>
                     ))}
                 </div>
-            </Drawer>
+            </CDrawer>
         </div>
     )
 }

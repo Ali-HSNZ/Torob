@@ -1,8 +1,8 @@
 import { type FC } from 'react'
-import { Drawer } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 
 import { CActionIcon } from '@atoms/ActionIcon'
+import { CDrawer } from '@atoms/Drawer'
 
 import { type THeaderDrawerMenuProps } from './resources'
 import { STATIC_HEADER_MENU_ITEM } from '../..'
@@ -12,7 +12,7 @@ const HeaderDrawerMenu: FC<THeaderDrawerMenuProps> = ({ closeDrawer, openedDrawe
     const matches = useMediaQuery('(min-width: 1024px)')
 
     return (
-        <Drawer
+        <CDrawer
             opened={matches ? false : openedDrawer}
             size={'xs'}
             onClose={closeDrawer}
@@ -53,7 +53,7 @@ const HeaderDrawerMenu: FC<THeaderDrawerMenuProps> = ({ closeDrawer, openedDrawe
                     </section>
                 ))}
             </div>
-        </Drawer>
+        </CDrawer>
     )
 }
 

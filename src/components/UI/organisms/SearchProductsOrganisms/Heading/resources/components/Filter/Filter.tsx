@@ -1,10 +1,10 @@
-import React, { type FC, useCallback, useEffect, useState } from 'react'
-import { Drawer } from '@mantine/core'
+import { type FC, useCallback, useEffect, useState } from 'react'
 import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import { NumberParam, StringParam, useQueryParams } from 'use-query-params'
 import { IconFilter } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
+import { CDrawer } from '@atoms/Drawer'
 
 import {
     type IFilterDrawerProps,
@@ -69,7 +69,7 @@ const FilterDrawer: FC<IFilterDrawerProps> = ({ className }) => {
                 <p className='text-sm font-medium capitalize'>Filters</p>
             </CActionIcon>
 
-            <Drawer
+            <CDrawer
                 opened={lgMatches ? false : openedDrawer}
                 classNames={{
                     title: 'text-sm',
@@ -112,7 +112,7 @@ const FilterDrawer: FC<IFilterDrawerProps> = ({ className }) => {
                         {renderStep()}
                     </div>
                 </div>
-            </Drawer>
+            </CDrawer>
         </section>
     )
 }
