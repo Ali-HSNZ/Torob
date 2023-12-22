@@ -1,12 +1,7 @@
-'use client'
-
-import React, { type FC, useMemo, useState } from 'react'
-import { Highlight } from '@mantine/core'
+import { type FC, useMemo, useState } from 'react'
 import { useDisclosure } from '@mantine/hooks'
 import { useQueryParam } from 'use-query-params'
 import { IconSearch } from '@tabler/icons-react'
-
-import { CNoData } from '@molecules/NoData'
 
 import { CButton } from '@atoms/Button'
 import { CTextInput } from '@atoms/TextInput'
@@ -44,31 +39,25 @@ const SidebarBrands: FC = () => {
                 placeholder='Search brand'
                 onChange={(input) => setInputValue(input.target.value)}
             />
-            <div className='flex flex-col px-1 min-h-[310px] max-h-[310px] overflow-y-auto gap-y-2 mt-5'>
+            <div className='flex flex-col px-1 max-h-[310px] overflow-y-auto gap-y-2 mt-5'>
                 {brandList.length > 0 ? (
                     brandList.slice(0, isShow ? brandList.length : 7).map((brand) => (
                         <div key={brand.id}>
                             <CButton
+                                fullWidth
+                                justify='start'
                                 onClick={() => setBrandQueryParams(brand.title)}
                                 variant='transparent'
-                                className={`p-0`}
+                                className={`px-0 ${
+                                    textToSlug(brand.title) === query ? 'text-red-600' : 'text-gray-700'
+                                }`}
                             >
-                                <Highlight
-                                    classNames={{
-                                        root: `text-sm font-medium ${
-                                            textToSlug(brand.title) === query ? 'text-red-600' : 'text-gray-700'
-                                        }`,
-                                    }}
-                                    color='gray'
-                                    highlight={inputValue}
-                                >
-                                    {brand.title}
-                                </Highlight>
+                                {brand.title}
                             </CButton>
                         </div>
                     ))
                 ) : (
-                    <CNoData className='border-none' />
+                    <h6 className='text-sm font-medium'>Not Found!</h6>
                 )}
             </div>
 
