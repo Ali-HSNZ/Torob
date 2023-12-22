@@ -1,12 +1,12 @@
 import React, { type FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Rating } from '@mantine/core'
 import { IconBell, IconHeart, IconShoppingBagPlus } from '@tabler/icons-react'
 import { IconShare } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
+import { CRating } from '@atoms/Rating'
 
 import { Routes } from '@core/constants/routes'
 import { textToSlug } from '@core/utils/common/textToSlug'
@@ -36,7 +36,7 @@ const ColumnProductCard: FC<IColumnProductCardProps> = ({ product }) => {
 
                     <div className='w-full'>
                         {/* Rating */}
-                        <Rating
+                        <CRating
                             className='mt-4'
                             classNames={{ label: 'cursor-pointer' }}
                             readOnly
