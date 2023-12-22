@@ -1,10 +1,10 @@
 import { type FC, useCallback, useState } from 'react'
-import { RangeSlider } from '@mantine/core'
 import { NumberParam, useQueryParams } from 'use-query-params'
 import { IconCurrencyDollar } from '@tabler/icons-react'
 
 import { CButton } from '@atoms/Button'
 import { CNumberInput } from '@atoms/NumberInput'
+import { CRangeSlider } from '@atoms/RangeSlider'
 
 import { type TPriceRangeType } from './resources'
 
@@ -97,7 +97,7 @@ const SidebarPrice: FC = () => {
 
             {/* Range Slider */}
             <div>
-                <RangeSlider
+                <CRangeSlider
                     onChange={(value) => handlePriceRange(value)}
                     color='red'
                     label={null}

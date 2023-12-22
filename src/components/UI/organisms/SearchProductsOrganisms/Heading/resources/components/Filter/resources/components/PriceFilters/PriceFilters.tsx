@@ -1,11 +1,11 @@
 import { type FC, useCallback, useState } from 'react'
-import { RangeSlider } from '@mantine/core'
 import { NumberParam, useQueryParams } from 'use-query-params'
 import { IconChevronLeft, IconCurrencyDollar } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
 import { CNumberInput } from '@atoms/NumberInput'
+import { CRangeSlider } from '@atoms/RangeSlider'
 
 import { type IPriceFiltersProps, type TPriceRangeType } from './resources'
 
@@ -132,7 +132,7 @@ const PriceFilters: FC<IPriceFiltersProps> = ({ setIsMainFilter }) => {
 
                     {/* Range Slider */}
                     <div>
-                        <RangeSlider
+                        <CRangeSlider
                             onChange={(value) => handlePriceRange(value)}
                             color='red'
                             label={null}
