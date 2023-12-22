@@ -1,10 +1,11 @@
 import { type FC, useCallback, useState } from 'react'
-import { NumberInput, RangeSlider } from '@mantine/core'
+import { RangeSlider } from '@mantine/core'
 import { NumberParam, useQueryParams } from 'use-query-params'
 import { IconChevronLeft, IconCurrencyDollar } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
+import { CNumberInput } from '@atoms/NumberInput'
 
 import { type IPriceFiltersProps, type TPriceRangeType } from './resources'
 
@@ -103,7 +104,7 @@ const PriceFilters: FC<IPriceFiltersProps> = ({ setIsMainFilter }) => {
 
                 <div className='w-full space-y-6 mt-4'>
                     <div className='grid grid-cols-2 w-full  gap-x-4'>
-                        <NumberInput
+                        <CNumberInput
                             label='From'
                             value={priceRange.min}
                             min={0}
@@ -115,7 +116,7 @@ const PriceFilters: FC<IPriceFiltersProps> = ({ setIsMainFilter }) => {
                             rightSection={<IconCurrencyDollar size={19} stroke={1.5} />}
                             classNames={{ label: 'text-xs' }}
                         />
-                        <NumberInput
+                        <CNumberInput
                             label='To'
                             value={priceRange.max}
                             min={priceRange.min}

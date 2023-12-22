@@ -1,9 +1,10 @@
 import { type FC, useCallback, useState } from 'react'
-import { NumberInput, RangeSlider } from '@mantine/core'
+import { RangeSlider } from '@mantine/core'
 import { NumberParam, useQueryParams } from 'use-query-params'
 import { IconCurrencyDollar } from '@tabler/icons-react'
 
 import { CButton } from '@atoms/Button'
+import { CNumberInput } from '@atoms/NumberInput'
 
 import { type TPriceRangeType } from './resources'
 
@@ -68,7 +69,7 @@ const SidebarPrice: FC = () => {
     return (
         <section className='px-4 space-y-4'>
             <div className='flex w-full  gap-x-4'>
-                <NumberInput
+                <CNumberInput
                     label='From'
                     value={priceRange.min}
                     min={0}
@@ -80,7 +81,7 @@ const SidebarPrice: FC = () => {
                     rightSection={<IconCurrencyDollar size={19} stroke={1.5} />}
                     classNames={{ label: 'text-xs' }}
                 />
-                <NumberInput
+                <CNumberInput
                     label='To'
                     value={priceRange.max}
                     min={priceRange.min}
