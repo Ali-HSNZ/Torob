@@ -1,6 +1,6 @@
 import { type FC } from 'react'
 import Link from 'next/link'
-import { useDisclosure, useMediaQuery } from '@mantine/hooks'
+import { useMediaQuery } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
@@ -10,7 +10,6 @@ import { STATIC_HEADER_MENU_ITEM } from '../..'
 
 const HeaderMenu: FC = () => {
     const matches = useMediaQuery('(min-width: 1024px)')
-    const [, { toggle }] = useDisclosure(false)
 
     return (
         <div className='hidden lg:flex gap-x-5 '>
@@ -27,7 +26,6 @@ const HeaderMenu: FC = () => {
                                 size={'auto'}
                                 color='dark'
                                 variant='transparent'
-                                onClick={toggle}
                                 className='capitalize text-sm flex items-center gap-x-1'
                             >
                                 <p>{link.title}</p>
@@ -38,7 +36,6 @@ const HeaderMenu: FC = () => {
                                 size={'auto'}
                                 color='dark'
                                 variant='transparent'
-                                onClick={toggle}
                                 href={'#'}
                                 component={Link}
                                 className='capitalize text-sm  '
