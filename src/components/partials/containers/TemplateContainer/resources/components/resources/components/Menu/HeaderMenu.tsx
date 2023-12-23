@@ -1,10 +1,10 @@
 import { type FC } from 'react'
 import Link from 'next/link'
-import { Popover } from '@mantine/core'
 import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
+import { CPopover } from '@atoms/Popover'
 
 import { STATIC_HEADER_MENU_ITEM } from '../..'
 
@@ -15,13 +15,13 @@ const HeaderMenu: FC = () => {
     return (
         <div className='hidden lg:flex gap-x-5 '>
             {STATIC_HEADER_MENU_ITEM.map((link) => (
-                <Popover
+                <CPopover
                     opened={matches ? undefined : false}
                     key={link.id}
                     radius={0}
                     classNames={{ dropdown: 'w-full' }}
                 >
-                    <Popover.Target>
+                    <CPopover.Target>
                         {link.sub.length > 0 ? (
                             <CActionIcon
                                 size={'auto'}
@@ -46,50 +46,48 @@ const HeaderMenu: FC = () => {
                                 {link.title}
                             </CActionIcon>
                         )}
-                    </Popover.Target>
+                    </CPopover.Target>
 
-                    {link.sub.length > 0 && (
-                        <Popover.Dropdown>
-                            {/* Menu Title */}
-                            <h3 className='font-medium text-sm'>{link.title}</h3>
+                    <CPopover.Dropdown>
+                        {/* Menu Title */}
+                        <h3 className='font-medium text-sm'>{link.title}</h3>
 
-                            {/* Simple Line */}
-                            <hr className='my-4' />
+                        {/* Simple Line */}
+                        <hr className='my-4' />
 
-                            <section className='w-full grid grid-cols-4 '>
-                                {link?.sub?.map((linkSub) => (
-                                    <article key={linkSub.id}>
-                                        <CActionIcon
-                                            size={'auto'}
-                                            color='dark'
-                                            variant='transparent'
-                                            component={Link}
-                                            href={'#'}
-                                            className='capitalize font-medium text-sm '
-                                        >
-                                            {linkSub.title}
-                                        </CActionIcon>
-                                        <div className='flex flex-col pl-4 mt-3 gap-y-3'>
-                                            {linkSub.sub?.map((item) => (
-                                                <CActionIcon
-                                                    size={'auto'}
-                                                    component={Link}
-                                                    href={'#'}
-                                                    color='dark'
-                                                    variant='transparent'
-                                                    className='capitalize w-fit text-sm'
-                                                    key={item.id}
-                                                >
-                                                    {item.title}
-                                                </CActionIcon>
-                                            ))}
-                                        </div>
-                                    </article>
-                                ))}
-                            </section>
-                        </Popover.Dropdown>
-                    )}
-                </Popover>
+                        <section className='w-full grid grid-cols-4 '>
+                            {link?.sub?.map((linkSub) => (
+                                <article key={linkSub.id}>
+                                    <CActionIcon
+                                        size={'auto'}
+                                        color='dark'
+                                        variant='transparent'
+                                        component={Link}
+                                        href={'#'}
+                                        className='capitalize font-medium text-sm '
+                                    >
+                                        {linkSub.title}
+                                    </CActionIcon>
+                                    <div className='flex flex-col pl-4 mt-3 gap-y-3'>
+                                        {linkSub.sub?.map((item) => (
+                                            <CActionIcon
+                                                size={'auto'}
+                                                component={Link}
+                                                href={'#'}
+                                                color='dark'
+                                                variant='transparent'
+                                                className='capitalize w-fit text-sm'
+                                                key={item.id}
+                                            >
+                                                {item.title}
+                                            </CActionIcon>
+                                        ))}
+                                    </div>
+                                </article>
+                            ))}
+                        </section>
+                    </CPopover.Dropdown>
+                </CPopover>
             ))}
         </div>
     )

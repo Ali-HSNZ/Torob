@@ -1,11 +1,11 @@
 import { type FC } from 'react'
 import Image from 'next/image'
-import { Popover } from '@mantine/core'
 import { useDisclosure, useElementSize } from '@mantine/hooks'
 import { IconMenu2 } from '@tabler/icons-react'
 import { IconSearch } from '@tabler/icons-react'
 
 import { CButton } from '@atoms/Button'
+import { CPopover } from '@atoms/Popover'
 import { CTextInput } from '@atoms/TextInput'
 
 import { HeaderCardButton, HeaderDrawerMenu, HeaderMenu, HeaderUserActionButtons } from '../resources'
@@ -51,24 +51,24 @@ const HeaderWithSearchbar: FC = () => {
                     {/* Search Input */}
                     <div className='w-full order-4 lg:order-2 '>
                         <section ref={inputRef} className='xl:ml-2 w-full sm:w-[460px] relative   flex-col gap-y-4'>
-                            <Popover
+                            <CPopover
                                 opened={undefined}
                                 offset={5}
                                 width={searchInputWidth}
                                 position='bottom'
                                 shadow='md'
                             >
-                                <Popover.Target>
+                                <CPopover.Target>
                                     <CTextInput
                                         placeholder='search products...'
                                         classNames={{ input: 'py-5 ' }}
                                         leftSection={<IconSearch size={'1.2rem'} />}
                                     />
-                                </Popover.Target>
-                                <Popover.Dropdown>
+                                </CPopover.Target>
+                                <CPopover.Dropdown>
                                     <p>This is uncontrolled popover, it is opened when button is clicked</p>
-                                </Popover.Dropdown>
-                            </Popover>
+                                </CPopover.Dropdown>
+                            </CPopover>
                         </section>
                     </div>
 
