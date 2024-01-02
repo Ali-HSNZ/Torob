@@ -1,10 +1,10 @@
 import { type FC } from 'react'
 import { useRouter } from 'next/navigation'
 import { Controller, useForm } from 'react-hook-form'
-import { Popover } from '@mantine/core'
 import { useElementSize } from '@mantine/hooks'
 import { IconSearch } from '@tabler/icons-react'
 
+import { CPopover } from '@atoms/Popover'
 import { CTextInput } from '@atoms/TextInput'
 
 import { Routes } from '@core/constants/routes'
@@ -40,20 +40,19 @@ const HomeSearchInput: FC = () => {
                     name='name'
                     control={control}
                     render={({ field }) => (
-                        <Popover width={searchInputWidth} offset={5} position='bottom' shadow='md'>
-                            <Popover.Target>
+                        <CPopover width={searchInputWidth} offset={5} position='bottom' shadow='md'>
+                            <CPopover.Target>
                                 <CTextInput
                                     {...field}
-                                    autoComplete='off'
                                     placeholder='search products...'
                                     classNames={{ input: 'py-5 ' }}
                                     leftSection={<IconSearch size={'1.2rem'} />}
                                 />
-                            </Popover.Target>
-                            <Popover.Dropdown>
+                            </CPopover.Target>
+                            <CPopover.Dropdown>
                                 <p>This is uncontrolled popover, it is opened when button is clicked</p>
-                            </Popover.Dropdown>
-                        </Popover>
+                            </CPopover.Dropdown>
+                        </CPopover>
                     )}
                 />
             </section>

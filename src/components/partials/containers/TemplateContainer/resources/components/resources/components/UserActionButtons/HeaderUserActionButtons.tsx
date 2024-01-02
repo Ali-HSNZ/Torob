@@ -1,6 +1,4 @@
-import React from 'react'
 import Link from 'next/link'
-import { Menu } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import {
     IconAdjustmentsAlt,
@@ -13,14 +11,15 @@ import {
 import { IconHeart } from '@tabler/icons-react'
 
 import { CButton } from '@atoms/Button'
+import { CMenu } from '@atoms/Menu'
 
 const HeaderUserActionButtons = () => {
     const smMatchesMediaQuery = useMediaQuery('(min-width: 640px)')
 
     return (
         <div>
-            <Menu position='bottom' width={170} arrowSize={10} withArrow shadow='sm'>
-                <Menu.Target>
+            <CMenu position='bottom' width={170} arrowSize={10} withArrow shadow='sm'>
+                <CMenu.Target>
                     <CButton
                         rightSection={<IconChevronDown stroke={1.4} size={20} />}
                         leftSection={<IconUser stroke={1.4} size={20} />}
@@ -30,51 +29,50 @@ const HeaderUserActionButtons = () => {
                     >
                         09302520508
                     </CButton>
-                </Menu.Target>
-                <Menu.Dropdown className='text-center sm:text-base'>
+                </CMenu.Target>
+                <CMenu.Dropdown className='text-center sm:text-base'>
                     {/* Label */}
-                    <Menu.Label classNames={{ label: 'text-left' }}>Application</Menu.Label>
+                    <CMenu.Label classNames={{ label: 'text-left' }}>Application</CMenu.Label>
 
-                    <Menu.Item
+                    <CMenu.Item
                         className='text-sm'
                         leftSection={<IconAdjustmentsAlt stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
-                        component={Link}
                         href={'#'}
                     >
                         Control Panel
-                    </Menu.Item>
+                    </CMenu.Item>
 
-                    <Menu.Item
+                    <CMenu.Item
                         className='text-sm'
                         leftSection={<IconHeart stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
                         href={'#'}
                     >
                         Favorites
-                    </Menu.Item>
+                    </CMenu.Item>
 
-                    <Menu.Item
+                    <CMenu.Item
                         className='text-sm'
                         leftSection={<IconHistory stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
                         href={'#'}
                     >
                         Recent
-                    </Menu.Item>
+                    </CMenu.Item>
 
-                    <Menu.Item
+                    <CMenu.Item
                         className='text-sm'
                         leftSection={<IconTruckDelivery stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
                         href={'#'}
                     >
                         Orders
-                    </Menu.Item>
+                    </CMenu.Item>
 
                     {/* Authentication */}
-                    <Menu.Label classNames={{ label: 'text-left' }}>Auth</Menu.Label>
+                    <CMenu.Label classNames={{ label: 'text-left' }}>Auth</CMenu.Label>
 
-                    <Menu.Item
+                    <CMenu.Item
                         color='red'
                         className='text-sm'
                         leftSection={<IconLogout2 stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
@@ -82,9 +80,9 @@ const HeaderUserActionButtons = () => {
                         href={'#'}
                     >
                         Logout
-                    </Menu.Item>
-                </Menu.Dropdown>
-            </Menu>
+                    </CMenu.Item>
+                </CMenu.Dropdown>
+            </CMenu>
         </div>
     )
 }
