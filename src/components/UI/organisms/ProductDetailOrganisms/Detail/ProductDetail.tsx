@@ -1,14 +1,15 @@
-import { type FC } from 'react'
+'use client'
+
+import { type FC, useState } from 'react'
 import Image from 'next/image'
 import { STATIC_PRODUCT_DETAIL } from '..'
-import { IconBell, IconHeart, IconPlus, IconShare } from '@tabler/icons-react'
+import { IconPlus, IconStarFilled } from '@tabler/icons-react'
 
-import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
 
 const ProductDetail: FC = () => {
     const [minPrice, maxPrice] = STATIC_PRODUCT_DETAIL.priceRange
-
+    const [selectedColor, setSelectedColor] = useState(STATIC_PRODUCT_DETAIL.colors[0])
     return (
         <section className='w-full bg-white p-4'>
             <div className='w-full flex gap-x-4'>
@@ -37,45 +38,67 @@ const ProductDetail: FC = () => {
                 </div>
 
                 <div className='flex flex-col gap-y-4'>
-                    <h1 className='font-medium text-lg'>{STATIC_PRODUCT_DETAIL.title}</h1>
+                    <h1 className='font-semibold text-sm'>{STATIC_PRODUCT_DETAIL.title}</h1>
 
-                    <div className='flex gap-x-1'>
-                        <span className='font-medium'>Brand:</span>
-                        <span>{STATIC_PRODUCT_DETAIL.brand}</span>
+                    <div className='flex flex-col gap-y-4'>
+                        <div className='text-sm flex items-center gap-x-1'>
+                            <IconStarFilled className=' text-yellow-500' size={15} />
+                            <p className='font-semibold'>{STATIC_PRODUCT_DETAIL.rating.rate}</p>
+                            <p className='text-gray-400'>
+                                ({Intl.NumberFormat('en-es').format(STATIC_PRODUCT_DETAIL.rating.count)})
+                            </p>
+                        </div>
+
+                        <div className='flex gap-x-4'>
+                            <div className='text-sm text-red-600 flex gap-x-1'>
+                                <p className='font-semibold'>
+                                    {Intl.NumberFormat('en-es').format(STATIC_PRODUCT_DETAIL.comment)}
+                                </p>
+                                <p>comments</p>
+                            </div>
+
+                            <div className='text-sm text-red-600 flex gap-x-1'>
+                                <p className='font-semibold'>
+                                    {Intl.NumberFormat('en-es').format(STATIC_PRODUCT_DETAIL.question)}
+                                </p>
+                                <p>question</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className='flex gap-x-1'>
-                        <span className='font-medium'>Category: </span>
-                        <span>{STATIC_PRODUCT_DETAIL.categories.map((e) => e.title).join('/ ')}</span>
-                    </div>
+                    <div>
+                        <div className='flex font-semibold gap-x-1'>
+                            <p>color:</p>
+                            <p className='capitalize'>{selectedColor.title}</p>
+                        </div>
 
-                    <h5 className='font-medium'> In {STATIC_PRODUCT_DETAIL.storeCount} Stores</h5>
+                        <div className='flex gap-x-3 mt-3'>
+                            {STATIC_PRODUCT_DETAIL.colors.map((color) => {
+                                console.log(color.hex)
 
-                    {/* Actions */}
-                    <div className='flex  '>
-                        {/* Share */}
-                        <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
-                            <IconShare />
-                        </CActionIcon>
-
-                        {/* Like */}
-                        <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
-                            <IconHeart />
-                        </CActionIcon>
-
-                        {/* Analyze */}
-                        <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
-                            <IconBell />
-                        </CActionIcon>
+                                return (
+                                    <div
+                                        onClick={() => setSelectedColor(color)}
+                                        style={{ backgroundColor: color.hex }}
+                                        key={color.id}
+                                        className={`w-9 cursor-pointer h-4 ring-2 z-[1] ring-offset-2 rounded-full ${
+                                            selectedColor.title === color.title ? 'ring-gray-500' : 'ring-gray-300'
+                                        }`}
+                                    ></div>
+                                )
+                            })}
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className='w-full mt-4 flex items-center justify-between'>
-                <span className='font-medium'>
-                    From {Intl.NumberFormat('en-es').format(minPrice)}$ to {Intl.NumberFormat('en-es').format(maxPrice)}
-                    $
-                </span>
+            <div className='w-full mt-4 bg-gray-50 p-2 rounded-lg flex items-center justify-between'>
+                <div className='font-medium text-sm flex items-end gap-x-2'>
+                    <span className='text-xs text-gray-600'>From</span>
+                    <span className='text-lg font-medium'>${Intl.NumberFormat('en-es').format(minPrice)}</span>
+                    <span className='text-xs text-gray-600'>to</span>
+                    <span className='text-lg font-medium'>${Intl.NumberFormat('en-es').format(maxPrice)}</span>
+                </div>
                 <CButton className='px-9 h-10'>Add To Cart</CButton>
             </div>
         </section>
