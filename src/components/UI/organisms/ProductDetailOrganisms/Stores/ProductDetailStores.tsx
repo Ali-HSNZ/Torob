@@ -17,6 +17,18 @@ const ProductDetailStores: FC = () => {
                 <li className='p-4 bg-white'>
                     <h2>store name</h2>
                 </li>
+                <li className='p-4 bg-white'>
+                    <h2>store name</h2>
+                </li>
+                <li className='p-4 bg-white'>
+                    <h2>store name</h2>
+                </li>
+                <li className='p-4 bg-white'>
+                    <h2>store name</h2>
+                </li>
+                <li className='p-4 bg-white'>
+                    <h2>store name</h2>
+                </li>
             </ul>
         </section>
     )

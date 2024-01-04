@@ -1,7 +1,7 @@
 {
     "title": "ACEMAGIC Laptop, Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Laptop Windows 11",
     "price": 5300,
-    "priceRange": [15554, 21757],
+    "priceRange": { "min": 15554, "max": 21757 },
     "rating": {
         "count": 33585,
         "rate": 4.2

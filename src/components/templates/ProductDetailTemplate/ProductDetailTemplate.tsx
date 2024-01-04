@@ -1,11 +1,6 @@
 import { type FC } from 'react'
 
-import {
-    ProductDescription,
-    ProductDetail,
-    ProductDetailSidebar,
-    ProductDetailStores,
-} from '@organisms/ProductDetailOrganisms'
+import { ProductDetail, ProductDetailSidebar, ProductDetailStores } from '@organisms/ProductDetailOrganisms'
 
 const ProductDetailTemplate: FC = () => {
     return (
@@ -13,9 +8,6 @@ const ProductDetailTemplate: FC = () => {
             <div className='w-full flex flex-col gap-y-4 h-auto '>
                 {/* detail */}
                 <ProductDetail />
-
-                {/* description */}
-                <ProductDescription />
 
                 {/* stores list */}
                 <ProductDetailStores />

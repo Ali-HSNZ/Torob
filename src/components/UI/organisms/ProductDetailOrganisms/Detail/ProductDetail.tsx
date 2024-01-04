@@ -3,31 +3,32 @@
 import { type FC, useState } from 'react'
 import Image from 'next/image'
 import { STATIC_PRODUCT_DETAIL } from '..'
-import { IconPlus, IconStarFilled } from '@tabler/icons-react'
+import { IconStarFilled } from '@tabler/icons-react'
+import { IconDots } from '@tabler/icons-react'
 
 import { CButton } from '@atoms/Button'
 
 const ProductDetail: FC = () => {
-    const [minPrice, maxPrice] = STATIC_PRODUCT_DETAIL.priceRange
     const [selectedColor, setSelectedColor] = useState(STATIC_PRODUCT_DETAIL.colors[0])
+
     return (
-        <section className='w-full bg-white p-4'>
+        <section className='w-full bg-white p-4 '>
             <div className='w-full flex gap-x-4'>
                 <div className='flex h-60 gap-x-4 '>
                     <div className='flex flex-col gap-y-4'>
-                        <figure className='w-14 h-14  rounded-md text-center relative'>
+                        <figure className='w-12 h-12 border rounded-md text-center relative'>
                             <Image fill src={STATIC_PRODUCT_DETAIL.image_url} alt={STATIC_PRODUCT_DETAIL.title} />
                         </figure>
 
-                        <figure className='w-14 h-14  rounded-md text-center relative'>
+                        <figure className='w-12 h-12 border rounded-md text-center relative'>
                             <Image fill src={STATIC_PRODUCT_DETAIL.image_url} alt={STATIC_PRODUCT_DETAIL.title} />
                         </figure>
 
-                        <CButton color='dark' variant='outline' className='w-14 h-14'>
-                            <IconPlus size={20} stroke={1.4} />
+                        <CButton color='dark' variant='outline' className='w-12 h-12'>
+                            <IconDots stroke={2.4} />
                         </CButton>
                     </div>
-                    <figure className='h-full w-72 relative'>
+                    <figure className='h-full w-56 aspect-square relative'>
                         <Image
                             className='object-contain'
                             fill
@@ -38,7 +39,7 @@ const ProductDetail: FC = () => {
                 </div>
 
                 <div className='flex flex-col gap-y-4'>
-                    <h1 className='font-semibold text-sm'>{STATIC_PRODUCT_DETAIL.title}</h1>
+                    <h1 className='font-semibold'>{STATIC_PRODUCT_DETAIL.title}</h1>
 
                     <div className='flex flex-col gap-y-4'>
                         <div className='text-sm flex items-center gap-x-1'>
@@ -74,33 +75,43 @@ const ProductDetail: FC = () => {
 
                         <div className='flex gap-x-3 mt-3'>
                             {STATIC_PRODUCT_DETAIL.colors.map((color) => {
-                                console.log(color.hex)
-
                                 return (
                                     <div
                                         onClick={() => setSelectedColor(color)}
                                         style={{ backgroundColor: color.hex }}
                                         key={color.id}
                                         className={`w-9 cursor-pointer h-4 ring-2 z-[1] ring-offset-2 rounded-full ${
-                                            selectedColor.title === color.title ? 'ring-gray-500' : 'ring-gray-300'
+                                            selectedColor.title === color.title ? 'ring-gray-400' : 'ring-gray-300'
                                         }`}
                                     ></div>
                                 )
                             })}
                         </div>
                     </div>
+
+                    <div className='flex gap-x-1 items-end'>
+                        <span className='text-sm text-gray-500'>in</span>
+                        <span className='font-medium text-xl'>8</span>
+                        <span className='text-sm text-gray-500'>stores</span>
+                    </div>
+
+                    <div className='flex gap-x-1 items-end'>
+                        <span className='text-sm text-gray-500'>from</span>
+                        <span className='font-medium text-xl'>
+                            ${Intl.NumberFormat('en-us').format(STATIC_PRODUCT_DETAIL.priceRange.min)}
+                        </span>
+
+                        <span className='text-sm text-gray-500'>to</span>
+
+                        <span className='font-medium text-xl'>
+                            ${Intl.NumberFormat('en-us').format(STATIC_PRODUCT_DETAIL.priceRange.max)}
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div className='w-full mt-4 bg-gray-50 p-2 rounded-lg flex items-center justify-between'>
-                <div className='font-medium text-sm flex items-end gap-x-2'>
-                    <span className='text-xs text-gray-600'>From</span>
-                    <span className='text-lg font-medium'>${Intl.NumberFormat('en-es').format(minPrice)}</span>
-                    <span className='text-xs text-gray-600'>to</span>
-                    <span className='text-lg font-medium'>${Intl.NumberFormat('en-es').format(maxPrice)}</span>
-                </div>
-                <CButton className='px-9 h-10'>Add To Cart</CButton>
-            </div>
+            <p className='font-semibold'>Description:</p>
+            <span className='text-sm'>{STATIC_PRODUCT_DETAIL.description}</span>
         </section>
     )
 }
