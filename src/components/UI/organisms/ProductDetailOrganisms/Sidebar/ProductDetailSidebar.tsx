@@ -8,6 +8,8 @@ import { IconBell, IconBuildingStore, IconMessage, IconProgressAlert } from '@ta
 import { CActionIcon } from '@atoms/ActionIcon'
 import { CTooltip } from '@atoms/Tooltip'
 
+import { scrollToSection } from '@core/utils/common/scrollToSection'
+
 const ProductDetailSidebar: FC = () => {
     const [, scrollTo] = useWindowScroll()
 
@@ -41,7 +43,14 @@ const ProductDetailSidebar: FC = () => {
             <div className='w-full border'></div>
             <div className='h-full flex flex-col justify-between'>
                 <div className='flex flex-col gap-y-4'>
-                    <CTooltip label='stores' withArrow color='#383838' arrowSize={7} position='left'>
+                    <CTooltip
+                        label='stores'
+                        onClick={() => scrollToSection('store_list')}
+                        withArrow
+                        color='#383838'
+                        arrowSize={7}
+                        position='left'
+                    >
                         <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
                             <IconBuildingStore />
                         </CActionIcon>
