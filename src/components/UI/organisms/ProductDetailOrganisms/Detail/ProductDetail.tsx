@@ -6,6 +6,7 @@ import { STATIC_PRODUCT_DETAIL } from '..'
 import { IconStarFilled } from '@tabler/icons-react'
 import { IconDots } from '@tabler/icons-react'
 
+import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
 
 const ProductDetail: FC = () => {
@@ -28,7 +29,7 @@ const ProductDetail: FC = () => {
                             <IconDots stroke={2.4} />
                         </CButton>
                     </div>
-                    <figure className='h-full w-56 aspect-square relative'>
+                    <figure className='h-full w-56 e relative'>
                         <Image
                             className='object-contain'
                             fill
@@ -76,14 +77,15 @@ const ProductDetail: FC = () => {
                         <div className='flex gap-x-3 mt-3'>
                             {STATIC_PRODUCT_DETAIL.colors.map((color) => {
                                 return (
-                                    <div
+                                    <CActionIcon
+                                        size={'auto'}
                                         onClick={() => setSelectedColor(color)}
                                         style={{ backgroundColor: color.hex }}
                                         key={color.id}
                                         className={`w-9 cursor-pointer h-4 ring-2 z-[1] ring-offset-2 rounded-full ${
                                             selectedColor.title === color.title ? 'ring-gray-400' : 'ring-gray-300'
                                         }`}
-                                    ></div>
+                                    ></CActionIcon>
                                 )
                             })}
                         </div>
@@ -97,13 +99,13 @@ const ProductDetail: FC = () => {
 
                     <div className='flex gap-x-1 items-end'>
                         <span className='text-sm text-gray-500'>from</span>
-                        <span className='font-medium text-xl'>
+                        <span className='font-medium text-lg'>
                             ${Intl.NumberFormat('en-us').format(STATIC_PRODUCT_DETAIL.priceRange.min)}
                         </span>
 
                         <span className='text-sm text-gray-500'>to</span>
 
-                        <span className='font-medium text-xl'>
+                        <span className='font-medium text-lg'>
                             ${Intl.NumberFormat('en-us').format(STATIC_PRODUCT_DETAIL.priceRange.max)}
                         </span>
                     </div>
