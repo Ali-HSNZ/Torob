@@ -9,7 +9,7 @@ const ProductDetailStores: FC = () => {
         <section id='store_list'>
             <h2 className='text-lg font-medium'>Stores</h2>
             <ul className='flex flex-col gap-y-4 mt-4'>
-                {[1, 2, 3, 4, 5, 6, 7, 8].map((e) => (
+                {[1, 2, 3, 4].map((e) => (
                     <li key={e} className='p-4 flex items-center gap-x-4 justify-between bg-white'>
                         <div className='grid grow grid-cols-4 gap-x-4 justify-between items-center'>
                             <div className='flex  gap-2'>

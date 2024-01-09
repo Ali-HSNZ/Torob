@@ -43,21 +43,26 @@ const ProductDetailSidebar: FC = () => {
             <div className='w-full border'></div>
             <div className='h-full flex flex-col justify-between'>
                 <div className='flex flex-col gap-y-4'>
-                    <CTooltip
-                        label='stores'
-                        onClick={() => scrollToSection('store_list')}
-                        withArrow
-                        color='#383838'
-                        arrowSize={7}
-                        position='left'
-                    >
-                        <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
+                    <CTooltip label='stores' withArrow color='#383838' arrowSize={7} position='left'>
+                        <CActionIcon
+                            onClick={() => scrollToSection('store_list')}
+                            size={'lg'}
+                            className='text-gray-400'
+                            variant='transparent'
+                            color='dark'
+                        >
                             <IconBuildingStore />
                         </CActionIcon>
                     </CTooltip>
 
                     <CTooltip label='properties' withArrow color='#383838' arrowSize={7} position='left'>
-                        <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
+                        <CActionIcon
+                            onClick={() => scrollToSection('product_properties_list')}
+                            size={'lg'}
+                            className='text-gray-400'
+                            variant='transparent'
+                            color='dark'
+                        >
                             <IconProgressAlert />
                         </CActionIcon>
                     </CTooltip>
