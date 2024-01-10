@@ -7,7 +7,7 @@ import { CButton } from '@atoms/Button'
 const ProductDetailStores: FC = () => {
     return (
         <section id='store_list'>
-            <h2 className='text-lg font-medium'>Stores</h2>
+            <p className='text-lg font-medium'>Stores</p>
             <ul className='flex flex-col gap-y-4 mt-4'>
                 {[1, 2, 3, 4].map((e) => (
                     <li key={e} className='p-4 flex items-center gap-x-4 justify-between bg-white'>

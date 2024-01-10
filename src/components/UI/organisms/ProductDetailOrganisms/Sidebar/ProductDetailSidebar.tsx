@@ -68,7 +68,13 @@ const ProductDetailSidebar: FC = () => {
                     </CTooltip>
 
                     <CTooltip label='comments' withArrow color='#383838' arrowSize={7} position='left'>
-                        <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
+                        <CActionIcon
+                            onClick={() => scrollToSection('comment-list')}
+                            size={'lg'}
+                            className='text-gray-400'
+                            variant='transparent'
+                            color='dark'
+                        >
                             <IconMessage />
                         </CActionIcon>
                     </CTooltip>

@@ -1,6 +1,7 @@
 import { type FC } from 'react'
 
 import {
+    ProductComments,
     ProductDetail,
     ProductDetailSidebar,
     ProductDetailStores,
@@ -19,6 +20,9 @@ const ProductDetailTemplate: FC = () => {
 
                 {/* Properties */}
                 <ProductProperties />
+
+                {/* Comments */}
+                <ProductComments />
             </div>
 
             {/* sidebar */}
