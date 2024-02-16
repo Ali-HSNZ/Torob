@@ -12,7 +12,7 @@ import { CTextarea } from '@atoms/Textarea'
 import { type TCriticalAny } from '@core/types/critical-any'
 import { getTextWidth } from '@core/utils/common/get-text-width'
 import { scrollToSection } from '@core/utils/common/scrollToSection'
-
+// import s from ''
 const ProductComments = () => {
     const [senderInfo, setSenderInfo] = useState<TCriticalAny>()
 
@@ -39,18 +39,13 @@ const ProductComments = () => {
             <div className='flex flex-col gap-y-4'>
                 {STATIC_PRODUCT_DETAIL.comments.map((comment) => (
                     <div key={comment.id} className='mt-4 flex justify-center gap-4'>
-                        <Avatar
-                            variant='filled'
-                            radius='xl'
-                            size='lg'
-                            src='https://qto.dornicaapi.ir/storage/admin/dummyAvatar3_1702286597.png'
-                        />
+                        <Avatar variant='filled' radius='xl' size='lg' src='@public/images/user-avatar.png' />
 
                         <div className='w-full flex flex-col items-end'>
                             <p className='w-full p-4 mt-6 bg-white '>{comment.description}</p>
                             <div className='w-full flex items-center justify-between '>
                                 <div className='flex text-sm  gap-x-2'>
-                                    <div className='flex gap-x-1'>
+                                    <div className='flex ygap-x-1'>
                                         <p className='font-medium'>{comment.user.first_name}</p>
                                         <p className='font-medium'>{comment.user.last_name}</p>
                                     </div>
@@ -107,7 +102,7 @@ const ProductComments = () => {
                         }}
                         rows={9}
                         minRows={9}
-                        label='Description'
+                        label='description:'
                     />
                 </div>
                 <CButton variant='light'>Send</CButton>
