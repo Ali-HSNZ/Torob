@@ -1,5 +1,6 @@
 import { type FC } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useDisclosure, useElementSize } from '@mantine/hooks'
 import { IconMenu2 } from '@tabler/icons-react'
 import { IconSearch } from '@tabler/icons-react'
@@ -34,18 +35,20 @@ const HeaderWithSearchbar: FC = () => {
                             <IconMenu2 className='text-gray-700' />
                         </CButton>
                         {/* Torob Logo */}
-                        <figure className='relative w-[40px] h-[35px]'>
-                            <Image
-                                alt='Torob logo'
-                                priority
-                                className='h-full object-cover w-auto'
-                                fill
-                                src={'https://torob.com/static/images/torob_logo.svg'}
-                            />
-                        </figure>
+                        <Link href={'/'} className='flex items-center'>
+                            <figure className='relative w-[40px] h-[35px]'>
+                                <Image
+                                    alt='Torob logo'
+                                    priority
+                                    className='h-full object-cover w-auto'
+                                    fill
+                                    src={'https://torob.com/static/images/torob_logo.svg'}
+                                />
+                            </figure>
 
-                        {/* Torob Title */}
-                        <h3 className='text-2xl hidden sm:block text-red-500 font-bold'>Torob</h3>
+                            {/* Torob Title */}
+                            <h3 className='text-2xl hidden sm:block text-red-500 font-bold'>Torob</h3>
+                        </Link>
                     </div>
 
                     {/* Search Input */}

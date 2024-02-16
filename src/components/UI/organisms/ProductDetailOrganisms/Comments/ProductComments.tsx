@@ -41,7 +41,13 @@ const ProductComments = () => {
             <div className='flex flex-col gap-y-4'>
                 {STATIC_PRODUCT_DETAIL.comments.map((comment) => (
                     <div key={comment.id} className='mt-4 flex justify-center gap-4'>
-                        <Avatar variant='filled' radius='xl' size='lg' className='object-cover aspect-square' src={avatar.src} />
+                        <Avatar
+                            variant='filled'
+                            radius='xl'
+                            size='lg'
+                            className='object-cover aspect-square'
+                            src={avatar.src}
+                        />
 
                         <div className='w-full flex flex-col items-end'>
                             <p className='w-full p-4 mt-6 bg-white '>{comment.description}</p>
