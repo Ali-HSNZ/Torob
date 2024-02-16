@@ -2,7 +2,7 @@
 
 import { type FC } from 'react'
 import { useWindowScroll } from '@mantine/hooks'
-import { IconChevronUp, IconHeart, IconQuestionMark, IconShare } from '@tabler/icons-react'
+import { IconChevronUp, IconHeart, IconShare } from '@tabler/icons-react'
 import { IconBell, IconBuildingStore, IconMessage, IconProgressAlert } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
@@ -76,12 +76,6 @@ const ProductDetailSidebar: FC = () => {
                             color='dark'
                         >
                             <IconMessage />
-                        </CActionIcon>
-                    </CTooltip>
-
-                    <CTooltip label='questions' withArrow color='#383838' arrowSize={7} position='left'>
-                        <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
-                            <IconQuestionMark />
                         </CActionIcon>
                     </CTooltip>
                 </div>
