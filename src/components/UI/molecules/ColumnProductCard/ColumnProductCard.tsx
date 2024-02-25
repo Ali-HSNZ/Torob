@@ -45,7 +45,7 @@ const ColumnProductCard: FC<IColumnProductCardProps> = ({ product }) => {
                         />
 
                         {/* price */}
-                        <p className='text-xs mt-4 text-gray-500  font-bold'>From ${product.price}</p>
+                        <p className='text-xs mt-4 text-gray-500 font-bold'>From ${product.price}</p>
 
                         <div className='flex mt-3 justify-between items-center'>
                             {/* store count */}

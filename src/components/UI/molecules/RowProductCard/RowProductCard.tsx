@@ -6,6 +6,7 @@ import { IconShare } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
+import { CRating } from '@atoms/Rating'
 
 import { Routes } from '@core/constants/routes'
 import { textToSlug } from '@core/utils/common/textToSlug'
@@ -36,11 +37,12 @@ const RowProductCard: FC<IRowProductCardProps> = ({ product }) => {
 
                         <div className='w-full mt-2'>
                             {/* price */}
-                            <p className='text-xs text-gray-500  font-bold'>From ${product.price}</p>
+                            <p className='text-xs text-gray-500 font-bold'>From ${product.price}</p>
 
                             {/* store count */}
                             <p className='text-sm text-gray-400 mt-1 font-medium'>in {product.storeCount} store</p>
                         </div>
+                        <CRating className='mt-2' readOnly value={1.5} fractions={2} />
                     </div>
                 </Link>
             </div>
