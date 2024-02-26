@@ -8,7 +8,8 @@ import { CButton } from '@atoms/Button'
 const ProductDetailStores: FC = () => {
     return (
         <section id='store_list'>
-            <p className='text-lg font-medium'>Stores</p>
+            <p className='text-base font-medium'>Stores</p>
+
             <ul className='flex flex-col gap-y-4 mt-4'>
                 {[1, 2, 3, 4].map((e) => (
                     <li
@@ -19,7 +20,7 @@ const ProductDetailStores: FC = () => {
                             <div className='flex gap-2'>
                                 <IconBuildingStore className='shrink-0' stroke={1} />
                                 <div className='flex flex-col gap-y-1 items-start'>
-                                    <p className='font-medium text-lg'>Atlas</p>
+                                    <p className='font-medium text-sm'>Atlas</p>
                                     <div className='flex gap-x-1'>
                                         <div className='text-xs flex gap-x-1 font-medium text-gray-500'>
                                             <p className='text-yellow-600'>50%</p>
@@ -34,8 +35,8 @@ const ProductDetailStores: FC = () => {
                                 </div>
                             </div>
 
-                            <div className='flex gap-2 underline underline-offset-[6px] text-sm h-full md:justify-end pb-1 xl:pb-0 xl:justify-start items-end xl:items-center '>
-                                <p>sent in 3 working days</p>
+                            <div className='flex gap-2 underline underline-offset-[6px] text-sm h-full md:justify-end  xl:justify-start items-end xl:items-center '>
+                                <p className='pb-1.5'>sent in 3 working days</p>
                                 <IconTruckDelivery stroke={1} />
                             </div>
 
