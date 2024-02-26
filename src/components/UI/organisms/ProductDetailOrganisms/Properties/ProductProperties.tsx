@@ -3,9 +3,9 @@ import { type FC } from 'react'
 const ProductProperties: FC = () => {
     return (
         <section id='product_properties_list'>
-            <h2 className='text-lg font-medium'>Properties</h2>
+            <h2 className='text-base font-medium'>Properties</h2>
 
-            <div className='mt-4 grid gap-2'>
+            <div className='mt-4 text-sm grid gap-2'>
                 <div className='w-full grid grid-cols-2'>
                     <div className='w-full p-4 border border-gray-100 border-r-0 bg-gray-50'>weight</div>
                     <div className='w-full p-4 bg-white'>2.320</div>
