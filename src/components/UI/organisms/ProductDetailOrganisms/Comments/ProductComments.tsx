@@ -36,11 +36,11 @@ const ProductComments = () => {
 
     return (
         <section id='comment-list'>
-            <p className='text-lg font-medium'>Comments</p>
+            <p className='text-base font-medium'>Comments</p>
 
             <div className='flex flex-col gap-y-4'>
                 {STATIC_PRODUCT_DETAIL.comments.map((comment) => (
-                    <div key={comment.id} className='mt-4 flex justify-center gap-4'>
+                    <div key={comment.id} className='mt-4 flex flex-col sm:flex-row justify-center '>
                         <Avatar
                             variant='filled'
                             radius='xl'
@@ -50,9 +50,11 @@ const ProductComments = () => {
                         />
 
                         <div className='w-full flex flex-col items-end'>
-                            <p className='w-full p-4 mt-6 bg-white '>{comment.description}</p>
-                            <div className='w-full flex items-center justify-between '>
-                                <div className='flex text-sm  gap-x-2'>
+                            <p className='w-full  text-sm p-4 sm:mt-6 rounded-xl sm:rounded-tl-none border bg-white '>
+                                {comment.description}
+                            </p>
+                            <div className='w-full text-sm flex items-center justify-between mt-2'>
+                                <div className='flex flex-col sm:flex-row gap-1'>
                                     <div className='flex gap-x-1'>
                                         <p className='font-medium'>{comment.user.first_name}</p>
                                         <p className='font-medium'>{comment.user.last_name}</p>
@@ -65,8 +67,8 @@ const ProductComments = () => {
                                         setSenderInfo(comment.user)
                                         scrollToSection('comment-description-textarea')
                                     }}
-                                    className='mt-4'
                                     variant='subtle'
+                                    className='text-sm'
                                 >
                                     Reply
                                 </CButton>
