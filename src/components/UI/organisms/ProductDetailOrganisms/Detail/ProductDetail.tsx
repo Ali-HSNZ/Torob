@@ -14,8 +14,8 @@ const ProductDetail: FC = () => {
 
     return (
         <section className='w-full bg-white p-4 '>
-            <div className='w-full flex gap-x-4'>
-                <div className='flex h-60 gap-x-4 '>
+            <div className='w-full flex flex-col xl:flex-row gap-x-4'>
+                <div className='flex flex-row justify-center gap-x-4 '>
                     <div className='flex flex-col gap-y-4'>
                         <figure className='w-12 h-12 border rounded-md text-center relative'>
                             <Image fill src={STATIC_PRODUCT_DETAIL.image_url} alt={STATIC_PRODUCT_DETAIL.title} />
@@ -29,7 +29,7 @@ const ProductDetail: FC = () => {
                             <IconDots stroke={2.4} />
                         </CButton>
                     </div>
-                    <figure className='h-full w-56 e relative'>
+                    <figure className='w-56 h-56 relative'>
                         <Image
                             className='object-contain'
                             fill
@@ -112,7 +112,7 @@ const ProductDetail: FC = () => {
                 </div>
             </div>
 
-            <p className='font-semibold'>Description:</p>
+            <p className='font-semibold mt-4 xl:mt-0'>Description:</p>
             <span className='text-sm'>{STATIC_PRODUCT_DETAIL.description}</span>
         </section>
     )

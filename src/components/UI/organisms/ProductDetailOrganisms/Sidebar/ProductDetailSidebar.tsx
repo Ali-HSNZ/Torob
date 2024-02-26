@@ -18,7 +18,7 @@ const ProductDetailSidebar: FC = () => {
     }
 
     return (
-        <div className='sticky top-0  bg-white h-screen p-4 gap-y-4 flex justify-start flex-col items-center'>
+        <div className='hidden sm:flex sticky  top-0  bg-white h-screen p-4 gap-y-4  justify-start flex-col items-center'>
             {/* Share */}
             <CTooltip label='Share' withArrow color='#383838' arrowSize={7} position='left'>
                 <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
