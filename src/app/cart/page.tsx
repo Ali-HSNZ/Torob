@@ -1,6 +1,6 @@
 import { type FC } from 'react'
 
-import CartsTemplate from '@templates/CartsTemplate/CartsTemplate'
+import { CartsTemplate } from '@templates/CartsTemplate'
 
 const page: FC = () => {
     return <CartsTemplate />
