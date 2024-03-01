@@ -5,7 +5,7 @@ import { CTextInput } from '@atoms/TextInput'
 
 const CartSummary: FC = () => {
     return (
-        <div className='py-4 flex flex-col gap-4 flex-1'>
+        <div className='lg:py-4 flex flex-col gap-4 flex-1'>
             <p className='text-base font-bold'>Summary</p>
 
             <hr />

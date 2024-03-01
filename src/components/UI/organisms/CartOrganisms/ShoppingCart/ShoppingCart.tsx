@@ -10,15 +10,16 @@ const ShoppingCart: FC = () => {
     const [counter, setCounter] = useState(1)
 
     return (
-        <div className='col-span-2 bg-white border border-gray-100 rounded-l-xl overflow-hidden p-4 flex overflow-y-auto h-full flex-col gap-4 flex-1'>
-            <p className='text-base font-bold'>Shopping Cart</p>
+        <div className='lg:col-span-2 bg-white border border-gray-100 rounded-l-xl overflow-hidden pb-4 px-4 flex overflow-y-auto h-full flex-col gap-4 flex-1'>
+            <div className='flex flex-col z-10 pt-4 gap-4 sticky top-0 bg-white'>
+                <p className='text-base font-bold'>Shopping Cart</p>
+                <hr />
+            </div>
 
-            <hr />
-
-            {[0, 1, 2, 3, 4].map((e) => (
+            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((e) => (
                 <div key={e} className='flex items-center'>
-                    <div className='grid  grid-cols-8 w-full gap-4 items-center'>
-                        <div className='flex  col-span-6 gap-x-4 items-center'>
+                    <div className='grid  lg:grid-cols-8 w-full gap-4 items-center'>
+                        <div className='flex col-span-6 gap-x-4 items-center'>
                             <div className='relative shrink-0 h-16 w-16'>
                                 <Image
                                     src={product_image.src}
