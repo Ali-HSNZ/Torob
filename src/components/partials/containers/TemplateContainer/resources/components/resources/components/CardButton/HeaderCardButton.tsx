@@ -9,7 +9,7 @@ const HeaderCardButton: FC = () => {
         <CActionIcon
             size={'auto'}
             variant='white'
-            href={'cart'}
+            href={'/cart'}
             color='dark'
             component={Link}
             className='rounded-md px-3 py-1.5 flex gap-x-2 border border-gray-700 text-sm font-medium '
