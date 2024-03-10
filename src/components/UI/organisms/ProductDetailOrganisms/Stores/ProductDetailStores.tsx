@@ -5,7 +5,9 @@ import { IconShoppingBag } from '@tabler/icons-react'
 
 import { CButton } from '@atoms/Button'
 
-const ProductDetailStores: FC = () => {
+import { type IProductDetailStoresProps } from './resources'
+
+const ProductDetailStores: FC<IProductDetailStoresProps> = () => {
     return (
         <section id='store_list'>
             <p className='text-base font-medium'>Stores</p>

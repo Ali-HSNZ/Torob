@@ -1,21 +1,25 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { type FC, useMemo, useState } from 'react'
 import { Avatar } from '@mantine/core'
-import { STATIC_PRODUCT_DETAIL } from '..'
 import { IconX } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
 import { CTextarea } from '@atoms/Textarea'
 
+import { STATIC_PRODUCTS_DATA } from '@core/constants/data/constants/products'
 import { type TCriticalAny } from '@core/types/critical-any'
 import { getTextWidth } from '@core/utils/common/get-text-width'
 import { scrollToSection } from '@core/utils/common/scrollToSection'
 
 import avatar from '@public/images/user-avatar.png'
 
-const ProductComments = () => {
+import { type IProductCommentsProps } from './resources'
+
+const ProductComments: FC<IProductCommentsProps> = ({ productCode }) => {
+    const product = STATIC_PRODUCTS_DATA.find((e) => e.code === productCode)
+
     const [senderInfo, setSenderInfo] = useState<TCriticalAny>()
 
     const senderName = useMemo(() => {
@@ -39,7 +43,7 @@ const ProductComments = () => {
             <p className='text-base font-medium'>Comments</p>
 
             <div className='flex flex-col gap-y-4'>
-                {STATIC_PRODUCT_DETAIL.comments.map((comment) => (
+                {product?.comments.map((comment) => (
                     <div key={comment.id} className='mt-4 flex flex-col sm:flex-row justify-center '>
                         <Avatar
                             variant='filled'

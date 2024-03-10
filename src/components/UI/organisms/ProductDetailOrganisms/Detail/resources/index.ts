@@ -1,3 +1,3 @@
-import STATIC_PRODUCT_DETAIL from './data/static-data.json'
+import { type IProductDetailProps } from './types/type'
 
-export { STATIC_PRODUCT_DETAIL }
+export { type IProductDetailProps }

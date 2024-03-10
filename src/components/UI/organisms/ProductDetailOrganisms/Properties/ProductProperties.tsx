@@ -1,6 +1,8 @@
 import { type FC } from 'react'
 
-const ProductProperties: FC = () => {
+import { type IProductPropertiesProps } from './resources'
+
+const ProductProperties: FC<IProductPropertiesProps> = () => {
     return (
         <section id='product_properties_list'>
             <h2 className='text-base font-medium'>Properties</h2>

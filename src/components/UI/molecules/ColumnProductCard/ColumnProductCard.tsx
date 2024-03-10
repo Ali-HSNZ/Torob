@@ -17,7 +17,7 @@ const ColumnProductCard: FC<IColumnProductCardProps> = ({ product }) => {
     return (
         <section className='bg-white flex flex-col justify-between items-start shadow-sm h-auto w-full p-4'>
             {/* image */}
-            <Link className='flex flex-col' href={Routes.ProductDetail(textToSlug(product.title))}>
+            <Link className='flex flex-col' href={Routes.ProductDetail(textToSlug(product.code))}>
                 <div className=' w-full flex justify-center items-center '>
                     <figure className='h-28 w-28 relative '>
                         <Image

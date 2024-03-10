@@ -30,7 +30,7 @@ const RowProductCard: FC<IRowProductCardProps> = ({ product }) => {
                     </figure>
                 </div>
 
-                <Link href={Routes.ProductDetail(textToSlug(product.title))} className='w-full flex flex-col gap-y-2'>
+                <Link href={Routes.ProductDetail(textToSlug(product.code))} className='w-full flex flex-col gap-y-2'>
                     <div className='w-full h-full flex justify-between flex-col '>
                         {/* name */}
                         <p className='text-sm text-gray-700 font-bold line-clamp-3'>{product.title}</p>

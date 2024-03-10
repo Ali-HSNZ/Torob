@@ -4,6 +4,7 @@ type TProductType = {
     price: number
     storeCount: number
     image: string
+    code: string
 }
 
 interface IRowProductCardProps {
