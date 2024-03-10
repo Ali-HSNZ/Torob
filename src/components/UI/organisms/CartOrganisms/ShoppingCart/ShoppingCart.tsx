@@ -9,10 +9,16 @@ const ShoppingCart: FC = () => {
                 <p className='text-base font-bold'>Shopping Cart</p>
                 <hr />
             </div>
-
-            {STATIC_SHOPPING_CART_DATA.map((product) => (
-                <ShoppingCartItem key={product.id} product={product} />
-            ))}
+            <div className='flex flex-col '>
+                {STATIC_SHOPPING_CART_DATA.map((product, index) => (
+                    <div key={product.id} className=''>
+                        {index !== 0 && <hr />}
+                        <div className={`${index === 0 ? 'pb-4' : 'py-4'}`}>
+                            <ShoppingCartItem product={product} />
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
