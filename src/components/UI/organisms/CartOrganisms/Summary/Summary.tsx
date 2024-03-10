@@ -37,7 +37,7 @@ const CartSummary: FC = () => {
                         <p className='font-bold text-base'> $137.00</p>
                     </div>
 
-                    <CButton fullWidth className='font-bold'>
+                    <CButton h={45} fullWidth className='font-bold'>
                         CHECKOUT
                     </CButton>
                 </div>
