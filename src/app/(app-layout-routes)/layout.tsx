@@ -1,11 +1,11 @@
 import { type FC } from 'react'
 
-import { SearchProductsLayout } from '@partials/layouts/SearchProductsLayout'
+import { AppLayout } from '@partials/layouts/AppLayout'
 
 import { type ILayoutProps } from '@core/types/layouts/layouts.type'
 
 const layout: FC<ILayoutProps> = ({ children }) => {
-    return <SearchProductsLayout>{children}</SearchProductsLayout>
+    return <AppLayout>{children}</AppLayout>
 }
 
 export default layout

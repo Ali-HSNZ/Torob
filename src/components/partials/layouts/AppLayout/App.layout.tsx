@@ -4,8 +4,8 @@ import { TemplateContainer } from '@partials/containers/TemplateContainer'
 
 import { type ILayoutProps } from '@core/types/layouts/layouts.type'
 
-const SearchProductsLayout: FC<ILayoutProps> = ({ children }) => {
+const AppLayout: FC<ILayoutProps> = ({ children }) => {
     return <TemplateContainer withSearchbar>{children}</TemplateContainer>
 }
 
-export default SearchProductsLayout
+export default AppLayout
