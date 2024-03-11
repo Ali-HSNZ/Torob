@@ -6,7 +6,6 @@ import { IconAlertCircleFilled, IconStarFilled } from '@tabler/icons-react'
 import { IconDots } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
-import { CButton } from '@atoms/Button'
 
 import { STATIC_PRODUCTS_DATA } from '@core/constants/data/constants/products'
 
@@ -22,17 +21,27 @@ const ProductDetail: FC<IProductDetailProps> = ({ productCode }) => {
                 <div className='w-full flex flex-col xl:flex-row gap-x-4'>
                     <div className='flex flex-row justify-center gap-x-4 '>
                         <div className='flex flex-col gap-y-4'>
-                            <figure className='w-12 h-12 border rounded-md text-center relative'>
-                                <Image fill src={product.image} alt={product.title} />
-                            </figure>
+                            <div className='border p-1 cursor-pointer hover:border-gray-400 rounded-md duration-100'>
+                                <figure className='w-12 h-12 border rounded-md text-center relative'>
+                                    <Image fill src={product.image} alt={product.title} />
+                                </figure>
+                            </div>
 
-                            <figure className='w-12 h-12 border rounded-md text-center relative'>
-                                <Image fill src={product.image} alt={product.title} />
-                            </figure>
+                            <div className='border p-1 cursor-pointer hover:border-gray-400 rounded-md duration-100'>
+                                <figure className='w-12 h-12 relative'>
+                                    <Image fill src={product.image} alt={product.title} />
+                                </figure>
+                            </div>
 
-                            <CButton color='dark' variant='outline' className='w-12 h-12'>
-                                <IconDots stroke={2.4} />
-                            </CButton>
+                            <div className='relative border p-1 cursor-pointer hover:border-gray-400 rounded-md duration-100'>
+                                <figure className='w-12 h-12 relative blur-sm'>
+                                    <Image fill src={product.image} alt={product.title} />
+                                </figure>
+                                <IconDots
+                                    className='text-gray-700 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'
+                                    stroke={2.4}
+                                />
+                            </div>
                         </div>
                         <figure className='w-64 h-64 relative'>
                             <Image className='object-contain' fill src={product.image} alt={product.title} />
