@@ -25,23 +25,23 @@ const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl
 
             <div className='flex flex-row justify-center gap-x-4 '>
                 <div className='flex flex-col gap-y-4'>
-                    {images.slice(0, 3).map((image, index) => (
+                    {images.slice(0, 4).map((image, index) => (
                         <div
                             key={image.id}
                             onClick={() => {
                                 open()
-                                setActiveSlideIndex(index === 2 ? 0 : index)
+                                setActiveSlideIndex(index === 3 ? 0 : index)
                             }}
                             className='border-2 p-1 relative cursor-pointer hover:border-red-400 rounded-md duration-100'
                         >
                             <figure
                                 className={`w-12 h-12 select-none rounded-md text-center relative ${
-                                    index === 2 ? 'blur-sm' : ''
+                                    index === 3 ? 'blur-sm' : ''
                                 }`}
                             >
                                 <Image fill src={image.url} alt={productTitle} className='' />
                             </figure>
-                            {index === 2 && (
+                            {index === 3 && (
                                 <IconDots
                                     className='text-gray-700 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'
                                     stroke={2.4}
@@ -55,7 +55,7 @@ const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl
                         open()
                         setActiveSlideIndex(0)
                     }}
-                    className='w-64 h-64 relative cursor-pointer'
+                    className='w-80 h-80 relative cursor-pointer'
                 >
                     <Image className='object-contain' fill src={imageUrl} alt={productTitle} />
                 </figure>

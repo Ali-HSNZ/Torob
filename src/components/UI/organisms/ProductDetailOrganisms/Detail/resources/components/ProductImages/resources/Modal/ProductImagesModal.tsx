@@ -46,13 +46,13 @@ const ProductImagesModal: FC<IProductImagesModalProps> = ({ productTitle, open, 
 
             <div className='w-full mt-4 flex justify-between items-start'>
                 {/* Dots */}
-                <div className='w-full flex flex-wrap gap-2 h-full'>
+                <div className='w-1/2 flex flex-wrap gap-2 h-full'>
                     {images.map((image, index) => (
                         <div
                             onClick={() => setActiveSlide(index)}
                             key={image.id}
                             className={`w-fit border-2 p-1 relative cursor-pointer rounded-md duration-100 ${
-                                index === activeSlide ? 'border-red-400' : 'hover:border-red-300 '
+                                index === activeSlide ? 'border-red-400' : 'hover:border-red-200'
                             }`}
                         >
                             <figure className={`w-12 h-12 select-none rounded-md text-center relative`}>
@@ -64,12 +64,12 @@ const ProductImagesModal: FC<IProductImagesModalProps> = ({ productTitle, open, 
 
                 {/* Sliders Image */}
                 <div className='w-1/2'>
-                    <CKeenSlider height={400} activeSlide={activeSlide} setActiveSlide={setActiveSlide}>
+                    <CKeenSlider height={500} activeSlide={activeSlide} setActiveSlide={setActiveSlide}>
                         {images.map((image) => (
                             <figure
                                 key={image.id}
                                 onClick={open}
-                                className='keen-slider__slide h-96 !w-[200px]  shrink-0 relative  flex items-center justify-center'
+                                className='keen-slider__slide h-[500px] !w-[300px] shrink-0 relative flex items-center justify-center'
                             >
                                 <Image className='object-contain' fill src={image.url} alt={productTitle} />
                             </figure>
