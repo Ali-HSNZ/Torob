@@ -44,7 +44,7 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: 'm.media-amazon.com',
+                hostname: 'dkstatics-public.digikala.com',
                 port: '',
                 pathname: '/**',
             },
