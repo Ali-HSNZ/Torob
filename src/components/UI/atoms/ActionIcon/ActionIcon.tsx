@@ -3,7 +3,7 @@ import { ActionIcon, type ActionIconProps, createPolymorphicComponent } from '@m
 
 const CustomActionIcon = forwardRef<HTMLButtonElement, ActionIconProps>(({ children, className = '', ...res }, ref) => {
     return (
-        <ActionIcon className={`focus:outline-none ${className}`} {...res} ref={ref}>
+        <ActionIcon size={'auto'} className={`focus:outline-none ${className}`} {...res} ref={ref}>
             {children}
         </ActionIcon>
     )

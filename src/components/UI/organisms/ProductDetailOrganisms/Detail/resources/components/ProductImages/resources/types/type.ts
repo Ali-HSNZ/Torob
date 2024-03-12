@@ -7,4 +7,4 @@ interface IProductImagesProps {
     imageUrl: string
 }
 
-export type { IProductImagesProps }
+export default IProductImagesProps
