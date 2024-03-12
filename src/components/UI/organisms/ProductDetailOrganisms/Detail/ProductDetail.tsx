@@ -1,15 +1,13 @@
 'use client'
 
 import { type FC, useState } from 'react'
-import Image from 'next/image'
 import { IconAlertCircleFilled, IconStarFilled } from '@tabler/icons-react'
-import { IconDots } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 
 import { STATIC_PRODUCTS_DATA } from '@core/constants/data/constants/products'
 
-import { type IProductDetailProps } from './resources'
+import { type IProductDetailProps, ProductImages } from './resources'
 
 const ProductDetail: FC<IProductDetailProps> = ({ productCode }) => {
     const product = STATIC_PRODUCTS_DATA.find((e) => e.code === productCode)
@@ -19,35 +17,7 @@ const ProductDetail: FC<IProductDetailProps> = ({ productCode }) => {
         return (
             <section className='w-full bg-white p-4 '>
                 <div className='w-full flex flex-col xl:flex-row gap-x-4'>
-                    <div className='flex flex-row justify-center gap-x-4 '>
-                        <div className='flex flex-col gap-y-4'>
-                            <div className='border p-1 cursor-pointer hover:border-gray-400 rounded-md duration-100'>
-                                <figure className='w-12 h-12 border rounded-md text-center relative'>
-                                    <Image fill src={product.image} alt={product.title} />
-                                </figure>
-                            </div>
-
-                            <div className='border p-1 cursor-pointer hover:border-gray-400 rounded-md duration-100'>
-                                <figure className='w-12 h-12 relative'>
-                                    <Image fill src={product.image} alt={product.title} />
-                                </figure>
-                            </div>
-
-                            <div className='relative border p-1 cursor-pointer hover:border-gray-400 rounded-md duration-100'>
-                                <figure className='w-12 h-12 relative blur-sm'>
-                                    <Image fill src={product.image} alt={product.title} />
-                                </figure>
-                                <IconDots
-                                    className='text-gray-700 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'
-                                    stroke={2.4}
-                                />
-                            </div>
-                        </div>
-                        <figure className='w-64 h-64 relative'>
-                            <Image className='object-contain' fill src={product.image} alt={product.title} />
-                        </figure>
-                    </div>
-
+                    <ProductImages imageUrl={product.image} images={product.images} productTitle={product.title} />
                     <div className='flex flex-col gap-y-4'>
                         <h1 className='font-semibold text-sm'>{product.title}</h1>
 
