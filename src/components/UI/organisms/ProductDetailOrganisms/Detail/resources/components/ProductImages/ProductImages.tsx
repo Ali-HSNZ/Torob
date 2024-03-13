@@ -12,11 +12,10 @@ const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl
 
     return (
         <>
-            <Modal size={1000} centered opened={opened} onClose={close} withCloseButton={false}>
+            {/* modal for product image (gallary) */}
+            <Modal size={1200} centered opened={opened} onClose={close} withCloseButton={false}>
                 <ProductImagesModal
-                    key={0}
                     close={close}
-                    open={open}
                     productTitle={productTitle}
                     activeSlideIndex={activeSlideIndex}
                     images={images}
@@ -39,7 +38,14 @@ const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl
                                     index === 3 ? 'blur-sm' : ''
                                 }`}
                             >
-                                <Image fill src={image.url} alt={productTitle} className='' />
+                                <Image
+                                    sizes='(max-width: 640px) 40vw, (min-width: 640px) 60vw'
+                                    fill
+                                    src={image.url}
+                                    alt={productTitle}
+                                    priority
+                                    className=''
+                                />
                             </figure>
                             {index === 3 && (
                                 <IconDots
@@ -57,7 +63,7 @@ const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl
                     }}
                     className='w-80 h-80 relative cursor-pointer'
                 >
-                    <Image className='object-contain' fill src={imageUrl} alt={productTitle} />
+                    <Image sizes='80vw' className='object-contain' fill src={imageUrl} alt={productTitle} />
                 </figure>
             </div>
         </>

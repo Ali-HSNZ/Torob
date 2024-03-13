@@ -8,7 +8,7 @@ import { CActionIcon } from '@atoms/ActionIcon'
 
 import { type IProductImagesModalProps, type TProductImagesModalTabType } from './resources'
 
-const ProductImagesModal: FC<IProductImagesModalProps> = ({ productTitle, open, close, activeSlideIndex, images }) => {
+const ProductImagesModal: FC<IProductImagesModalProps> = ({ productTitle, close, activeSlideIndex, images }) => {
     const [tab, setTab] = useState<TProductImagesModalTabType>('original-images')
 
     const [activeSlide, setActiveSlide] = useState<number>(activeSlideIndex)
@@ -44,34 +44,51 @@ const ProductImagesModal: FC<IProductImagesModalProps> = ({ productTitle, open, 
                 </CActionIcon>
             </div>
 
-            <div className='w-full mt-4 flex justify-between items-start'>
-                {/* Dots */}
-                <div className='w-1/2 flex flex-wrap gap-2 h-full'>
+            <div className='w-full mt-4 flex flex-col gap-y-4 lg:flex-row justify-between items-start'>
+                {/* thumbnails */}
+                <div className='lg:w-1/2 flex flex-wrap gap-2 h-full'>
                     {images.map((image, index) => (
                         <div
                             onClick={() => setActiveSlide(index)}
                             key={image.id}
                             className={`w-fit border-2 p-1 relative cursor-pointer rounded-md duration-100 ${
-                                index === activeSlide ? 'border-red-400' : 'hover:border-red-200'
+                                index === activeSlide ? 'border-red-400' : 'sm:hover:border-red-200'
                             }`}
                         >
                             <figure className={`w-12 h-12 select-none rounded-md text-center relative`}>
-                                <Image fill src={image.url} alt={productTitle} className='' />
+                                <Image
+                                    blurDataURL={image.url}
+                                    placeholder='blur'
+                                    fill
+                                    src={image.url}
+                                    alt={productTitle}
+                                    sizes='(max-width: 640px) 40vw, (min-width: 640px) 60vw'
+                                    className=''
+                                    loading='lazy'
+                                />
                             </figure>
                         </div>
                     ))}
                 </div>
 
                 {/* Sliders Image */}
-                <div className='w-1/2'>
-                    <CKeenSlider height={500} activeSlide={activeSlide} setActiveSlide={setActiveSlide}>
+                <div className='w-full lg:w-1/2'>
+                    <CKeenSlider activeSlide={activeSlide} setActiveSlide={setActiveSlide}>
                         {images.map((image) => (
                             <figure
                                 key={image.id}
-                                onClick={open}
-                                className='keen-slider__slide h-[500px] !w-[300px] shrink-0 relative flex items-center justify-center'
+                                className={`keen-slider__slide h-[400px] lg:h-[550px] !w-[100%] shrink-0 relative flex items-center justify-center`}
                             >
-                                <Image className='object-contain' fill src={image.url} alt={productTitle} />
+                                <Image
+                                    sizes='80vw'
+                                    className='object-contain'
+                                    fill
+                                    placeholder={`data:image/${image.url}`}
+                                    blurDataURL={image.url}
+                                    src={image.url}
+                                    loading='lazy'
+                                    alt={productTitle}
+                                />
                             </figure>
                         ))}
                     </CKeenSlider>
