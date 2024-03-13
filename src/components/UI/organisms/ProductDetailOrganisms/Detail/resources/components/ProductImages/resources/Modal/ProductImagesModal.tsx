@@ -51,7 +51,7 @@ const ProductImagesModal: FC<IProductImagesModalProps> = ({ productTitle, close,
                         <div
                             onClick={() => setActiveSlide(index)}
                             key={image.id}
-                            className={`w-fit border-2 p-1 relative cursor-pointer rounded-md duration-100 ${
+                            className={`w-fit border-2 p-1 relative cursor-pointer rounded-md duration-300 ${
                                 index === activeSlide ? 'border-red-400' : 'sm:hover:border-red-200'
                             }`}
                         >
