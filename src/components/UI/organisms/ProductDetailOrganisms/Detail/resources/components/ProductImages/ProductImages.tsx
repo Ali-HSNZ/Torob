@@ -6,19 +6,20 @@ import { IconDots } from '@tabler/icons-react'
 
 import { type IProductImagesProps, ProductImagesModal } from './resources'
 
-const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl }) => {
+const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl, picturesOfBuyers }) => {
     const [opened, { open, close }] = useDisclosure(false)
     const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0)
 
     return (
         <>
-            {/* modal for product image (gallary) */}
+            {/* modal for product image (gallery) */}
             <Modal size={1200} centered opened={opened} onClose={close} withCloseButton={false}>
                 <ProductImagesModal
                     close={close}
                     productTitle={productTitle}
                     activeSlideIndex={activeSlideIndex}
                     images={images}
+                    picturesOfBuyers={picturesOfBuyers}
                 />
             </Modal>
 

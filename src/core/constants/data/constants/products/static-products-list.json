@@ -93,7 +93,46 @@
                 "url": "https://dkstatics-public.digikala.com/digikala-products/1174e3dd5cd7bbb11a4e23427621c114b7fbc75f_1705152758.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
             }
         ],
-        "code": "trb-4565675"
+        "code": "trb-4565675",
+        "picturesOfBuyers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-products/ff58d9edf3c7e5dda7b2e92e8022ca6916810d4a_1624799072.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/d70bff17c970b15cb9b80151410b01fd9cdc47e6_1624799074.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/67ec9e871c7a2b44f05ae021c53f15db3e95dea2_1624799075.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    },
+                    {
+                        "id": 2,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/76b37638d7da3182f3420b3188308fdbf242234b_1624799077.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    },
+                    {
+                        "id": 3,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/6864fb73e94e8a4ebf0543a8ee165f4850a18194_1624799078.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    },
+                    {
+                        "id": 4,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/b6763f08db98121f0cdad32e6509b12891b1eb16_1624799079.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ],
+                "moreDetail": {
+                    "body": "",
+                    "user": {
+                        "name": "",
+                        "lastName": ""
+                    },
+                    "isBuyer": true,
+                    "storeName": "",
+                    "like": 8,
+                    "disLike": 4
+                }
+            }
+        ]
     },
     {
         "id": 4,

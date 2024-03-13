@@ -1,14 +1,18 @@
+import { type TPicturesOfBuyersType } from '../../..'
+
 type TProductImagesModalTabType = 'original-images' | 'pictures-of-buyers'
 
-type TProductImageOriginalImagesTab = {
+type TProductImageModalTab = {
     id: number
     url: string
 }[]
+
 interface IProductImagesModalProps {
     productTitle: string
     close: () => void
     activeSlideIndex: number
-    images: TProductImageOriginalImagesTab
+    images: TProductImageModalTab
+    picturesOfBuyers: TPicturesOfBuyersType[] | undefined
 }
 
-export type { TProductImagesModalTabType, IProductImagesModalProps, TProductImageOriginalImagesTab }
+export type { TProductImagesModalTabType, IProductImagesModalProps, TProductImageModalTab }

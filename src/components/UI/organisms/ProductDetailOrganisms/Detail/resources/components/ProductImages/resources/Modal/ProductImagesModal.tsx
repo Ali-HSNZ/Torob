@@ -3,15 +3,23 @@ import { IconX } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 
-import { type IProductImagesModalProps, OriginalImagesTab, type TProductImagesModalTabType } from './resources'
+import {
+    type IProductImagesModalProps,
+    OriginalImagesTab,
+    PicturesOfBuyersTab,
+    type TProductImagesModalTabType,
+} from './resources'
 
-const ProductImagesModal: FC<IProductImagesModalProps> = ({ productTitle, close, activeSlideIndex, images }) => {
+const ProductImagesModal: FC<IProductImagesModalProps> = ({
+    productTitle,
+    close,
+    activeSlideIndex,
+    images,
+    picturesOfBuyers,
+}) => {
     const [tab, setTab] = useState<TProductImagesModalTabType>('original-images')
 
-    // const RenderTab = useMemo(() => {
-
-    // },[])
-
+    console.log('picturesOfBuyers: ', picturesOfBuyers)
     return (
         <section>
             {/* header */}
@@ -43,7 +51,12 @@ const ProductImagesModal: FC<IProductImagesModalProps> = ({ productTitle, close,
                 </CActionIcon>
             </div>
 
-            <OriginalImagesTab activeSlideIndex={activeSlideIndex} images={images} productTitle={productTitle} />
+            {tab === 'original-images' ? (
+                <OriginalImagesTab activeSlideIndex={activeSlideIndex} images={images} productTitle={productTitle} />
+            ) : (
+                <PicturesOfBuyersTab activeSlideIndex={activeSlideIndex} images={images} productTitle={productTitle} />
+            )}
+            {/* <PicturesOfBuyersTab activeSlideIndex={activeSlideIndex} images={images} productTitle={productTitle} /> */}
         </section>
     )
 }

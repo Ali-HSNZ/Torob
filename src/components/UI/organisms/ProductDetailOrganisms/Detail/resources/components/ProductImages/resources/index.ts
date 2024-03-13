@@ -1,4 +1,4 @@
 import { ProductImagesModal } from './Modal'
-import type IProductImagesProps from './types/type'
+import type { IProductImagesProps, TPicturesOfBuyersType } from './types/type'
 
-export { type IProductImagesProps, ProductImagesModal }
+export { type IProductImagesProps, type TPicturesOfBuyersType, ProductImagesModal }

@@ -3,10 +3,10 @@ import Image from 'next/image'
 
 import { CKeenSlider } from '@molecules/KeenSlider'
 
-import { type TProductImageOriginalImagesTab } from '../..'
+import { type TProductImageModalTab } from '../..'
 
 const OriginalImagesTab: FC<{
-    images: TProductImageOriginalImagesTab
+    images: TProductImageModalTab
     productTitle: string
     activeSlideIndex: number
 }> = ({ images, productTitle, activeSlideIndex }) => {
@@ -31,7 +31,7 @@ const OriginalImagesTab: FC<{
                                 fill
                                 src={image.url}
                                 alt={productTitle}
-                                sizes='(max-width: 640px) 40vw, (min-width: 640px) 60vw'
+                                sizes='(max-width: 640px) 40vw, (min-width: 640px) 50vw'
                                 className=''
                                 loading='lazy'
                             />

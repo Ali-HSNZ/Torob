@@ -17,7 +17,12 @@ const ProductDetail: FC<IProductDetailProps> = ({ productCode }) => {
         return (
             <section className='w-full bg-white p-4 '>
                 <div className='w-full flex flex-col xl:flex-row gap-x-4'>
-                    <ProductImages imageUrl={product.image} images={product.images} productTitle={product.title} />
+                    <ProductImages
+                        picturesOfBuyers={product.picturesOfBuyers}
+                        imageUrl={product.image}
+                        images={product.images}
+                        productTitle={product.title}
+                    />
                     <div className='flex flex-col gap-y-4'>
                         <h1 className='font-semibold text-sm'>{product.title}</h1>
 

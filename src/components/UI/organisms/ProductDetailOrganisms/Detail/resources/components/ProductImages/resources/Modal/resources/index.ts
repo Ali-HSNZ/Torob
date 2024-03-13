@@ -1,9 +1,11 @@
-import { OriginalImagesTab } from './components/OriginalImages'
-import type { IProductImagesModalProps, TProductImageOriginalImagesTab, TProductImagesModalTabType } from './types/type'
+import { OriginalImagesTab } from './components/OriginalImagesTab'
+import { PicturesOfBuyersTab } from './components/PicturesOfBuyersTab'
+import type { IProductImagesModalProps, TProductImageModalTab, TProductImagesModalTabType } from './types/type'
 
 export {
     type TProductImagesModalTabType,
     type IProductImagesModalProps,
-    type TProductImageOriginalImagesTab,
+    type TProductImageModalTab,
     OriginalImagesTab,
+    PicturesOfBuyersTab,
 }
