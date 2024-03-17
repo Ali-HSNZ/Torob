@@ -6,7 +6,7 @@ import { IconDots } from '@tabler/icons-react'
 
 import { type IProductImagesProps, ProductImagesModal } from './resources'
 
-const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl, picturesOfBuyers }) => {
+const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl, productCode }) => {
     const [opened, { open, close }] = useDisclosure(false)
     const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0)
 
@@ -19,11 +19,12 @@ const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl
                     productTitle={productTitle}
                     activeSlideIndex={activeSlideIndex}
                     images={images}
-                    picturesOfBuyers={picturesOfBuyers}
+                    productCode={productCode}
                 />
             </Modal>
 
             <div className='flex flex-row justify-center gap-x-4 '>
+                {/* thumbnails */}
                 <div className='flex flex-col gap-y-4'>
                     {images.slice(0, 4).map((image, index) => (
                         <div
@@ -32,10 +33,10 @@ const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl
                                 open()
                                 setActiveSlideIndex(index === 3 ? 0 : index)
                             }}
-                            className='border-2 p-1 relative cursor-pointer hover:border-red-400 rounded-md duration-100'
+                            className='border-2 p-0.5 relative cursor-pointer rounded-[7px] hover:border-red-400 duration-100'
                         >
                             <figure
-                                className={`w-12 h-12 select-none rounded-md text-center relative ${
+                                className={`w-12 h-12 select-none rounded-[4px] overflow-hidden text-center relative ${
                                     index === 3 ? 'blur-sm' : ''
                                 }`}
                             >
