@@ -3,13 +3,9 @@ import Image from 'next/image'
 
 import { CKeenSlider } from '@molecules/KeenSlider'
 
-import { type TProductImageModalTab } from '../..'
+import { type IOriginalImagesTabProps } from './resources'
 
-const OriginalImagesTab: FC<{
-    images: TProductImageModalTab
-    productTitle: string
-    activeSlideIndex: number
-}> = ({ images, productTitle, activeSlideIndex }) => {
+const OriginalImagesTab: FC<IOriginalImagesTabProps> = ({ images, productTitle, activeSlideIndex }) => {
     const [activeSlide, setActiveSlide] = useState<number>(activeSlideIndex)
 
     return (
