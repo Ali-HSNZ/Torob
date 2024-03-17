@@ -97,39 +97,73 @@
         "picturesOfBuyers": [
             {
                 "id": 0,
-                "image": "https://dkstatics-public.digikala.com/digikala-products/ff58d9edf3c7e5dda7b2e92e8022ca6916810d4a_1624799072.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
                 "images": [
                     {
                         "id": 0,
-                        "url": "https://dkstatics-public.digikala.com/digikala-products/d70bff17c970b15cb9b80151410b01fd9cdc47e6_1624799074.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
                     },
                     {
                         "id": 1,
-                        "url": "https://dkstatics-public.digikala.com/digikala-products/67ec9e871c7a2b44f05ae021c53f15db3e95dea2_1624799075.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
-                    },
-                    {
-                        "id": 2,
-                        "url": "https://dkstatics-public.digikala.com/digikala-products/76b37638d7da3182f3420b3188308fdbf242234b_1624799077.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
-                    },
-                    {
-                        "id": 3,
-                        "url": "https://dkstatics-public.digikala.com/digikala-products/6864fb73e94e8a4ebf0543a8ee165f4850a18194_1624799078.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
-                    },
-                    {
-                        "id": 4,
-                        "url": "https://dkstatics-public.digikala.com/digikala-products/b6763f08db98121f0cdad32e6509b12891b1eb16_1624799079.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
                     }
                 ],
                 "moreDetail": {
-                    "body": "",
+                    "body": "درکل مانیتور خوبیه تنها مشکلش پایشه که از پلاستیک بی کیفیته.",
                     "user": {
-                        "name": "",
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "isBuyer": true,
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "body": "اینکه این مانیتور براتون با کیفیته یا نه بستگی به این داره که مانیتور قبلیتون چی بوده اگه مثل من مانیتور قبلیتون مانیتور باکیفیتی بوده باشه این مانیتور هرگز راضیتون نمیکنه! مانیتور قبلی من سامسونگ s24d390 بود و اصلا نمیتونم این مانیتور رو تحمل کنم ولی به هر حال کیفیتش زیاد بد نیست پیکسل سوخته اصلا نداشت. مشکلی که این مانیتور داره اصلا برای طراحی مناسب نیست رنگ هارو دقیق نشون نمیده رنگ تصویر رو مایل به سبز نشون میده که میتونید با display calibration ویندوز این سبزی رو کم کنید و رنگ نرمالتری داشته باشید. ایراد دیگه ای که داره اگه یه عکس ۵۰ درصد خاکستری درست کنید و این عکس رو روی صفحه حرکت بدین متوجه یه سری لکه و خطوط روی صفحه میشید که توی بازیها بیشتر قابل مشاهده هست و برای همین این مانیتور رو برای بازی هم توصیه نمیکنم چون ممکنه براتون آزاردهنده باشه. کاش این موارد رو کس دیگری اشاره کرده بود در اینصورت قطعا مانیتور دیگه ای رو انتخاب میکردم. موفق باشید!",
+                    "user": {
+                        "name": "Torob user",
                         "lastName": ""
                     },
                     "isBuyer": true,
-                    "storeName": "",
-                    "like": 8,
-                    "disLike": 4
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "body": "اینکه این مانیتور براتون با کیفیته یا نه بستگی به این داره که مانیتور قبلیتون چی بوده اگه مثل من مانیتور قبلیتون مانیتور باکیفیتی بوده باشه این مانیتور هرگز راضیتون نمیکنه! مانیتور قبلی من سامسونگ s24d390 بود و اصلا نمیتونم این مانیتور رو تحمل کنم ولی به هر حال کیفیتش زیاد بد نیست پیکسل سوخته اصلا نداشت. مشکلی که این مانیتور داره اصلا برای طراحی مناسب نیست رنگ هارو دقیق نشون نمیده رنگ تصویر رو مایل به سبز نشون میده که میتونید با display calibration ویندوز این سبزی رو کم کنید و رنگ نرمالتری داشته باشید. ایراد دیگه ای که داره اگه یه عکس ۵۰ درصد خاکستری درست کنید و این عکس رو روی صفحه حرکت بدین متوجه یه سری لکه و خطوط روی صفحه میشید که توی بازیها بیشتر قابل مشاهده هست و برای همین این مانیتور رو برای بازی هم توصیه نمیکنم چون ممکنه براتون آزاردهنده باشه. کاش این موارد رو کس دیگری اشاره کرده بود در اینصورت قطعا مانیتور دیگه ای رو انتخاب میکردم. موفق باشید!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "isBuyer": false,
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0
                 }
             }
         ]
