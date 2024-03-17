@@ -2,9 +2,9 @@ import { type ReactNode } from 'react'
 import { type KeenSliderOptions } from 'keen-slider'
 
 interface IExtraProps {
-    isLoop?: boolean
     children: ReactNode
     activeSlide?: number
+    isHiddenArrow?: boolean
     setActiveSlide?: (arg: number) => void
 }
 

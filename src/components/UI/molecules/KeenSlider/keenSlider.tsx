@@ -9,7 +9,7 @@ import 'keen-slider/keen-slider.min.css'
 
 import { type IKeenSliderProps } from './resources'
 
-const CustomKeenSlider: FC<IKeenSliderProps> = ({ children, isLoop, activeSlide, setActiveSlide, ...res }) => {
+const CustomKeenSlider: FC<IKeenSliderProps> = ({ children, isHiddenArrow, activeSlide, setActiveSlide, ...res }) => {
     const [loaded, setLoaded] = useState(false)
 
     // slider image height dependency
@@ -24,14 +24,12 @@ const CustomKeenSlider: FC<IKeenSliderProps> = ({ children, isLoop, activeSlide,
     const [sliderRef, instanceRef] = useKeenSlider(
         {
             initial: 0,
-            loop: isLoop,
             defaultAnimation: {
                 duration: 300,
             },
             created: () => {
                 setLoaded(true)
             },
-            drag: false,
             ...res,
         },
         [AdaptiveHeight]
@@ -48,7 +46,7 @@ const CustomKeenSlider: FC<IKeenSliderProps> = ({ children, isLoop, activeSlide,
             {children}
 
             {/* Arrows */}
-            {loaded && instanceRef.current && (
+            {loaded && !isHiddenArrow && instanceRef.current && (
                 <>
                     <div className={`absolute ${activeSlide === 0 ? 'hidden' : ''} left-4 top-1/2 -translate-y-1/2`}>
                         <CActionIcon
