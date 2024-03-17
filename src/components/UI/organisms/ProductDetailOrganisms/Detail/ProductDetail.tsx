@@ -22,6 +22,7 @@ const ProductDetail: FC<IProductDetailProps> = ({ productCode }) => {
                         imageUrl={product.image}
                         images={product.images}
                         productTitle={product.title}
+                        productCode={product.code}
                     />
                     <div className='flex flex-col gap-y-4'>
                         <h1 className='font-semibold text-sm'>{product.title}</h1>

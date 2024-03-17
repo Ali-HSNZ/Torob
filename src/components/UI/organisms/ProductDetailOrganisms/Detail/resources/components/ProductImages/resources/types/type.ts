@@ -26,6 +26,7 @@ interface IProductImagesProps {
     }[]
     imageUrl: string
     picturesOfBuyers: TPicturesOfBuyersType[] | undefined
+    productCode: string
 }
 
 export type { IProductImagesProps, TPicturesOfBuyersType }

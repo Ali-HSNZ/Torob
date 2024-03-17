@@ -15,11 +15,10 @@ const ProductImagesModal: FC<IProductImagesModalProps> = ({
     close,
     activeSlideIndex,
     images,
-    picturesOfBuyers,
+    productCode,
 }) => {
     const [tab, setTab] = useState<TProductImagesModalTabType>('original-images')
 
-    console.log('picturesOfBuyers: ', picturesOfBuyers)
     return (
         <section>
             {/* header */}
@@ -54,9 +53,8 @@ const ProductImagesModal: FC<IProductImagesModalProps> = ({
             {tab === 'original-images' ? (
                 <OriginalImagesTab activeSlideIndex={activeSlideIndex} images={images} productTitle={productTitle} />
             ) : (
-                <PicturesOfBuyersTab activeSlideIndex={activeSlideIndex} images={images} productTitle={productTitle} />
+                <PicturesOfBuyersTab productCode={productCode} productTitle={productTitle} />
             )}
-            {/* <PicturesOfBuyersTab activeSlideIndex={activeSlideIndex} images={images} productTitle={productTitle} /> */}
         </section>
     )
 }
