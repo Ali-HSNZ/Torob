@@ -20,11 +20,11 @@ const OriginalImagesTab: FC<{
                     <div
                         onClick={() => setActiveSlide(index)}
                         key={image.id}
-                        className={`w-fit border-2 p-1 relative cursor-pointer rounded-md duration-300 ${
+                        className={`w-fit border-2 p-0.5 relative cursor-pointer rounded-[7px] duration-300 ${
                             index === activeSlide ? 'border-red-400' : 'sm:hover:border-red-200'
                         }`}
                     >
-                        <figure className={`w-12 h-12 select-none rounded-md text-center relative`}>
+                        <figure className={`w-12 h-12 select-none rounded-[4px] overflow-hidden text-center relative`}>
                             <Image
                                 blurDataURL={image.url}
                                 placeholder='blur'
