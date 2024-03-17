@@ -11,7 +11,7 @@ type TPicturesOfBuyersType = {
             name: string
             lastName: string
         }
-        isBuyer: boolean
+        tags: string[]
         storeName: string
         like: number
         disLike: number
