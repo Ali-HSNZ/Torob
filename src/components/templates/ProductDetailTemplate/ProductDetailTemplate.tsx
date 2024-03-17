@@ -1,12 +1,10 @@
 import { type FC } from 'react'
 
-import {
-    ProductComments,
-    ProductDetail,
-    ProductDetailSidebar,
-    ProductDetailStores,
-    ProductProperties,
-} from '@organisms/ProductDetailOrganisms'
+import { ProductComments } from '@organisms/ProductDetailOrganisms/Comments'
+import { ProductDetail } from '@organisms/ProductDetailOrganisms/Detail'
+import { ProductProperties } from '@organisms/ProductDetailOrganisms/Properties'
+import { ProductDetailSidebar } from '@organisms/ProductDetailOrganisms/Sidebar'
+import { ProductDetailStores } from '@organisms/ProductDetailOrganisms/Stores'
 
 import { type IProductDetailTemplateProps } from './resources'
 

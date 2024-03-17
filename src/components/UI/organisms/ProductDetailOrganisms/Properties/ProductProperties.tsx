@@ -1,4 +1,4 @@
-import { type FC } from 'react'
+import { type FC, memo } from 'react'
 
 import { type IProductPropertiesProps } from './resources'
 
@@ -43,4 +43,4 @@ const ProductProperties: FC<IProductPropertiesProps> = () => {
     )
 }
 
-export default ProductProperties
+export default memo(ProductProperties)

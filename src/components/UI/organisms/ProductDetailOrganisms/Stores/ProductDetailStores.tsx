@@ -1,4 +1,4 @@
-import { type FC } from 'react'
+import { type FC, memo } from 'react'
 import { IconBuildingStore, IconTruckDelivery } from '@tabler/icons-react'
 import { IconShieldCheck } from '@tabler/icons-react'
 import { IconShoppingBag } from '@tabler/icons-react'
@@ -59,4 +59,4 @@ const ProductDetailStores: FC<IProductDetailStoresProps> = () => {
     )
 }
 
-export default ProductDetailStores
+export default memo(ProductDetailStores)

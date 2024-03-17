@@ -1,4 +1,4 @@
-import { type FC, useState } from 'react'
+import { type FC, memo, useState } from 'react'
 import Image from 'next/image'
 import { Modal } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
@@ -72,4 +72,4 @@ const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl
     )
 }
 
-export default ProductImages
+export default memo(ProductImages)

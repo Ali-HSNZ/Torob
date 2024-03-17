@@ -1,4 +1,4 @@
-import { type FC } from 'react'
+import { type FC, memo } from 'react'
 import Image from 'next/image'
 
 import avatar from '@public/images/user-avatar.png'
@@ -45,4 +45,4 @@ const PicturesOfBuyersTabThumbnails: FC<IPicturesOfBuyersTabThumbnailsProps> = (
     )
 }
 
-export default PicturesOfBuyersTabThumbnails
+export default memo(PicturesOfBuyersTabThumbnails)

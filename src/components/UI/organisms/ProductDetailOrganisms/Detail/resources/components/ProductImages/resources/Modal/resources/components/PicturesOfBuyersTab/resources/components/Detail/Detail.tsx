@@ -1,4 +1,4 @@
-import React, { type FC } from 'react'
+import React, { type FC, memo } from 'react'
 import Image from 'next/image'
 import { IconBuildingStore, IconChevronRight, IconUser } from '@tabler/icons-react'
 
@@ -66,4 +66,4 @@ const PicturesOfBuyersTabDetail: FC<IPicturesOfBuyersTabDetailProps> = ({
         )
 }
 
-export default PicturesOfBuyersTabDetail
+export default memo(PicturesOfBuyersTabDetail)

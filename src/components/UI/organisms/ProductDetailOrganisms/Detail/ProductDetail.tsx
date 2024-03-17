@@ -1,6 +1,4 @@
-'use client'
-
-import { type FC, useState } from 'react'
+import { type FC, memo, useState } from 'react'
 import { IconAlertCircleFilled, IconStarFilled } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
@@ -112,4 +110,4 @@ const ProductDetail: FC<IProductDetailProps> = ({ productCode }) => {
         )
 }
 
-export default ProductDetail
+export default memo(ProductDetail)

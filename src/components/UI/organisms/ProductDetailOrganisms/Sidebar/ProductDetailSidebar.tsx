@@ -1,6 +1,4 @@
-'use client'
-
-import { type FC } from 'react'
+import { type FC, memo } from 'react'
 import { useWindowScroll } from '@mantine/hooks'
 import { IconChevronUp, IconHeart, IconShare } from '@tabler/icons-react'
 import { IconBell, IconBuildingStore, IconMessage, IconProgressAlert } from '@tabler/icons-react'
@@ -96,4 +94,4 @@ const ProductDetailSidebar: FC = () => {
     )
 }
 
-export default ProductDetailSidebar
+export default memo(ProductDetailSidebar)

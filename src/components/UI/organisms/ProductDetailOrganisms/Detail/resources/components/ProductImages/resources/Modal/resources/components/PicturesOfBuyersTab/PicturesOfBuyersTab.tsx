@@ -1,4 +1,4 @@
-import { type FC, useState } from 'react'
+import { type FC, memo, useState } from 'react'
 import Image from 'next/image'
 
 import { CKeenSlider } from '@molecules/KeenSlider'
@@ -75,4 +75,4 @@ const PicturesOfBuyersTab: FC<IPicturesOfBuyersTabProps> = ({ productTitle, prod
     }
 }
 
-export default PicturesOfBuyersTab
+export default memo(PicturesOfBuyersTab)

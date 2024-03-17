@@ -1,6 +1,4 @@
-'use client'
-
-import { type FC, useMemo, useState } from 'react'
+import { type FC, memo, useMemo, useState } from 'react'
 import { Avatar } from '@mantine/core'
 import { IconX } from '@tabler/icons-react'
 
@@ -125,4 +123,4 @@ const ProductComments: FC<IProductCommentsProps> = ({ productCode }) => {
     )
 }
 
-export default ProductComments
+export default memo(ProductComments)

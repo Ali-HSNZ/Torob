@@ -1,4 +1,4 @@
-import { type FC, useState } from 'react'
+import { type FC, memo, useState } from 'react'
 import Image from 'next/image'
 
 import { CKeenSlider } from '@molecules/KeenSlider'
@@ -62,4 +62,4 @@ const OriginalImagesTab: FC<IOriginalImagesTabProps> = ({ images, productTitle, 
     )
 }
 
-export default OriginalImagesTab
+export default memo(OriginalImagesTab)
