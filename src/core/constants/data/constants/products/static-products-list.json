@@ -114,7 +114,7 @@
                         "name": "Saman",
                         "lastName": "Amiri"
                     },
-                    "isBuyer": true,
+                    "tags": ["Suggested"],
                     "storeName": "Flutter",
                     "like": 12,
                     "disLike": 2
@@ -139,7 +139,7 @@
                         "name": "Torob user",
                         "lastName": ""
                     },
-                    "isBuyer": true,
+                    "tags": ["Buyer", "Suggested"],
                     "storeName": "Diatel Trade",
                     "like": 2,
                     "disLike": 0
@@ -160,7 +160,7 @@
                         "name": "AmirReza",
                         "lastName": "Ahmadi"
                     },
-                    "isBuyer": false,
+                    "tags": ["Suggested"],
                     "storeName": "My computer",
                     "like": 2,
                     "disLike": 0
