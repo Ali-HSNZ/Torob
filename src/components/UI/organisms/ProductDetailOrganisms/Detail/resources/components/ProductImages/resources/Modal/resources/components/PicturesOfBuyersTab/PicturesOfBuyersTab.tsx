@@ -9,26 +9,36 @@ import {
     type IPicturesOfBuyersTabProps,
     PicturesOfBuyersTabDetail,
     PicturesOfBuyersTabThumbnails,
+    PicturesOfBuyersTabUserDetail,
     type TActiveSlideType,
 } from './resources'
 
 const PicturesOfBuyersTab: FC<IPicturesOfBuyersTabProps> = ({ productTitle, productCode }) => {
-    // active slider
+    // active slide
     const [activeSlide, setActiveSlide] = useState<TActiveSlideType>({ index: 0, isDetail: false })
 
     // find current user data
     const picturesOfBuyers = STATIC_PRODUCTS_DATA.find((product) => product.code === productCode)?.picturesOfBuyers
     const currentUser = picturesOfBuyers ? picturesOfBuyers[activeSlide.index] : undefined
 
-    // handle slider thumbnail clicked
+    // handle each slider thumbnail clicked
     const handleThumbnailClick = (index: number): void => setActiveSlide({ index, isDetail: false })
 
     // handle 'more detail' button clicked
     const handleMoreDetailClick = (): void => setActiveSlide({ index: activeSlide.index, isDetail: true })
 
+    // handle 'point of view' button clicked
+    const handlePointOfViewClick = (): void => setActiveSlide({ index: activeSlide.index, isDetail: false })
+
+    // render 'UserDetail' component when clicked on 'more detail' button
+    if (activeSlide.isDetail) {
+        return <PicturesOfBuyersTabUserDetail handlePointOfViewClick={handlePointOfViewClick} data={currentUser} />
+    }
+
+    // else render default component when access 'picturesOfBuyers'
     if (picturesOfBuyers) {
         return (
-            <div className='w-full mt-4 flex flex-col gap-y-4 lg:flex-row justify-between items-start'>
+            <div className='w-full mt-4 flex flex-col-reverse gap-4 lg:flex-row justify-between items-start'>
                 <div className='w-full lg:w-1/2'>
                     {/* thumbnails */}
                     <PicturesOfBuyersTabThumbnails

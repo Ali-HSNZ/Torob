@@ -15,7 +15,7 @@ const PicturesOfBuyersTabDetail: FC<IPicturesOfBuyersTabDetailProps> = ({
         return (
             <div className='mt-4'>
                 <p className='text-xs text-gray-500'>Detail</p>
-                <div className='px-4 text-sm  font-medium flex items-start justify-between gap-y-1'>
+                <div className=' text-sm  font-medium flex items-start justify-between gap-y-1'>
                     <div className='flex flex-col mt-1 text-xs gap-y-2'>
                         <div className='flex text-gray-700 gap-x-1 items-center'>
                             <IconUser size={18} />
@@ -54,9 +54,13 @@ const PicturesOfBuyersTabDetail: FC<IPicturesOfBuyersTabDetailProps> = ({
                     <CButton
                         size='xs'
                         rightSection={<IconChevronRight stroke={1} size={20} />}
-                        variant='transparent'
                         onClick={handleMoreDetailClick}
-                        classNames={{ label: 'p-0', section: 'p-0 m-0' }}
+                        classNames={{
+                            label: 'pl-0 relative  -right-1.5',
+                            section: 'p-0 m-0 relative -right-1.5',
+                            root: 'p-0',
+                        }}
+                        variant='transparent'
                         color='dark'
                     >
                         More Detail
