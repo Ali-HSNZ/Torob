@@ -1,5 +1,5 @@
 import { type FC, memo, useState } from 'react'
-import { IconAlertCircleFilled, IconStarFilled } from '@tabler/icons-react'
+import { IconStarFilled } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 
@@ -13,8 +13,8 @@ const ProductDetail: FC<IProductDetailProps> = ({ productCode }) => {
 
     if (product && selectedColor)
         return (
-            <section className='w-full bg-white p-4 '>
-                <div className='w-full flex flex-col xl:flex-row gap-x-4'>
+            <section className='w-full bg-white p-4'>
+                <div className='w-full flex flex-col xl:flex-row gap-4'>
                     <ProductImages
                         picturesOfBuyers={product.picturesOfBuyers}
                         imageUrl={product.image}
@@ -87,23 +87,6 @@ const ProductDetail: FC<IProductDetailProps> = ({ productCode }) => {
                                 ${Intl.NumberFormat('en-us').format(product.priceRange.max)}
                             </span>
                         </div>
-                    </div>
-                </div>
-
-                <div>
-                    <p className='font-bold text-sm mt-4 xl:mt-0'>Description:</p>
-                    <span className='text-sm'>{product.description}</span>
-                </div>
-
-                <div className='mt-4 flex items-center bg-gray-100 p-1.5 rounded-lg gap-1.5'>
-                    <IconAlertCircleFilled size={17} className='shrink-0 ' />
-                    <div className='flex flex-col gap-y-1'>
-                        <p className='text-xs font-bold'>Mony-Back</p>
-                        <p className='text-xs text-gray-500'>
-                            The request to return the goods in the mouse group (consultation) with the reason of
-                            cancellation of the purchase can only be approved if the goods are in their original
-                            condition (if they are sealed, the goods must not have been opened).
-                        </p>
                     </div>
                 </div>
             </section>
