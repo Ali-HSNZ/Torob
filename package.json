@@ -21,6 +21,8 @@
         "@tabler/icons-react": "^2.39.0",
         "@tanstack/react-query": "^5.8.1",
         "axios": "^1.6.1",
+        "highcharts": "^11.4.0",
+        "highcharts-react-official": "^3.2.1",
         "keen-slider": "^6.8.6",
         "next": "^13.5.2",
         "next-query-params": "^5.0.0",
