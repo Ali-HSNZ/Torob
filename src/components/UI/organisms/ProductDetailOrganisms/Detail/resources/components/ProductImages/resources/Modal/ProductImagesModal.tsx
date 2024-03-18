@@ -20,14 +20,14 @@ const ProductImagesModal: FC<IProductImagesModalProps> = ({
     const [tab, setTab] = useState<TProductImagesModalTabType>('original-images')
 
     return (
-        <section>
+        <section className='px-4 pb-4'>
             {/* header */}
-            <div className='w-full flex justify-between items-start border-b border-gray-200'>
+            <div className='w-full flex sticky top-0 py-4 bg-white z-20 justify-between items-start border-b border-gray-200'>
                 <div className='w-fit flex gap-x-5 relative '>
                     <CActionIcon
                         variant='transparent'
                         onClick={() => setTab('original-images')}
-                        className={`text-sm bg-transparent relative top-[2px] pb-3 ${
+                        className={`text-sm bg-transparent relative top-[2px] ${
                             tab === 'original-images' ? 'text-red-500 font-bold' : 'text-gray-600 font-medium'
                         }`}
                     >
@@ -37,7 +37,7 @@ const ProductImagesModal: FC<IProductImagesModalProps> = ({
                     <CActionIcon
                         variant='transparent'
                         onClick={() => setTab('pictures-of-buyers')}
-                        className={`text-sm relative top-[2px] pb-3 ${
+                        className={`text-sm relative top-[2px] ${
                             tab === 'pictures-of-buyers' ? 'text-red-500 font-bold' : 'text-gray-600 font-medium'
                         }`}
                     >
