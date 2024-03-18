@@ -14,7 +14,7 @@ const ProductDetail: FC<IProductDetailProps> = ({ productCode }) => {
     if (product && selectedColor)
         return (
             <section className='w-full bg-white p-4'>
-                <div className='w-full flex flex-col xl:flex-row gap-4'>
+                <div className='w-full flex flex-col lg:flex-row gap-4'>
                     <ProductImages
                         picturesOfBuyers={product.picturesOfBuyers}
                         imageUrl={product.image}

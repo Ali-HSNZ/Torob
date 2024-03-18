@@ -14,12 +14,16 @@ const ProductDetailTemplate: FC<IProductDetailTemplateProps> = ({ productCode })
     return (
         <section className='w-full p-4 gap-x-4 flex justify-between'>
             <div className='w-full flex flex-col gap-y-4 h-auto '>
-                <div className='flex flex-col xl:flex-row gap-4'>
+                <div className='grid grid-cols-1 xl:grid-cols-12 gap-4'>
                     {/* detail */}
-                    <ProductDetail productCode={productCode} />
+                    <div className='w-full xl:col-span-8'>
+                        <ProductDetail productCode={productCode} />
+                    </div>
 
                     {/* price change list */}
-                    <ProductPriceChanges />
+                    <div className='w-full grid xl:col-span-4'>
+                        <ProductPriceChanges />
+                    </div>
                 </div>
 
                 {/* description */}
