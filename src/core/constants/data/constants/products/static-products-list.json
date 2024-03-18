@@ -109,15 +109,23 @@
                     }
                 ],
                 "moreDetail": {
-                    "body": "درکل مانیتور خوبیه تنها مشکلش پایشه که از پلاستیک بی کیفیته.",
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
                     "user": {
                         "name": "Saman",
                         "lastName": "Amiri"
                     },
-                    "tags": ["Suggested"],
+                    "tags": ["Suggested", "Buyer"],
                     "storeName": "Flutter",
                     "like": 12,
-                    "disLike": 2
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
                 }
             },
             {
@@ -134,7 +142,8 @@
                     }
                 ],
                 "moreDetail": {
-                    "body": "اینکه این مانیتور براتون با کیفیته یا نه بستگی به این داره که مانیتور قبلیتون چی بوده اگه مثل من مانیتور قبلیتون مانیتور باکیفیتی بوده باشه این مانیتور هرگز راضیتون نمیکنه! مانیتور قبلی من سامسونگ s24d390 بود و اصلا نمیتونم این مانیتور رو تحمل کنم ولی به هر حال کیفیتش زیاد بد نیست پیکسل سوخته اصلا نداشت. مشکلی که این مانیتور داره اصلا برای طراحی مناسب نیست رنگ هارو دقیق نشون نمیده رنگ تصویر رو مایل به سبز نشون میده که میتونید با display calibration ویندوز این سبزی رو کم کنید و رنگ نرمالتری داشته باشید. ایراد دیگه ای که داره اگه یه عکس ۵۰ درصد خاکستری درست کنید و این عکس رو روی صفحه حرکت بدین متوجه یه سری لکه و خطوط روی صفحه میشید که توی بازیها بیشتر قابل مشاهده هست و برای همین این مانیتور رو برای بازی هم توصیه نمیکنم چون ممکنه براتون آزاردهنده باشه. کاش این موارد رو کس دیگری اشاره کرده بود در اینصورت قطعا مانیتور دیگه ای رو انتخاب میکردم. موفق باشید!",
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
                     "user": {
                         "name": "Torob user",
                         "lastName": ""
@@ -142,7 +151,14 @@
                     "tags": ["Buyer", "Suggested"],
                     "storeName": "Diatel Trade",
                     "like": 2,
-                    "disLike": 0
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
                 }
             },
             {
@@ -155,7 +171,8 @@
                     }
                 ],
                 "moreDetail": {
-                    "body": "اینکه این مانیتور براتون با کیفیته یا نه بستگی به این داره که مانیتور قبلیتون چی بوده اگه مثل من مانیتور قبلیتون مانیتور باکیفیتی بوده باشه این مانیتور هرگز راضیتون نمیکنه! مانیتور قبلی من سامسونگ s24d390 بود و اصلا نمیتونم این مانیتور رو تحمل کنم ولی به هر حال کیفیتش زیاد بد نیست پیکسل سوخته اصلا نداشت. مشکلی که این مانیتور داره اصلا برای طراحی مناسب نیست رنگ هارو دقیق نشون نمیده رنگ تصویر رو مایل به سبز نشون میده که میتونید با display calibration ویندوز این سبزی رو کم کنید و رنگ نرمالتری داشته باشید. ایراد دیگه ای که داره اگه یه عکس ۵۰ درصد خاکستری درست کنید و این عکس رو روی صفحه حرکت بدین متوجه یه سری لکه و خطوط روی صفحه میشید که توی بازیها بیشتر قابل مشاهده هست و برای همین این مانیتور رو برای بازی هم توصیه نمیکنم چون ممکنه براتون آزاردهنده باشه. کاش این موارد رو کس دیگری اشاره کرده بود در اینصورت قطعا مانیتور دیگه ای رو انتخاب میکردم. موفق باشید!",
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
                     "user": {
                         "name": "AmirReza",
                         "lastName": "Ahmadi"
@@ -163,7 +180,14 @@
                     "tags": ["Suggested"],
                     "storeName": "My computer",
                     "like": 2,
-                    "disLike": 0
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
                 }
             }
         ]
