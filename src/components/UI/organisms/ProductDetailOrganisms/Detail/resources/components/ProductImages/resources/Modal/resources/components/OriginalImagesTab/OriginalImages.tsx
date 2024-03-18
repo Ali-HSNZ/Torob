@@ -9,36 +9,40 @@ const OriginalImagesTab: FC<IOriginalImagesTabProps> = ({ images, productTitle, 
     const [activeSlide, setActiveSlide] = useState<number>(activeSlideIndex)
 
     return (
-        <div className='w-full mt-4 flex flex-col gap-y-4 lg:flex-row justify-between items-start'>
+        <div className='w-full mt-4 flex flex-col-reverse gap-y-4 lg:flex-row justify-between items-start'>
             {/* thumbnails */}
-            <div className='lg:w-1/2 flex flex-wrap gap-2 h-full'>
-                {images.map((image, index) => (
-                    <div
-                        onClick={() => setActiveSlide(index)}
-                        key={image.id}
-                        className={`w-fit border-2 p-0.5 relative cursor-pointer rounded-[7px] duration-300 ${
-                            index === activeSlide ? 'border-red-400' : 'sm:hover:border-red-200'
-                        }`}
-                    >
-                        <figure className={`w-12 h-12 select-none rounded-[4px] overflow-hidden text-center relative`}>
-                            <Image
-                                blurDataURL={image.url}
-                                placeholder='blur'
-                                fill
-                                src={image.url}
-                                alt={productTitle}
-                                sizes='(max-width: 640px) 40vw, (min-width: 640px) 50vw'
-                                className=''
-                                loading='lazy'
-                            />
-                        </figure>
-                    </div>
-                ))}
+            <div className='w-full lg:w-1/2 flex justify-center lg:justify-start  '>
+                <div className=' flex flex-wrap gap-2 h-full'>
+                    {images.map((image, index) => (
+                        <div
+                            onClick={() => setActiveSlide(index)}
+                            key={image.id}
+                            className={`w-fit border-2 p-0.5 relative cursor-pointer rounded-[7px] duration-300 ${
+                                index === activeSlide ? 'border-red-400' : 'sm:hover:border-red-200'
+                            }`}
+                        >
+                            <figure
+                                className={`w-12 h-12 select-none rounded-[4px] overflow-hidden text-center relative`}
+                            >
+                                <Image
+                                    blurDataURL={image.url}
+                                    placeholder='blur'
+                                    fill
+                                    src={image.url}
+                                    alt={productTitle}
+                                    sizes='(max-width: 640px) 40vw, (min-width: 640px) 50vw'
+                                    className=''
+                                    loading='lazy'
+                                />
+                            </figure>
+                        </div>
+                    ))}
+                </div>
             </div>
 
             {/* Sliders Image */}
             <div className='w-full lg:w-1/2'>
-                <CKeenSlider activeSlide={activeSlide} setActiveSlide={setActiveSlide}>
+                <CKeenSlider drag={false} activeSlide={activeSlide} setActiveSlide={setActiveSlide}>
                     {images.map((image) => (
                         <figure
                             key={image.id}
@@ -48,10 +52,8 @@ const OriginalImagesTab: FC<IOriginalImagesTabProps> = ({ images, productTitle, 
                                 sizes='80vw'
                                 className='object-contain'
                                 fill
-                                placeholder={`data:image/${image.url}`}
                                 blurDataURL={image.url}
                                 src={image.url}
-                                loading='lazy'
                                 alt={productTitle}
                             />
                         </figure>
