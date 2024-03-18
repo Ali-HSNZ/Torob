@@ -13,7 +13,14 @@ const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl
     return (
         <>
             {/* modal for product image (gallery) */}
-            <Modal size={1200} centered opened={opened} onClose={close} withCloseButton={false}>
+            <Modal
+                size={1200}
+                classNames={{ body: 'p-0' }}
+                centered
+                opened={opened}
+                onClose={close}
+                withCloseButton={false}
+            >
                 <ProductImagesModal
                     close={close}
                     productTitle={productTitle}
