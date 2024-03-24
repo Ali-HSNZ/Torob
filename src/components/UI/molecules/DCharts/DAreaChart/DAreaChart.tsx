@@ -10,10 +10,10 @@ const DAreaChart: FC<IDAreaChartProps> = ({ xAxisData, chartType = 'area', serie
     const renderSeries = seriesData.map((item: TSingleSeriesDataType) => {
         // set custom marker in last of series item
         const customSeriesData = item.data.map((singleData, index: number) => {
-            // find last item
-            const isLastItem: boolean = index === item.data.length - 1
-            // set custom marker if item is last of data
-            const customMarker = isLastItem ? { enabled: true, radius: 7, fillColor: item.color } : undefined
+            // find first and last item
+            const isSpatialItem: boolean = index === item.data.length - 1 || index === 0
+            // set custom marker if isSpatialItem condition
+            const customMarker = isSpatialItem ? { enabled: true, radius: 7, fillColor: item.color } : undefined
             // return modified series data
             return {
                 y: singleData,
