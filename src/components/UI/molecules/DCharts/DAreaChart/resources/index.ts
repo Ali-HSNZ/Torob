@@ -1,3 +1,3 @@
-import type IDAreaChartProps from './types/type'
+import type { IDAreaChartProps, TSingleSeriesDataType } from './types/type'
 
-export type { IDAreaChartProps }
+export type { IDAreaChartProps, TSingleSeriesDataType }

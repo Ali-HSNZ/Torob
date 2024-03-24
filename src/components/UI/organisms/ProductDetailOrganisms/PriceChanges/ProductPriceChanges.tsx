@@ -10,7 +10,6 @@ const ProductPriceChanges = () => {
             <p className='px-2 pt-2 text-sm font-medium'>Price changes</p>
             <DAreaChart
                 height={300}
-                isAxisGridLine
                 xAxisData={STATIC_CHART_DATA.xAxisData}
                 seriesData={STATIC_CHART_DATA.seriesData}
             />

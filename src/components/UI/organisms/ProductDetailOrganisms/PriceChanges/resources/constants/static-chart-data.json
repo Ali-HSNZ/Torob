@@ -14,10 +14,12 @@
     "seriesData": [
         {
             "name": "Average price",
+            "color": "#04d412",
             "data": [20, 45, 40, 30, 40, 45, 20, 25, 30, 35]
         },
         {
             "name": "Lowest price",
+            "color": "#0554a3",
             "data": [25, 37, 34, 27, 36, 39, 24, 27, 27, 31]
         }
     ]

@@ -1,20 +1,13 @@
-import { type TCriticalAny } from '@core/types/critical-any'
+type TSingleSeriesDataType = {
+    name: string
+    data: number[]
+    color: string
+}
 
 interface IDAreaChartProps {
-    seriesData: TCriticalAny[]
+    seriesData: TSingleSeriesDataType[]
     xAxisData: string[]
     height?: number
-    chartType?: 'area' | 'areaspline' | 'arearange' | 'streamgraph'
-    isLegend?: boolean
-    fillOpacity?: number
-    minWidth?: number
-    lineWidth?: number
-    isShowNameTooltip?: boolean
-    isShowValueTooltip?: boolean
-    isAxisGridLine?: boolean
-    isCustomMarker?: boolean
-    isMarker?: boolean
-    xAxisTitle?: string
-    colors?: string[]
+    chartType?: 'area' | 'areaspline'
 }
-export default IDAreaChartProps
+export type { IDAreaChartProps, TSingleSeriesDataType }
