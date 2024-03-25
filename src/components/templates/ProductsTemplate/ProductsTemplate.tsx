@@ -13,7 +13,7 @@ const ProductsTemplate: FC = () => {
             </div>
 
             {/* Heading */}
-            <section className='flex-1 mt-3 overflow-x-auto'>
+            <section className='flex-1 py-4 overflow-x-auto'>
                 <SearchProductsHeading />
                 <SearchProductsList />
             </section>
