@@ -1,5 +1,5 @@
 import { OriginalImagesTab } from './components/OriginalImagesTab'
-import { PicturesOfBuyersTab } from './components/PicturesOfBuyersTab'
+import { PicturesOfCustomersTab } from './components/PicturesOfCustomersTab'
 import type { IProductImagesModalProps, TProductImageModalTab, TProductImagesModalTabType } from './types/type'
 
 export {
@@ -7,5 +7,5 @@ export {
     type IProductImagesModalProps,
     type TProductImageModalTab,
     OriginalImagesTab,
-    PicturesOfBuyersTab,
+    PicturesOfCustomersTab,
 }

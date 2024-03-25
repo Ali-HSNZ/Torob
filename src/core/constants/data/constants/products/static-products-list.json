@@ -94,7 +94,7 @@
             }
         ],
         "code": "trb-4565675",
-        "picturesOfBuyers": [
+        "picturesOfCustomers": [
             {
                 "id": 0,
                 "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
@@ -115,7 +115,7 @@
                         "name": "Saman",
                         "lastName": "Amiri"
                     },
-                    "tags": ["Suggested", "Buyer"],
+                    "tags": ["Suggested", "Customer"],
                     "storeName": "Flutter",
                     "like": 12,
                     "disLike": 2,
@@ -148,7 +148,7 @@
                         "name": "Torob user",
                         "lastName": ""
                     },
-                    "tags": ["Buyer", "Suggested"],
+                    "tags": ["Customer", "Suggested"],
                     "storeName": "Diatel Trade",
                     "like": 2,
                     "disLike": 0,

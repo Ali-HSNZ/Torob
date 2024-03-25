@@ -13,7 +13,7 @@ type TColorType = {
     hex: string
 }
 
-interface IPicturesOfBuyersTabUserDetailProps {
+interface IPicturesOfCustomersTabUserDetailProps {
     handlePointOfViewClick: () => void
     data?: {
         id: number
@@ -35,4 +35,4 @@ interface IPicturesOfBuyersTabUserDetailProps {
     }
 }
 
-export default IPicturesOfBuyersTabUserDetailProps
+export default IPicturesOfCustomersTabUserDetailProps

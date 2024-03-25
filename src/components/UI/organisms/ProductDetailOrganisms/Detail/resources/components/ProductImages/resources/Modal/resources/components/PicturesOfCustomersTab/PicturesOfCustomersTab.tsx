@@ -6,20 +6,21 @@ import { CKeenSlider } from '@molecules/KeenSlider'
 import { STATIC_PRODUCTS_DATA } from '@core/constants/data/constants/products'
 
 import {
-    type IPicturesOfBuyersTabProps,
-    PicturesOfBuyersTabDetail,
-    PicturesOfBuyersTabThumbnails,
-    PicturesOfBuyersTabUserDetail,
+    type IPicturesOfCustomersTabProps,
+    PicturesOfCustomersTabDetail,
+    PicturesOfCustomersTabThumbnails,
+    PicturesOfCustomersTabUserDetail,
     type TActiveSlideType,
 } from './resources'
 
-const PicturesOfBuyersTab: FC<IPicturesOfBuyersTabProps> = ({ productTitle, productCode }) => {
+const PicturesOfCustomersTab: FC<IPicturesOfCustomersTabProps> = ({ productTitle, productCode }) => {
     // active slide
     const [activeSlide, setActiveSlide] = useState<TActiveSlideType>({ index: 0, isDetail: false })
 
     // find current user data
-    const picturesOfBuyers = STATIC_PRODUCTS_DATA.find((product) => product.code === productCode)?.picturesOfBuyers
-    const currentUser = picturesOfBuyers ? picturesOfBuyers[activeSlide.index] : undefined
+    const picturesOfCustomers = STATIC_PRODUCTS_DATA.find((product) => product.code === productCode)
+        ?.picturesOfCustomers
+    const currentUser = picturesOfCustomers ? picturesOfCustomers[activeSlide.index] : undefined
 
     // handle each slider thumbnail clicked
     const handleThumbnailClick = (index: number): void => setActiveSlide({ index, isDetail: false })
@@ -32,23 +33,23 @@ const PicturesOfBuyersTab: FC<IPicturesOfBuyersTabProps> = ({ productTitle, prod
 
     // render 'UserDetail' component when clicked on 'more detail' button
     if (activeSlide.isDetail) {
-        return <PicturesOfBuyersTabUserDetail handlePointOfViewClick={handlePointOfViewClick} data={currentUser} />
+        return <PicturesOfCustomersTabUserDetail handlePointOfViewClick={handlePointOfViewClick} data={currentUser} />
     }
 
-    // else render default component when access 'picturesOfBuyers'
-    if (picturesOfBuyers) {
+    // else render default component when access 'picturesOfCustomers'
+    if (picturesOfCustomers) {
         return (
             <div className='w-full mt-4 flex flex-col-reverse gap-4 lg:flex-row justify-between items-start'>
                 <div className='w-full lg:w-1/2'>
                     {/* thumbnails */}
-                    <PicturesOfBuyersTabThumbnails
+                    <PicturesOfCustomersTabThumbnails
                         activeSlideIndex={activeSlide.index}
                         handleThumbnailClick={handleThumbnailClick}
-                        images={picturesOfBuyers || []}
+                        images={picturesOfCustomers || []}
                     />
 
                     {/* details */}
-                    <PicturesOfBuyersTabDetail
+                    <PicturesOfCustomersTabDetail
                         handleMoreDetailClick={handleMoreDetailClick}
                         images={currentUser?.images}
                         moreDetail={currentUser?.moreDetail}
@@ -62,7 +63,7 @@ const PicturesOfBuyersTab: FC<IPicturesOfBuyersTabProps> = ({ productTitle, prod
                         activeSlide={activeSlide.index}
                         setActiveSlide={(currentIndex) => setActiveSlide({ index: currentIndex })}
                     >
-                        {picturesOfBuyers.map((image, index) => (
+                        {picturesOfCustomers.map((image, index) => (
                             <figure
                                 key={index}
                                 className={`keen-slider__slide h-[400px] lg:h-[550px] !w-[100%] shrink-0 relative flex items-center justify-center`}
@@ -85,4 +86,4 @@ const PicturesOfBuyersTab: FC<IPicturesOfBuyersTabProps> = ({ productTitle, prod
     }
 }
 
-export default memo(PicturesOfBuyersTab)
+export default memo(PicturesOfCustomersTab)

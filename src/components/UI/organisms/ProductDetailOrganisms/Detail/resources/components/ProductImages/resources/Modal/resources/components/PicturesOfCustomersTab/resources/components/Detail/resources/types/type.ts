@@ -17,10 +17,10 @@ type TMoreDetailType = {
     disLike: number
 }
 
-interface IPicturesOfBuyersTabDetailProps {
+interface IPicturesOfCustomersTabDetailProps {
     moreDetail: TMoreDetailType | undefined
     images: TImagesType[] | undefined
     handleMoreDetailClick: () => void
 }
 
-export default IPicturesOfBuyersTabDetailProps
+export default IPicturesOfCustomersTabDetailProps

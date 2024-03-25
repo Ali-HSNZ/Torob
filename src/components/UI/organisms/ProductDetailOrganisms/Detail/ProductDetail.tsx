@@ -16,7 +16,7 @@ const ProductDetail: FC<IProductDetailProps> = ({ productCode }) => {
             <section className='w-full bg-white p-4'>
                 <div className='w-full flex flex-col lg:flex-row gap-4'>
                     <ProductImages
-                        picturesOfBuyers={product.picturesOfBuyers}
+                        picturesOfCustomers={product.picturesOfCustomers}
                         imageUrl={product.image}
                         images={product.images}
                         productTitle={product.title}

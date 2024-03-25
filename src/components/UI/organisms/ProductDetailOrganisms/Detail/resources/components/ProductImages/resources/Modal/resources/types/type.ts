@@ -1,4 +1,4 @@
-type TProductImagesModalTabType = 'original-images' | 'pictures-of-buyers'
+type TProductImagesModalTabType = 'original-images' | 'pictures-of-customers'
 
 type TProductImageModalTab = {
     id: number

@@ -1,9 +1,9 @@
 type TImagesType = { id: number; image: string }
 
-interface IPicturesOfBuyersTabThumbnailsProps {
+interface IPicturesOfCustomersTabThumbnailsProps {
     handleThumbnailClick: (index: number) => void
     activeSlideIndex: number
     images: TImagesType[]
 }
 
-export default IPicturesOfBuyersTabThumbnailsProps
+export default IPicturesOfCustomersTabThumbnailsProps

@@ -6,7 +6,7 @@ import { CActionIcon } from '@atoms/ActionIcon'
 import {
     type IProductImagesModalProps,
     OriginalImagesTab,
-    PicturesOfBuyersTab,
+    PicturesOfCustomersTab,
     type TProductImagesModalTabType,
 } from './resources'
 
@@ -36,12 +36,12 @@ const ProductImagesModal: FC<IProductImagesModalProps> = ({
 
                     <CActionIcon
                         variant='transparent'
-                        onClick={() => setTab('pictures-of-buyers')}
+                        onClick={() => setTab('pictures-of-customers')}
                         className={`text-sm relative top-[2px] ${
-                            tab === 'pictures-of-buyers' ? 'text-red-500 font-bold' : 'text-gray-600 font-medium'
+                            tab === 'pictures-of-customers' ? 'text-red-500 font-bold' : 'text-gray-600 font-medium'
                         }`}
                     >
-                        Pictures of buyers
+                        Pictures of customers
                     </CActionIcon>
                 </div>
 
@@ -53,7 +53,7 @@ const ProductImagesModal: FC<IProductImagesModalProps> = ({
             {tab === 'original-images' ? (
                 <OriginalImagesTab activeSlideIndex={activeSlideIndex} images={images} productTitle={productTitle} />
             ) : (
-                <PicturesOfBuyersTab productCode={productCode} productTitle={productTitle} />
+                <PicturesOfCustomersTab productCode={productCode} productTitle={productTitle} />
             )}
         </section>
     )

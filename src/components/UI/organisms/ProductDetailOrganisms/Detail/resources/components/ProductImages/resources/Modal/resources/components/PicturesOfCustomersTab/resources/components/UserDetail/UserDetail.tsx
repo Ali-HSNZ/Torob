@@ -21,9 +21,12 @@ import { CButton } from '@atoms/Button'
 import { CMenu } from '@atoms/Menu'
 import { CRating } from '@atoms/Rating'
 
-import { type IPicturesOfBuyersTabUserDetailProps } from './resources'
+import { type IPicturesOfCustomersTabUserDetailProps } from './resources'
 
-const PicturesOfBuyersTabUserDetail: FC<IPicturesOfBuyersTabUserDetailProps> = ({ data, handlePointOfViewClick }) => {
+const PicturesOfCustomersTabUserDetail: FC<IPicturesOfCustomersTabUserDetailProps> = ({
+    data,
+    handlePointOfViewClick,
+}) => {
     if (data)
         return (
             <section className='w-full flex flex-col gap-y-4 items-start'>
@@ -168,4 +171,4 @@ const PicturesOfBuyersTabUserDetail: FC<IPicturesOfBuyersTabUserDetailProps> = (
         )
 }
 
-export default memo(PicturesOfBuyersTabUserDetail)
+export default memo(PicturesOfCustomersTabUserDetail)

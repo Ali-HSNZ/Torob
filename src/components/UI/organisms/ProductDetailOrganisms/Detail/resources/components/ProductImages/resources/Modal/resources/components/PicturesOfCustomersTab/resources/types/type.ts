@@ -1,7 +1,7 @@
-interface IPicturesOfBuyersTabProps {
+interface IPicturesOfCustomersTabProps {
     productTitle: string
     productCode: string
 }
 type TActiveSlideType = { index: number; isDetail?: boolean }
 
-export type { IPicturesOfBuyersTabProps, TActiveSlideType }
+export type { IPicturesOfCustomersTabProps, TActiveSlideType }

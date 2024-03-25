@@ -1,4 +1,4 @@
-type TPicturesOfBuyersType = {
+type TpicturesOfCustomersType = {
     id: number
     image: string
     images: {
@@ -25,8 +25,8 @@ interface IProductImagesProps {
         url: string
     }[]
     imageUrl: string
-    picturesOfBuyers: TPicturesOfBuyersType[] | undefined
+    picturesOfCustomers: TpicturesOfCustomersType[] | undefined
     productCode: string
 }
 
-export type { IProductImagesProps, TPicturesOfBuyersType }
+export type { IProductImagesProps, TpicturesOfCustomersType }

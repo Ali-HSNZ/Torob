@@ -1,12 +1,12 @@
-import React, { type FC, memo } from 'react'
+import { type FC, memo } from 'react'
 import Image from 'next/image'
 import { IconBuildingStore, IconChevronRight, IconUser } from '@tabler/icons-react'
 
 import { CButton } from '@atoms/Button'
 
-import type IPicturesOfBuyersTabDetailProps from './resources/types/type'
+import type { IPicturesOfCustomersTabDetailProps } from './resources'
 
-const PicturesOfBuyersTabDetail: FC<IPicturesOfBuyersTabDetailProps> = ({
+const PicturesOfCustomersTabDetail: FC<IPicturesOfCustomersTabDetailProps> = ({
     handleMoreDetailClick,
     images,
     moreDetail,
@@ -70,4 +70,4 @@ const PicturesOfBuyersTabDetail: FC<IPicturesOfBuyersTabDetailProps> = ({
         )
 }
 
-export default memo(PicturesOfBuyersTabDetail)
+export default memo(PicturesOfCustomersTabDetail)

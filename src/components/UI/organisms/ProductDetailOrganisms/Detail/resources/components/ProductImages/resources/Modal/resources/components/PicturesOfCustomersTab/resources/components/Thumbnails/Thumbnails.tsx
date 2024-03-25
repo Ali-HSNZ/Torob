@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 import avatar from '@public/images/user-avatar.png'
 
-import type IPicturesOfBuyersTabThumbnailsProps from './resources/types/type'
+import type { IPicturesOfCustomersTabThumbnailsProps } from './resources'
 
-const PicturesOfBuyersTabThumbnails: FC<IPicturesOfBuyersTabThumbnailsProps> = ({
+const PicturesOfCustomersTabThumbnails: FC<IPicturesOfCustomersTabThumbnailsProps> = ({
     activeSlideIndex,
     handleThumbnailClick,
     images,
@@ -47,4 +47,4 @@ const PicturesOfBuyersTabThumbnails: FC<IPicturesOfBuyersTabThumbnailsProps> = (
     )
 }
 
-export default memo(PicturesOfBuyersTabThumbnails)
+export default memo(PicturesOfCustomersTabThumbnails)
