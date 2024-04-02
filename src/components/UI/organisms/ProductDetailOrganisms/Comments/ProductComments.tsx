@@ -1,7 +1,7 @@
 import { type FC, memo, useMemo, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Avatar } from '@mantine/core'
+import { Avatar, Slider } from '@mantine/core'
 import { IconThumbUpFilled, IconX } from '@tabler/icons-react'
 import { IconBuildingStore } from '@tabler/icons-react'
 import { IconThumbDownFilled } from '@tabler/icons-react'
@@ -9,6 +9,7 @@ import { IconThumbDownFilled } from '@tabler/icons-react'
 import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
 import { CTextarea } from '@atoms/Textarea'
+import { CTextInput } from '@atoms/TextInput'
 
 import { STATIC_PRODUCTS_DATA } from '@core/constants/data/products'
 import { type TCriticalAny } from '@core/types/critical-any'
@@ -23,6 +24,22 @@ const ProductComments: FC<IProductCommentsProps> = ({ productCode }) => {
     const product = STATIC_PRODUCTS_DATA.find((e) => e.code === productCode)
 
     const [senderInfo, setSenderInfo] = useState<TCriticalAny>()
+    const [ratingState, setRatingState] = useState<string>('normal')
+
+    // rating marks
+    const marks = [
+        { value: 0, label: '-' },
+        { value: 20, label: 'very bad' },
+        { value: 40, label: 'bad' },
+        { value: 60, label: 'normal' },
+        { value: 80, label: 'good' },
+        { value: 100, label: 'excellent' },
+    ]
+
+    const handleRating = (rating: number) => {
+        const rate = marks.find((e) => e.value === rating)
+        setRatingState(rate?.label || '-')
+    }
 
     const senderName = useMemo(() => {
         let name = ''
@@ -186,43 +203,66 @@ const ProductComments: FC<IProductCommentsProps> = ({ productCode }) => {
                 ))}
             </div>
 
-            <div className='flex flex-col items-end gap-y-4 mt-4'>
-                <div id='comment-description-textarea' className='w-full text-sm flex flex-col  gap-y-1 font-medium'>
-                    <CTextarea
-                        autosize
-                        leftSection={
-                            senderName && (
-                                <span className=' font-medium flex gap-x-1 text-sm text-gray-600 pointer-events-auto'>
-                                    <CActionIcon
-                                        className=''
-                                        size={20}
-                                        variant='transparent'
-                                        onClick={() => {
-                                            setSenderInfo(undefined)
-                                        }}
-                                    >
-                                        <IconX />
-                                    </CActionIcon>
-                                    {senderName}
-                                </span>
-                            )
-                        }
-                        classNames={{
-                            input: 'border-0 p-0   ',
-                            wrapper:
-                                'relative max-h-[215px] border border-transparent focus-within:border-red-500  bg-white overflow-y-auto p-3 pb-0',
-                            section: 'absolute top-[13px] left-3 whitespace-nowrap w-fit h-fit z-50',
-                        }}
-                        styles={{
-                            input: {
-                                textIndent: `${senderName ? getTextWidth(senderName) + 40 : 0}px`,
-                            },
-                        }}
-                        rows={9}
-                        minRows={9}
-                        label='description:'
-                    />
+            {/* add comment */}
+            <div id='comment-description-textarea' className='w-full flex flex-col items-end gap-y-4 mt-4'>
+                <div className='w-full gap-4 grid grid-cols-5'>
+                    <div className='text-sm flex flex-col col-span-3  gap-y-1 font-medium'>
+                        <CTextInput
+                            label='title'
+                            classNames={{
+                                input: 'border border border-gray-200 focus:border-red-500',
+                            }}
+                        />
+                        <CTextarea
+                            autosize
+                            leftSection={
+                                senderName && (
+                                    <span className='font-medium  flex gap-x-1 text-sm text-gray-600 pointer-events-auto'>
+                                        <CActionIcon
+                                            className=''
+                                            size={20}
+                                            variant='transparent'
+                                            onClick={() => setSenderInfo(undefined)}
+                                        >
+                                            <IconX />
+                                        </CActionIcon>
+                                        {senderName}
+                                    </span>
+                                )
+                            }
+                            classNames={{
+                                root: '',
+                                input: 'border-0 p-0',
+                                wrapper:
+                                    'duration-100 transition-all relative max-h-[215px] rounded border border-gray-200 focus-within:border-red-500 bg-white overflow-y-auto p-3 pb-0',
+                                section: 'absolute top-[13px] left-3 whitespace-nowrap w-fit h-fit z-50',
+                            }}
+                            styles={{
+                                input: {
+                                    textIndent: `${senderName ? getTextWidth(senderName) + 40 : 0}px`,
+                                },
+                            }}
+                            rows={9}
+                            minRows={9}
+                            label='description:'
+                        />
+                    </div>
+                    <div className='col-span-2'>
+                        <p className='font-medium text-sm capitalize'>Your rating: {ratingState}</p>
+                        <Slider
+                            defaultValue={60}
+                            // label={(val) => marks.find((mark) => mark.value === val)!.label}
+                            step={20}
+                            size={8}
+                            classNames={{ thumb: '[&>div]:hidden' }}
+                            marks={marks}
+                            onChange={handleRating}
+                            className='duration-1000'
+                            styles={{ markLabel: { display: 'none' } }}
+                        />
+                    </div>
                 </div>
+
                 <CButton variant='light'>Send</CButton>
             </div>
         </section>
