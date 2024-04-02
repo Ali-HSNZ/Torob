@@ -1,5 +1,5 @@
 import { type FC, memo } from 'react'
-import { IconBuildingStore, IconTruckDelivery } from '@tabler/icons-react'
+import { IconBuildingStore, IconTruckDelivery, IconUser } from '@tabler/icons-react'
 import { IconShieldCheck } from '@tabler/icons-react'
 import { IconShoppingBag } from '@tabler/icons-react'
 
@@ -11,7 +11,6 @@ const ProductDetailStores: FC<IProductDetailStoresProps> = () => {
     return (
         <section id='store_list'>
             <p className='text-base font-medium'>Stores</p>
-
             <ul className='flex flex-col gap-y-4 mt-4'>
                 {[1, 2, 3, 4].map((e) => (
                     <li
@@ -37,16 +36,20 @@ const ProductDetailStores: FC<IProductDetailStoresProps> = () => {
                                 </div>
                             </div>
 
-                            <div className='flex gap-2 underline underline-offset-[6px] text-sm h-full md:justify-end  xl:justify-start items-end xl:items-center '>
-                                <p className='pb-1.5'>sent in 3 working days</p>
-                                <IconTruckDelivery stroke={1} />
+                            <div>
+                                <div className='flex gap-1.5 text-sm h-full md:justify-end xl:justify-start  xl:items-center '>
+                                    <IconTruckDelivery size={20} stroke={1} />
+                                    <p className='pb-1.5'>sending torob in 1 working days</p>
+                                </div>
+                                <div className='flex gap-1.5 text-sm h-full md:justify-end xl:justify-start  xl:items-center '>
+                                    <IconUser size={20} stroke={1} />
+                                    <p className='pb-1.5'>sending seller</p>
+                                </div>
                             </div>
 
                             <div className='flex gap-x-2 md:col-span-2 xl:col-span-1 items-center'>
-                                <IconShieldCheck className='text-green-600 shrink-0' />
-                                <p className='text-sm font-medium '>
-                                    Guarantee of authenticity and physical health of goods
-                                </p>
+                                <IconShieldCheck size={20} stroke={2} className='text-green-600 shrink-0' />
+                                <p className='text-sm'>Guarantee of authenticity and physical health of goods</p>
                             </div>
                         </div>
                         <CButton leftSection={<IconShoppingBag />} className='shrink-0'>
