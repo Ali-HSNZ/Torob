@@ -4,7 +4,7 @@ import { type IProductPropertiesProps } from './resources'
 
 const ProductProperties: FC<IProductPropertiesProps> = () => {
     return (
-        <section id='product_properties_list'>
+        <section id='product_properties_list' className='pt-4'>
             <h2 className='text-base font-medium'>Properties</h2>
 
             <div className='mt-4 text-sm grid gap-2'>

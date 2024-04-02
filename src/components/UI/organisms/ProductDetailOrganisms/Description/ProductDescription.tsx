@@ -10,7 +10,7 @@ const ProductDescription: FC<IProductDescriptionProps> = ({ productCode }) => {
 
     if (product)
         return (
-            <section className='bg-white p-4'>
+            <section className='bg-white p-4 mt-4'>
                 <span className='text-sm'>{product.description}</span>
 
                 <div className='mt-4 flex items-center bg-gray-100 p-1.5 rounded-lg gap-1.5'>

@@ -18,8 +18,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -27,8 +50,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -37,7 +79,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -46,7 +101,20 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
@@ -211,8 +279,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -220,8 +311,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -230,7 +340,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -239,7 +362,20 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
@@ -278,7 +414,104 @@
                 "url": "https://dkstatics-public.digikala.com/digikala-products/324286.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
             }
         ],
-        "code": "trb-1754875"
+        "code": "trb-1754875",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ]
     },
     {
         "id": 5,
@@ -298,8 +531,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -307,8 +563,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -317,7 +592,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -326,7 +614,20 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
@@ -374,7 +675,104 @@
             }
         ],
         "image": "https://dkstatics-public.digikala.com/digikala-products/09a18512f2b929c8e4fa3d878e469065fe1ef9de_1655028363.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-        "code": "trb-2874841"
+        "code": "trb-2874841",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ]
     },
     {
         "id": 6,
@@ -394,8 +792,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -403,8 +824,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -413,7 +853,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -422,7 +875,20 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
@@ -470,6 +936,103 @@
             }
         ],
         "image": "https://dkstatics-public.digikala.com/digikala-products/abb89667cf0becb996a07cd5da863c0869deb686_1680996739.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ],
         "code": "trb-95454332"
     },
     {
@@ -490,8 +1053,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -499,8 +1085,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -509,7 +1114,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -518,7 +1136,20 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
@@ -578,6 +1209,103 @@
             }
         ],
         "image": "https://dkstatics-public.digikala.com/digikala-products/d3d57e056b7f19ab90708496b7f91fa16b423a57_1697291823.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ],
         "code": "trb-17475656"
     },
     {
@@ -598,8 +1326,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -607,8 +1358,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -617,7 +1387,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -626,7 +1409,20 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
@@ -694,6 +1490,103 @@
             }
         ],
         "image": "https://dkstatics-public.digikala.com/digikala-products/dd815b674162037a5cfe28c7a656a2feaae7f231_1692691606.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ],
         "code": "trb-796241411"
     },
     {
@@ -714,8 +1607,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -723,8 +1639,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -733,7 +1668,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -742,7 +1690,20 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
@@ -770,6 +1731,103 @@
             }
         ],
         "image": "https://dkstatics-public.digikala.com/digikala-products/8ff3f29e8a69f493404a1b08568a1860c9f20cdf_1690204135.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ],
         "code": "trb-114745564"
     },
     {
@@ -790,8 +1848,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -799,8 +1880,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -809,7 +1909,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -818,7 +1931,20 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
@@ -842,6 +1968,103 @@
             { "id": 2, "url": "https://image.torob.com/base/images/b8/KZ/b8KZ2XutsxJOVVR3.jpg_/280x280.webp" }
         ],
         "image": "https://image.torob.com/base/images/gJ/qQ/gJqQ-nv_hTzojJ3L.jpg_/280x280.webp",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ],
         "code": "trb-25646754"
     },
     {
@@ -863,8 +2086,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -872,8 +2118,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -882,7 +2147,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -891,7 +2169,20 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
@@ -914,6 +2205,103 @@
             { "id": 2, "url": "https://image.torob.com/base/images/b8/KZ/b8KZ2XutsxJOVVR3.jpg_/280x280.webp" }
         ],
         "image": "https://image.torob.com/base/images/b8/KZ/b8KZ2XutsxJOVVR3.jpg_/280x280.webp",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ],
         "code": "trb-3389655"
     },
     {
@@ -935,8 +2323,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -944,8 +2355,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -954,7 +2384,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -963,14 +2406,26 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
             { "id": 0, "type": "category", "title": "phone" },
             { "id": 1, "type": "category", "title": "cover" }
         ],
-
         "colors": [
             { "id": 0, "title": "red", "hex": "#e81a24" },
             { "id": 1, "title": "black", "hex": "#141414" },
@@ -987,6 +2442,103 @@
             { "id": 2, "url": "https://image.torob.com/base/images/b8/KZ/b8KZ2XutsxJOVVR3.jpg_/280x280.webp" }
         ],
         "image": "https://image.torob.com/base/images/8X/6q/8X6qUtUonY3sIe7-.webp_/280x280.webp",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ],
         "code": "trb-2216455"
     },
     {
@@ -1008,8 +2560,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -1017,8 +2592,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -1027,7 +2621,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -1036,7 +2643,20 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
@@ -1059,6 +2679,103 @@
             { "id": 2, "url": "https://image.torob.com/base/images/b8/KZ/b8KZ2XutsxJOVVR3.jpg_/280x280.webp" }
         ],
         "image": "https://image.torob.com/base/images/8v/kg/8vkgL6h5SmhLTRai.jpg_/280x280.webp",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ],
         "code": "trb-4446536"
     },
     {
@@ -1080,8 +2797,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -1089,8 +2829,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -1099,7 +2858,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -1108,14 +2880,26 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
             { "id": 0, "type": "category", "title": "phone" },
             { "id": 1, "type": "category", "title": "cover" }
         ],
-
         "colors": [
             { "id": 0, "title": "red", "hex": "#e81a24" },
             { "id": 1, "title": "black", "hex": "#141414" },
@@ -1132,6 +2916,103 @@
             { "id": 2, "url": "https://image.torob.com/base/images/b8/KZ/b8KZ2XutsxJOVVR3.jpg_/280x280.webp" }
         ],
         "image": "https://image.torob.com/base/images/3I/k8/3Ik8FyfdN0i-rYVR.jpg_/280x280.webp",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ],
         "code": "trb-56582224"
     },
     {
@@ -1153,8 +3034,31 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
                 "id": 1,
@@ -1162,8 +3066,27 @@
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -1172,7 +3095,20 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
                 "id": 3,
@@ -1181,14 +3117,26 @@
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
             { "id": 0, "type": "category", "title": "phone" },
             { "id": 1, "type": "category", "title": "cover" }
         ],
-
         "colors": [
             { "id": 0, "title": "red", "hex": "#e81a24" },
             { "id": 1, "title": "black", "hex": "#141414" },
@@ -1205,6 +3153,103 @@
             { "id": 2, "url": "https://image.torob.com/base/images/b8/KZ/b8KZ2XutsxJOVVR3.jpg_/280x280.webp" }
         ],
         "image": "https://image.torob.com/base/images/gv/4o/gv4oNnNi8dn24foo.jpg_/280x280.webp",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ],
         "code": "trb-33546842"
     },
     {
@@ -1226,17 +3271,59 @@
                     "first_name": "Ali",
                     "last_name": "Hassanzadeh"
                 },
+                "tags": ["buyer", "suggested"],
                 "description": "adable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                "created_at": "2023-12-12 5:12 pm"
+                "created_at": "2023-12-12",
+                "title": "perfect product",
+                "weaknesses": ["Processor", "screen"],
+                "product": {
+                    "store": "Alex",
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    }
+                },
+                "like": 7,
+                "dislike": 0,
+                "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ]
             },
             {
-                "id": 7,
+                "id": 1,
                 "user": {
                     "first_name": "Reza",
                     "last_name": "Ahmadi"
                 },
+                "title": "this product is the best",
                 "description": "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over",
-                "created_at": "2023-01-14 11:28 am"
+                "created_at": "2023-01-14",
+                "weaknesses": ["screen"],
+                "tags": ["suggested"],
+                "like": 12,
+                "dislike": 1,
+                "product": {
+                    "store": "Binesh",
+                    "color": {
+                        "name": "black",
+                        "hex": "#000"
+                    }
+                },
+                "strengths": [],
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-products/a451646b0e0dec1e27dd95404d8a18b6dbd0f3e9_1692691566.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -1245,23 +3332,48 @@
                     "last_name": "Ramzani"
                 },
                 "description": "s a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem ",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good",
+                "like": 0,
+                "dislike": 0,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "blue",
+                        "hex": "#0b5de0"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": ["Handy", "High speed"],
+                "images": []
             },
             {
-                "id": 13,
+                "id": 3,
                 "user": {
                     "first_name": "Mohammad",
                     "last_name": "Alizadeh"
                 },
                 "description": "This Product is best  Metal Case, 15.6 Inch FHD, 16GB DDR4, 512GB SSD Notebook Computer, Intel Quad-Core N95 (up to 3.40GHz) with, Lightweight Lapt",
-                "created_at": "2022-07-28 17:48 am"
+                "created_at": "2022-07-28",
+                "title": "Good on the scale of price and quality",
+                "like": 0,
+                "dislike": 1,
+                "product": {
+                    "store": "ITS product",
+                    "color": {
+                        "name": "green",
+                        "hex": "#04c90b"
+                    }
+                },
+                "weaknesses": [],
+                "strengths": [],
+                "images": []
             }
         ],
         "categories": [
             { "id": 0, "type": "category", "title": "phone" },
             { "id": 1, "type": "category", "title": "cover" }
         ],
-
         "colors": [
             { "id": 0, "title": "red", "hex": "#e81a24" },
             { "id": 1, "title": "black", "hex": "#141414" },
@@ -1278,6 +3390,103 @@
             { "id": 2, "url": "https://image.torob.com/base/images/b8/KZ/b8KZ2XutsxJOVVR3.jpg_/280x280.webp" }
         ],
         "image": "https://image.torob.com/base/images/Km/-O/Km-ObtfYgsxsGqxT.jpg_/280x280.webp",
+        "picturesOfCustomers": [
+            {
+                "id": 0,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/8e3587a31d2f5a76cdfb90cd690af90c9c144474_1675518514.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/c37774ed10429df68f54c4435037c2737bb0c694_1675518554.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "beautiful monitor",
+                    "body": "In general, the monitor is good, the only problem is that the monitor is made of poor quality plastic.",
+                    "user": {
+                        "name": "Saman",
+                        "lastName": "Amiri"
+                    },
+                    "tags": ["Suggested", "Customer"],
+                    "storeName": "Flutter",
+                    "like": 12,
+                    "disLike": 2,
+                    "color": {
+                        "name": "Lily",
+                        "hex": "#0ff"
+                    },
+                    "date": "1 month ago",
+                    "weaknesses": ["Processor", "screen"],
+                    "strengths": ["No need for a mouse pad", "pretty color", "Handy", "High speed"]
+                }
+            },
+            {
+                "id": 1,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c87f33ff78b89b2383d1c44ae1ab28955faf14f_1710132874.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    },
+                    {
+                        "id": 1,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/1c7193cd07152ef9d6bbe9dffcdf9d1d4b3437c7_1710132896.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "Samsung Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck! Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "Torob user",
+                        "lastName": ""
+                    },
+                    "tags": ["Customer", "Suggested"],
+                    "storeName": "Diatel Trade",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "blue",
+                        "hex": "#00f"
+                    },
+                    "date": "1 day ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            },
+            {
+                "id": 2,
+                "image": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
+                "images": [
+                    {
+                        "id": 0,
+                        "url": "https://dkstatics-public.digikala.com/digikala-comment-files/ec3fafb80140ea513db9e12c0b069826c4aa3ebd_1710523527.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80"
+                    }
+                ],
+                "moreDetail": {
+                    "title": "This Monitor",
+                    "body": "Whether this monitor is of good quality or not depends on what your previous monitor was, if like me your previous monitor was a high quality monitor, this monitor will never satisfy you! My previous monitor was Samsung s24d390 and I can't stand this monitor at all, but in any case the quality is not too bad, there were no burnt pixels at all. The problem with this monitor is that it is not suitable for design at all, it does not show the colors accurately, it shows the color of the image as greenish, which you can reduce this greenness with Windows display calibration and have a more normal color. Another problem is that if you make a 50% gray image and move this image on the screen, you will notice a series of spots and lines on the screen, which are more visible in games, and for this reason, I do not recommend this monitor for gaming because it is possible. May it be annoying for you. I wish someone else had mentioned these things, in that case I would have definitely chosen another monitor. Good luck!",
+                    "user": {
+                        "name": "AmirReza",
+                        "lastName": "Ahmadi"
+                    },
+                    "tags": ["Suggested"],
+                    "storeName": "My computer",
+                    "like": 2,
+                    "disLike": 0,
+                    "color": {
+                        "name": "yellow",
+                        "hex": "#ff0"
+                    },
+                    "date": "2 years ago",
+                    "weaknesses": ["روی بعضی سطوح خوب کار نمیکنه"],
+                    "strengths": ["نیاز به پد موس نداره", "خوش رنگ", "خوش دست", "سرعت بالا"]
+                }
+            }
+        ],
         "code": "trb-218894564"
     }
 ]

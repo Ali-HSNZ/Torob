@@ -9,7 +9,7 @@ import { type IProductDetailStoresProps } from './resources'
 
 const ProductDetailStores: FC<IProductDetailStoresProps> = () => {
     return (
-        <section id='store_list'>
+        <section id='store_list' className='pt-4'>
             <p className='text-base font-medium'>Stores</p>
             <ul className='flex flex-col gap-y-4 mt-4'>
                 {[1, 2, 3, 4].map((e) => (
