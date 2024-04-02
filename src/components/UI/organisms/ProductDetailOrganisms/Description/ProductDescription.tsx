@@ -1,7 +1,7 @@
 import { type FC, memo } from 'react'
 import { IconAlertCircleFilled } from '@tabler/icons-react'
 
-import { STATIC_PRODUCTS_DATA } from '@core/constants/data/constants/products'
+import { STATIC_PRODUCTS_DATA } from '@core/constants/data/products'
 
 import { type IProductDescriptionProps } from './resources'
 

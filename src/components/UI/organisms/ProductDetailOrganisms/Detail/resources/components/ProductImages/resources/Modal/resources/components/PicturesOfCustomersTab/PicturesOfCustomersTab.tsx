@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { CKeenSlider } from '@molecules/KeenSlider'
 
-import { STATIC_PRODUCTS_DATA } from '@core/constants/data/constants/products'
+import { STATIC_PRODUCTS_DATA } from '@core/constants/data/products'
 
 import {
     type IPicturesOfCustomersTabProps,

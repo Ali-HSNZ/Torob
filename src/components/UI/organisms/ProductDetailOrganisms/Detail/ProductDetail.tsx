@@ -3,7 +3,7 @@ import { IconStarFilled } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 
-import { STATIC_PRODUCTS_DATA } from '@core/constants/data/constants/products'
+import { STATIC_PRODUCTS_DATA } from '@core/constants/data/products'
 
 import { type IProductDetailProps, ProductImages } from './resources'
 

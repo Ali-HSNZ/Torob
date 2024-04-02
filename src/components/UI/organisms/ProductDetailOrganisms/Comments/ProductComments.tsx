@@ -10,7 +10,7 @@ import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
 import { CTextarea } from '@atoms/Textarea'
 
-import { STATIC_PRODUCTS_DATA } from '@core/constants/data/constants/products'
+import { STATIC_PRODUCTS_DATA } from '@core/constants/data/products'
 import { type TCriticalAny } from '@core/types/critical-any'
 import { getTextWidth } from '@core/utils/common/get-text-width'
 import { scrollToSection } from '@core/utils/common/scrollToSection'

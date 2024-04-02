@@ -4,7 +4,7 @@ import { useQueryParam } from 'use-query-params'
 import { ColumnProductCard } from '@molecules/ColumnProductCard'
 import { RowProductCard } from '@molecules/RowProductCard'
 
-import { STATIC_PRODUCTS_DATA } from '@core/constants/data/constants/products'
+import { STATIC_PRODUCTS_DATA } from '@core/constants/data/products'
 
 const SearchProductsList = () => {
     // url param
