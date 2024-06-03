@@ -1,4 +1,3 @@
-import { type FC } from 'react'
 import { StringParam, useQueryParams } from 'use-query-params'
 import { IconX } from '@tabler/icons-react'
 
@@ -6,7 +5,7 @@ import { CActionIcon } from '@atoms/ActionIcon'
 
 import { slugToText } from '@core/utils/common/slugToText'
 
-const AvailableFilters: FC = () => {
+const AvailableFilters = () => {
     const [{ available, brand, max, min, category }, setQuery] = useQueryParams({
         min: StringParam,
         max: StringParam,

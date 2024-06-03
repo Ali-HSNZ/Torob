@@ -1,10 +1,9 @@
-import { type FC } from 'react'
 import Link from 'next/link'
 import { IconShoppingBag } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 
-const HeaderCardButton: FC = () => {
+const HeaderCardButton = () => {
     return (
         <CActionIcon
             size={'auto'}

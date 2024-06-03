@@ -1,8 +1,6 @@
-import { type FC } from 'react'
-
 import { ProductsTemplate } from '@templates/ProductsTemplate'
 
-const page: FC = () => {
+const page = () => {
     return <ProductsTemplate />
 }
 

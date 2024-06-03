@@ -1,9 +1,8 @@
-import { type FC } from 'react'
 import { useQueryParam } from 'use-query-params'
 
 import { CCheckbox } from '@atoms/Checkbox'
 
-const SidebarAvailable: FC = () => {
+const SidebarAvailable = () => {
     const [query, setQuery] = useQueryParam<string>('available')
 
     const isDefaultChecked: boolean = query && query === 'true' ? true : false

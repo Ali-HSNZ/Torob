@@ -1,4 +1,4 @@
-import { type FC, useCallback, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { NumberParam, useQueryParams } from 'use-query-params'
 import { IconCurrencyDollar } from '@tabler/icons-react'
 
@@ -8,7 +8,7 @@ import { CRangeSlider } from '@atoms/RangeSlider'
 
 import { type TPriceRangeType } from './resources'
 
-const SidebarPrice: FC = () => {
+const SidebarPrice = () => {
     const maxPrice = 1000000
 
     const [query, setQuery] = useQueryParams({

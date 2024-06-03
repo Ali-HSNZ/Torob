@@ -2,7 +2,7 @@ import { forwardRef } from 'react'
 import { createPolymorphicComponent, TextInput, type TextInputProps } from '@mantine/core'
 
 const CustomTextInput = forwardRef<HTMLInputElement, TextInputProps>(({ className, ...res }, ref) => {
-    return <TextInput autoComplete={'off'} className={className} ref={ref} {...res} />
+    return <TextInput autoComplete={'off'} className={`${className}`} ref={ref} {...res} />
 })
 
 CustomTextInput.displayName = 'TextInput'

@@ -1,4 +1,3 @@
-import { type FC } from 'react'
 import Link from 'next/link'
 import { useMediaQuery } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
@@ -8,7 +7,7 @@ import { CPopover } from '@atoms/Popover'
 
 import { STATIC_HEADER_MENU_ITEM } from '../..'
 
-const HeaderMenu: FC = () => {
+const HeaderMenu = () => {
     const matches = useMediaQuery('(min-width: 1024px)')
 
     return (

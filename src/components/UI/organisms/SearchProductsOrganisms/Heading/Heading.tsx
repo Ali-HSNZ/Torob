@@ -1,4 +1,3 @@
-import { type FC } from 'react'
 import { StringParam, useQueryParams } from 'use-query-params'
 
 import { CBreadcrumbs } from '@atoms/Breadcrumbs'
@@ -13,7 +12,7 @@ import {
     STATIC_BREADCRUMBS_LIST,
 } from './resources'
 
-const SearchProductsHeading: FC = () => {
+const SearchProductsHeading = () => {
     const [query, setQuery] = useQueryParams({
         search: StringParam,
         view: StringParam,

@@ -1,9 +1,7 @@
-import { type FC } from 'react'
-
 import { CButton } from '@atoms/Button'
 import { CTextInput } from '@atoms/TextInput'
 
-const CartSummary: FC = () => {
+const CartSummary = () => {
     return (
         <div className='lg:py-4 flex flex-col gap-4 flex-1'>
             <p className='text-base font-bold'>Summary</p>

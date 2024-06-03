@@ -1,4 +1,3 @@
-import { type FC } from 'react'
 import { useRouter } from 'next/navigation'
 import { Controller, useForm } from 'react-hook-form'
 import { useElementSize } from '@mantine/hooks'
@@ -10,7 +9,7 @@ import { CTextInput } from '@atoms/TextInput'
 import { Routes } from '@core/constants/routes'
 import { type THomeSearchProductFormSchemaType } from '@core/types/forms-schema/home-search-product-form'
 
-const HomeSearchInput: FC = () => {
+const HomeSearchInput = () => {
     const { ref, width: searchInputWidth } = useElementSize()
     const { push } = useRouter()
 

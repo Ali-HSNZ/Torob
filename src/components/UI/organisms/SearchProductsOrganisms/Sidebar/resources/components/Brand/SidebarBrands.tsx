@@ -1,4 +1,4 @@
-import { type FC, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useDisclosure } from '@mantine/hooks'
 import { useQueryParam } from 'use-query-params'
 import { IconSearch } from '@tabler/icons-react'
@@ -10,7 +10,7 @@ import { textToSlug } from '@core/utils/common/textToSlug'
 
 import { STATIC_BRANDS_LIST } from './resources'
 
-const SidebarBrands: FC = () => {
+const SidebarBrands = () => {
     const [query, setQuery] = useQueryParam<string>('brand')
 
     const [isShow, { toggle }] = useDisclosure(false)

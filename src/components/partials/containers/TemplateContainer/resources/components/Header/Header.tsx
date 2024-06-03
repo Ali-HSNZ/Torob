@@ -1,4 +1,3 @@
-import { type FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useDisclosure } from '@mantine/hooks'
@@ -8,7 +7,7 @@ import { CButton } from '@atoms/Button'
 
 import { HeaderCardButton, HeaderDrawerMenu, HeaderMenu, HeaderUserActionButtons } from '../resources'
 
-const Header: FC = () => {
+const Header = () => {
     const [openedDrawer, { toggle: toggleDrawer }] = useDisclosure(false)
 
     return (

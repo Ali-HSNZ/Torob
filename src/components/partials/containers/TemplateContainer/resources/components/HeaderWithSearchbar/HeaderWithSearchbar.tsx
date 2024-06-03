@@ -1,4 +1,3 @@
-import { type FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useDisclosure, useElementSize } from '@mantine/hooks'
@@ -11,7 +10,7 @@ import { CTextInput } from '@atoms/TextInput'
 
 import { HeaderCardButton, HeaderDrawerMenu, HeaderMenu, HeaderUserActionButtons } from '../resources'
 
-const HeaderWithSearchbar: FC = () => {
+const HeaderWithSearchbar = () => {
     const [openedDrawer, { toggle: toggleDrawer }] = useDisclosure(false)
 
     // Get Search Input Width For Handling Popup Dropdown Width And Position

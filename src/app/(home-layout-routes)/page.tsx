@@ -1,8 +1,6 @@
-import { type FC } from 'react'
-
 import { HomeTemplate } from '@templates/HomeTemplate'
 
-const page: FC = () => {
+const page = () => {
     return <HomeTemplate />
 }
 

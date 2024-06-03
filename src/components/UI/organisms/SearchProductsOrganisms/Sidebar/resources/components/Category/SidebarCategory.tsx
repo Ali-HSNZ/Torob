@@ -26,7 +26,7 @@ const renderCategory: FC<IRenderCategoryProps> = ({ category, query, setQuery })
     )
 }
 
-const SidebarCategory: FC = () => {
+const SidebarCategory = () => {
     const [query, setQuery] = useQueryParam<string>('category')
 
     return STATIC_CATEGORIES.map((category) => renderCategory({ category, setQuery, query }))

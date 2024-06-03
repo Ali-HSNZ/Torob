@@ -1,11 +1,10 @@
-import { type FC } from 'react'
 import { IconChevronRight } from '@tabler/icons-react'
 
 import { CNavLink } from '@atoms/NavLink'
 
 import { SidebarAvailable, SidebarBrands, SidebarCategory, SidebarPrice } from './resources'
 
-const SearchProductsSidebar: FC = () => {
+const SearchProductsSidebar = () => {
     return (
         <section className='w-96 h-screen  overflow-y-auto sticky pb-4 top-0 space-y-2  bg-white'>
             {/* Brand */}

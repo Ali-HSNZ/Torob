@@ -1,4 +1,4 @@
-import { type FC, memo } from 'react'
+import { memo } from 'react'
 import { useWindowScroll } from '@mantine/hooks'
 import { IconChevronUp, IconHeart, IconShare } from '@tabler/icons-react'
 import { IconBell, IconBuildingStore, IconMessage, IconProgressAlert } from '@tabler/icons-react'
@@ -8,7 +8,7 @@ import { CTooltip } from '@atoms/Tooltip'
 
 import { scrollToSection } from '@core/utils/common/scrollToSection'
 
-const ProductDetailSidebar: FC = () => {
+const ProductDetailSidebar = () => {
     const [, scrollTo] = useWindowScroll()
 
     const backToTop = () => {

@@ -3,7 +3,7 @@ import { Button, type ButtonProps, createPolymorphicComponent } from '@mantine/c
 
 const CustomButton = forwardRef<HTMLButtonElement, ButtonProps>(({ className, classNames, children, ...res }, ref) => {
     return (
-        <Button ref={ref} classNames={{ ...classNames }} className={`focus:outline-none ${className}`} {...res}>
+        <Button ref={ref} classNames={{ ...classNames }} className={`b focus:outline-none ${className}`} {...res}>
             {children}
         </Button>
     )
