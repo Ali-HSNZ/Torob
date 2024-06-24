@@ -1,4 +1,5 @@
-import { SingleComment } from './components/SingleComment'
+import ProductCommentForm from './components/Form/ProductCommentForm'
+import SingleComment from './components/SingleComment/SingleComment'
 import type IProductCommentsProps from './types/type'
 
-export { type IProductCommentsProps, SingleComment }
+export { type IProductCommentsProps, ProductCommentForm, SingleComment }
