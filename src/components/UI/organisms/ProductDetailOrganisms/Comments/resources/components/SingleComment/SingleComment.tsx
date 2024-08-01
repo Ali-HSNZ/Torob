@@ -1,5 +1,4 @@
 import { type FC, memo } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Avatar } from '@mantine/core'
 import { IconThumbUpFilled } from '@tabler/icons-react'
@@ -7,6 +6,7 @@ import { IconBuildingStore } from '@tabler/icons-react'
 import { IconThumbDownFilled } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
+import { NextImage } from '@atoms/Image'
 
 import avatar from '@public/images/comments/avatar.jpg'
 
@@ -50,7 +50,7 @@ const SingleComment: FC<ISingleCommentProps> = ({ comment }) => {
                                     key={image.id}
                                     className={`w-6 h-6 rounded-md text-center relative`}
                                 >
-                                    <Image
+                                    <NextImage
                                         blurDataURL={image.url}
                                         fill
                                         src={image.url}

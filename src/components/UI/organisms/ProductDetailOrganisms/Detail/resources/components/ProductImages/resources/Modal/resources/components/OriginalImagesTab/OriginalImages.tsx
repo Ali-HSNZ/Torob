@@ -1,7 +1,8 @@
 import { type FC, memo, useState } from 'react'
-import Image from 'next/image'
 
 import { CKeenSlider } from '@molecules/KeenSlider'
+
+import { NextImage } from '@atoms/Image'
 
 import { type IOriginalImagesTabProps } from './resources'
 
@@ -24,7 +25,7 @@ const OriginalImagesTab: FC<IOriginalImagesTabProps> = ({ images, productTitle, 
                             <figure
                                 className={`w-12 h-12 select-none rounded-[4px] overflow-hidden text-center relative`}
                             >
-                                <Image
+                                <NextImage
                                     blurDataURL={image.url}
                                     placeholder='blur'
                                     fill
@@ -48,7 +49,7 @@ const OriginalImagesTab: FC<IOriginalImagesTabProps> = ({ images, productTitle, 
                             key={image.id}
                             className={`keen-slider__slide h-[400px] lg:h-[550px] !w-[100%] shrink-0 relative flex items-center justify-center`}
                         >
-                            <Image
+                            <NextImage
                                 sizes='80vw'
                                 className='object-contain'
                                 fill

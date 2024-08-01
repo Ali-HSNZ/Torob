@@ -1,11 +1,11 @@
 import React, { type FC } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { IconBell, IconHeart, IconShoppingBagPlus } from '@tabler/icons-react'
 import { IconShare } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
+import { NextImage } from '@atoms/Image'
 import { CRating } from '@atoms/Rating'
 
 import { Routes } from '@core/constants/routes'
@@ -20,7 +20,7 @@ const RowProductCard: FC<IRowProductCardProps> = ({ product }) => {
                 {/* image */}
                 <div className=' w-fit flex justify-center items-center '>
                     <figure className='h-24 w-28 relative '>
-                        <Image
+                        <NextImage
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                             alt={product.title}
                             fill

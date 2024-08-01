@@ -1,7 +1,8 @@
 import { type FC, memo, useState } from 'react'
-import Image from 'next/image'
 
 import { CKeenSlider } from '@molecules/KeenSlider'
+
+import { NextImage } from '@atoms/Image'
 
 import { STATIC_PRODUCTS_DATA } from '@core/constants/data/products'
 
@@ -68,10 +69,11 @@ const PicturesOfCustomersTab: FC<IPicturesOfCustomersTabProps> = ({ productTitle
                                 key={index}
                                 className={`keen-slider__slide h-[400px] lg:h-[550px] !w-[100%] shrink-0 relative flex items-center justify-center`}
                             >
-                                <Image
+                                <NextImage
                                     sizes='80vw'
                                     className='object-contain'
                                     fill
+                                    draggable={false}
                                     blurDataURL={image.image}
                                     src={image.image}
                                     loading='lazy'

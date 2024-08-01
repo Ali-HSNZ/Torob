@@ -1,8 +1,8 @@
 import { type FC, memo } from 'react'
-import Image from 'next/image'
 import { IconBuildingStore, IconChevronRight, IconUser } from '@tabler/icons-react'
 
 import { CButton } from '@atoms/Button'
+import { NextImage } from '@atoms/Image'
 
 import type { IPicturesOfCustomersTabDetailProps } from './resources'
 
@@ -38,7 +38,7 @@ const PicturesOfCustomersTabDetail: FC<IPicturesOfCustomersTabDetailProps> = ({
                         <div className='flex gap-x-1.5'>
                             {images.map((image, index) => (
                                 <figure key={image.id} className={`w-6 h-6 rounded-md text-center relative`}>
-                                    <Image
+                                    <NextImage
                                         blurDataURL={image.url}
                                         fill
                                         src={image.url}

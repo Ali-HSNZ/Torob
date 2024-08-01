@@ -1,8 +1,9 @@
 import { type FC, memo, useState } from 'react'
-import Image from 'next/image'
 import { Modal } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconDots } from '@tabler/icons-react'
+
+import { NextImage } from '@atoms/Image'
 
 import { type IProductImagesProps, ProductImagesModal } from './resources'
 
@@ -47,7 +48,7 @@ const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl
                                     index === 3 ? 'blur-sm' : ''
                                 }`}
                             >
-                                <Image
+                                <NextImage
                                     sizes='(max-width: 640px) 40vw, (min-width: 640px) 60vw'
                                     fill
                                     src={image.url}
@@ -72,7 +73,7 @@ const ProductImages: FC<IProductImagesProps> = ({ productTitle, images, imageUrl
                     }}
                     className='w-80 h-80 relative cursor-pointer'
                 >
-                    <Image sizes='80vw' className='object-contain' fill src={imageUrl} alt={productTitle} />
+                    <NextImage sizes='80vw' className='object-contain' fill src={imageUrl} alt={productTitle} />
                 </figure>
             </div>
         </>

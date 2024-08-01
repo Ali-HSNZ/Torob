@@ -1,5 +1,6 @@
 import { type FC, memo } from 'react'
-import Image from 'next/image'
+
+import { NextImage } from '@atoms/Image'
 
 import avatar from '@public/images/user-avatar.png'
 
@@ -23,7 +24,7 @@ const PicturesOfCustomersTabThumbnails: FC<IPicturesOfCustomersTabThumbnailsProp
                     >
                         {/* image src */}
                         <figure className={`w-14 h-14 select-none rounded-[4px] overflow-hidden text-center relative`}>
-                            <Image
+                            <NextImage
                                 fill
                                 src={item.image}
                                 alt={'thumbnail image'}
@@ -33,7 +34,7 @@ const PicturesOfCustomersTabThumbnails: FC<IPicturesOfCustomersTabThumbnailsProp
 
                         {/* user avatar */}
                         <figure className={`w-6 h-6 absolute top-1 select-none rounded-md text-center`}>
-                            <Image
+                            <NextImage
                                 fill
                                 src={avatar.src}
                                 alt={'thumbnail image'}

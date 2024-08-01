@@ -1,10 +1,10 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { useDisclosure, useElementSize } from '@mantine/hooks'
 import { IconMenu2 } from '@tabler/icons-react'
 import { IconSearch } from '@tabler/icons-react'
 
 import { CButton } from '@atoms/Button'
+import { NextImage } from '@atoms/Image'
 import { CPopover } from '@atoms/Popover'
 import { CTextInput } from '@atoms/TextInput'
 
@@ -36,7 +36,7 @@ const HeaderWithSearchbar = () => {
                         {/* Torob Logo */}
                         <Link href={'/'} className='flex items-center'>
                             <figure className='relative w-[40px] h-[35px]'>
-                                <Image
+                                <NextImage
                                     alt='Torob logo'
                                     priority
                                     className='h-full object-cover w-auto'

@@ -1,5 +1,4 @@
 import { type FC, memo } from 'react'
-import Image from 'next/image'
 import { ActionIcon } from '@mantine/core'
 import {
     IconBuildingStore,
@@ -18,6 +17,7 @@ import { CKeenSlider } from '@molecules/KeenSlider'
 
 import { CActionIcon } from '@atoms/ActionIcon'
 import { CButton } from '@atoms/Button'
+import { NextImage } from '@atoms/Image'
 import { CMenu } from '@atoms/Menu'
 import { CRating } from '@atoms/Rating'
 
@@ -153,7 +153,7 @@ const PicturesOfCustomersTabUserDetail: FC<IPicturesOfCustomersTabUserDetailProp
                                     key={index}
                                     className={`keen-slider__slide h-[400px] lg:h-[500px] !w-[100%] shrink-0 relative flex items-start justify-center`}
                                 >
-                                    <Image
+                                    <NextImage
                                         sizes='80vw'
                                         className='object-contain'
                                         fill

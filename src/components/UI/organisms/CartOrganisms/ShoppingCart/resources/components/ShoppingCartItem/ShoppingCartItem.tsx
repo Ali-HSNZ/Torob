@@ -1,8 +1,8 @@
 import { type FC, useState } from 'react'
-import Image from 'next/image'
 import { IconMinus, IconPlus, IconTrash } from '@tabler/icons-react'
 
 import { CActionIcon } from '@atoms/ActionIcon'
+import { NextImage } from '@atoms/Image'
 
 import { type IShoppingCartItemProps } from './resources'
 
@@ -14,7 +14,12 @@ const ShoppingCartItem: FC<IShoppingCartItemProps> = ({ product }) => {
             <div className='grid  lg:grid-cols-8 w-full gap-4 items-center'>
                 <div className='flex col-span-6 gap-x-4 items-center'>
                     <div className='relative shrink-0 h-16 w-16'>
-                        <Image src={product.image} fill className='object-contain aspect-square' alt={product.title} />
+                        <NextImage
+                            src={product.image}
+                            fill
+                            className='object-contain aspect-square'
+                            alt={product.title}
+                        />
                     </div>
                     <div>
                         <p className='text-xs'>{product.category}</p>
