@@ -16,31 +16,34 @@ const ProductDetailSidebar = () => {
     }
 
     return (
-        <div className='hidden sm:flex sticky  top-0  bg-white h-screen p-4 gap-y-4  justify-start flex-col items-center'>
-            {/* Share */}
-            <CTooltip label='Share' withArrow color='#383838' arrowSize={7} position='left'>
-                <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
-                    <IconShare />
-                </CActionIcon>
-            </CTooltip>
+        <div className=' flex sm:sticky top-0  bg-white sm:h-screen p-4 gap-y-4 justify-between w-full sm:w-fit sm:justify-start sm:flex-col items-center'>
+            <div className='flex sm:flex-col justify-around sm:justify-normal gap-y-4 w-1/2 sm:w-fit'>
+                {/* Share */}
+                <CTooltip label='Share' withArrow color='#383838' arrowSize={7} position='left'>
+                    <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
+                        <IconShare />
+                    </CActionIcon>
+                </CTooltip>
 
-            {/* Like */}
-            <CTooltip label='Like' withArrow color='#383838' arrowSize={7} position='left'>
-                <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
-                    <IconHeart />
-                </CActionIcon>
-            </CTooltip>
+                {/* Like */}
+                <CTooltip label='Like' withArrow color='#383838' arrowSize={7} position='left'>
+                    <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
+                        <IconHeart />
+                    </CActionIcon>
+                </CTooltip>
 
-            {/* Analyze */}
-            <CTooltip label='Analyze' withArrow color='#383838' arrowSize={7} position='left'>
-                <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
-                    <IconBell />
-                </CActionIcon>
-            </CTooltip>
+                {/* Analyze */}
+                <CTooltip label='Analyze' withArrow color='#383838' arrowSize={7} position='left'>
+                    <CActionIcon size={'lg'} className='text-gray-400' variant='transparent' color='dark'>
+                        <IconBell />
+                    </CActionIcon>
+                </CTooltip>
+            </div>
 
-            <div className='w-full border'></div>
-            <div className='h-full flex flex-col justify-between'>
-                <div className='flex flex-col gap-y-4'>
+            <div className='w-[1px] h-7 sm:h-auto sm:w-full border  '></div>
+
+            <div className='sm:h-full flex sm:flex-col justify-between w-1/2 sm:w-fit'>
+                <div className='w-full sm:w-fit flex sm:flex-col justify-around sm:justify-normal gap-y-4'>
                     <CTooltip label='stores' withArrow color='#383838' arrowSize={7} position='left'>
                         <CActionIcon
                             onClick={() => scrollToSection('store_list')}
@@ -78,17 +81,19 @@ const ProductDetailSidebar = () => {
                     </CTooltip>
                 </div>
 
-                <CTooltip label='Back to top' withArrow color='#383838' arrowSize={7} position='left'>
-                    <CActionIcon
-                        onClick={backToTop}
-                        size={'lg'}
-                        className='text-gray-400'
-                        variant='transparent'
-                        color='dark'
-                    >
-                        <IconChevronUp />
-                    </CActionIcon>
-                </CTooltip>
+                <div className='hidden sm:block'>
+                    <CTooltip label='Back to top' withArrow color='#383838' arrowSize={7} position='left'>
+                        <CActionIcon
+                            onClick={backToTop}
+                            size={'lg'}
+                            className='text-gray-400'
+                            variant='transparent'
+                            color='dark'
+                        >
+                            <IconChevronUp />
+                        </CActionIcon>
+                    </CTooltip>
+                </div>
             </div>
         </div>
     )

@@ -35,10 +35,10 @@ const SingleComment: FC<ISingleCommentProps> = ({ comment }) => {
                     />
 
                     {/* title */}
-                    <p className='text-sm normal-case font-medium'>{comment.title}</p>
+                    <p className='text-sm case font-semibold normal-case text-black'>{comment.title}</p>
 
                     {/* description */}
-                    <p className='text-sm '>{comment.description}</p>
+                    <p className='text-xs text-gray-800'>{comment.description}</p>
 
                     {/* images */}
                     {comment.images.length > 0 && (
