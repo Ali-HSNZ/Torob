@@ -1,3 +1,3 @@
-import type IProductPropertiesProps from './types/type'
+import type IProductDetailPropertiesProps from './types/type'
 
-export type { IProductPropertiesProps }
+export type { IProductDetailPropertiesProps }

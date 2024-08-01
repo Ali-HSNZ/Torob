@@ -3,9 +3,9 @@ import { IconAlertCircleFilled } from '@tabler/icons-react'
 
 import { STATIC_PRODUCTS_DATA } from '@core/constants/data/products'
 
-import { type IProductDescriptionProps } from './resources'
+import { type IProductDetailDescriptionProps } from './resources'
 
-const ProductDescription: FC<IProductDescriptionProps> = ({ productCode }) => {
+const ProductDetailDescription: FC<IProductDetailDescriptionProps> = ({ productCode }) => {
     const product = STATIC_PRODUCTS_DATA.find((e) => e.code === productCode)
 
     if (product)
@@ -28,4 +28,4 @@ const ProductDescription: FC<IProductDescriptionProps> = ({ productCode }) => {
         )
 }
 
-export default memo(ProductDescription)
+export default memo(ProductDetailDescription)

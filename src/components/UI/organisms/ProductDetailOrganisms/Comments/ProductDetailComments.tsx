@@ -1,3 +1,4 @@
+'use client'
 import { type FC, memo } from 'react'
 import { Modal } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
@@ -7,9 +8,9 @@ import { CButton } from '@atoms/Button'
 
 import { STATIC_PRODUCTS_DATA } from '@core/constants/data/products'
 
-import { type IProductCommentsProps, ProductCommentForm, SingleComment } from './resources'
+import { type IProductDetailCommentsProps, ProductCommentForm, SingleComment } from './resources'
 
-const ProductComments: FC<IProductCommentsProps> = ({ productCode }) => {
+const ProductDetailComments: FC<IProductDetailCommentsProps> = ({ productCode }) => {
     const product = STATIC_PRODUCTS_DATA.find((e) => e.code === productCode)
 
     const [opened, { open, close }] = useDisclosure(false)
@@ -48,4 +49,4 @@ const ProductComments: FC<IProductCommentsProps> = ({ productCode }) => {
         )
 }
 
-export default memo(ProductComments)
+export default memo(ProductDetailComments)

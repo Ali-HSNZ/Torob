@@ -1,3 +1,4 @@
+'use client'
 import { memo } from 'react'
 import { useWindowScroll } from '@mantine/hooks'
 import { IconChevronUp, IconHeart, IconShare } from '@tabler/icons-react'

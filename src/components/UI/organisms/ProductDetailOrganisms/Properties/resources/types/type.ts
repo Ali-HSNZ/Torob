@@ -1,5 +1,5 @@
-interface IProductPropertiesProps {
+interface IProductDetailPropertiesProps {
     productCode: string
 }
 
-export default IProductPropertiesProps
+export default IProductDetailPropertiesProps

@@ -1,12 +1,14 @@
 import { type FC } from 'react'
 
-import { ProductComments } from '@organisms/ProductDetailOrganisms/Comments'
-import { ProductDescription } from '@organisms/ProductDetailOrganisms/Description'
-import { ProductDetail } from '@organisms/ProductDetailOrganisms/Detail'
-import { ProductPriceChanges } from '@organisms/ProductDetailOrganisms/PriceChanges'
-import { ProductProperties } from '@organisms/ProductDetailOrganisms/Properties'
-import { ProductDetailSidebar } from '@organisms/ProductDetailOrganisms/Sidebar'
-import { ProductDetailStores } from '@organisms/ProductDetailOrganisms/Stores'
+import {
+    ProductDetail,
+    ProductDetailComments,
+    ProductDetailDescription,
+    ProductDetailPriceChanges,
+    ProductDetailProperties,
+    ProductDetailSidebar,
+    ProductDetailStores,
+} from '@organisms/ProductDetailOrganisms'
 
 import { type IProductDetailTemplateProps } from './resources'
 
@@ -22,21 +24,21 @@ const ProductDetailTemplate: FC<IProductDetailTemplateProps> = ({ productCode })
 
                     {/* price change list */}
                     <div className='w-full grid xl:col-span-4'>
-                        <ProductPriceChanges />
+                        <ProductDetailPriceChanges />
                     </div>
                 </div>
 
                 {/* description */}
-                <ProductDescription productCode={productCode} />
+                <ProductDetailDescription productCode={productCode} />
 
                 {/* stores list */}
                 <ProductDetailStores productCode={productCode} />
 
                 {/* Properties */}
-                <ProductProperties productCode={productCode} />
+                <ProductDetailProperties productCode={productCode} />
 
                 {/* Comments */}
-                <ProductComments productCode={productCode} />
+                <ProductDetailComments productCode={productCode} />
             </div>
 
             {/* sidebar */}

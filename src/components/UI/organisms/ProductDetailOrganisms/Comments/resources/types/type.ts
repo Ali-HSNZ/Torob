@@ -1,5 +1,5 @@
-interface IProductCommentsProps {
+interface IProductDetailCommentsProps {
     productCode: string
 }
 
-export default IProductCommentsProps
+export default IProductDetailCommentsProps

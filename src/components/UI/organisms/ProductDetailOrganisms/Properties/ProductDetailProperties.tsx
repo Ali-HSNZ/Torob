@@ -1,8 +1,8 @@
 import { type FC, memo } from 'react'
 
-import { type IProductPropertiesProps } from './resources'
+import { type IProductDetailPropertiesProps } from './resources'
 
-const ProductProperties: FC<IProductPropertiesProps> = () => {
+const ProductDetailProperties: FC<IProductDetailPropertiesProps> = () => {
     return (
         <section id='product_properties_list' className='pt-4'>
             <h2 className='text-base font-medium'>Properties</h2>
@@ -43,4 +43,4 @@ const ProductProperties: FC<IProductPropertiesProps> = () => {
     )
 }
 
-export default memo(ProductProperties)
+export default memo(ProductDetailProperties)

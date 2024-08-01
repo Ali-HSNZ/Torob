@@ -1,3 +1,5 @@
+'use client'
+
 import { type FC, memo, useState } from 'react'
 import { IconStarFilled } from '@tabler/icons-react'
 

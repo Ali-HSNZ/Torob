@@ -4,7 +4,7 @@ import { DAreaChart } from '@molecules/DCharts/DAreaChart'
 
 import { STATIC_CHART_DATA } from './resources'
 
-const ProductPriceChanges = () => {
+const ProductDetailPriceChanges = () => {
     return (
         <div className='w-full shrink-0 p-2 bg-white'>
             <p className='px-2 pt-2 text-sm font-medium'>Price changes</p>
@@ -17,4 +17,4 @@ const ProductPriceChanges = () => {
     )
 }
 
-export default memo(ProductPriceChanges)
+export default memo(ProductDetailPriceChanges)
