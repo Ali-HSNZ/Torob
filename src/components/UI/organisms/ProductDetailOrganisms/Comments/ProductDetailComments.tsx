@@ -39,9 +39,10 @@ const ProductDetailComments: FC<IProductDetailCommentsProps> = ({ productCode })
                 <Modal
                     classNames={{ body: 'p-0' }}
                     centered
+                    size={'lg'}
                     opened={opened}
                     onClose={close}
-                    title='My point of view and score'
+                    title='New Comment'
                 >
                     <ProductCommentForm />
                 </Modal>
