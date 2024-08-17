@@ -13,6 +13,8 @@ import { IconHeart } from '@tabler/icons-react'
 import { CButton } from '@atoms/Button'
 import { CMenu } from '@atoms/Menu'
 
+import { APP_ROUTES } from '@core/routes'
+
 const HeaderUserActionButtons = () => {
     const smMatchesMediaQuery = useMediaQuery('(min-width: 640px)')
 
@@ -37,7 +39,7 @@ const HeaderUserActionButtons = () => {
                     <CMenu.Item
                         className='text-sm'
                         leftSection={<IconAdjustmentsAlt stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
-                        href={'#'}
+                        href={APP_ROUTES.AdminPanel}
                     >
                         Control Panel
                     </CMenu.Item>
@@ -46,7 +48,7 @@ const HeaderUserActionButtons = () => {
                         className='text-sm'
                         leftSection={<IconHeart stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
-                        href={'#'}
+                        href={APP_ROUTES.Favorites}
                     >
                         Favorites
                     </CMenu.Item>
@@ -55,7 +57,7 @@ const HeaderUserActionButtons = () => {
                         className='text-sm'
                         leftSection={<IconHistory stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
-                        href={'#'}
+                        href={APP_ROUTES.Recent}
                     >
                         Recent
                     </CMenu.Item>
@@ -64,7 +66,7 @@ const HeaderUserActionButtons = () => {
                         className='text-sm'
                         leftSection={<IconTruckDelivery stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
-                        href={'#'}
+                        href={APP_ROUTES.Orders}
                     >
                         Orders
                     </CMenu.Item>
@@ -76,8 +78,6 @@ const HeaderUserActionButtons = () => {
                         color='red'
                         className='text-sm'
                         leftSection={<IconLogout2 stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
-                        component={Link}
-                        href={'#'}
                     >
                         Logout
                     </CMenu.Item>
