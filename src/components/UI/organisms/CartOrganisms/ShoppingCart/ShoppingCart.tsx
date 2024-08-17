@@ -7,14 +7,9 @@ const ShoppingCart = () => {
                 <p className='text-base font-bold'>Shopping Cart</p>
                 <hr />
             </div>
-            <div className='flex flex-col '>
-                {STATIC_SHOPPING_CART_DATA.map((product, index) => (
-                    <div key={product.id} className=''>
-                        {index !== 0 && <hr />}
-                        <div className={`${index === 0 ? 'pb-4' : 'py-4'}`}>
-                            <ShoppingCartItem product={product} />
-                        </div>
-                    </div>
+            <div className='flex flex-col gap-y-4 divide-y divide-gray-200'>
+                {STATIC_SHOPPING_CART_DATA.map((product) => (
+                    <ShoppingCartItem key={product.id} product={product} className='last:pt-4' />
                 ))}
             </div>
         </div>

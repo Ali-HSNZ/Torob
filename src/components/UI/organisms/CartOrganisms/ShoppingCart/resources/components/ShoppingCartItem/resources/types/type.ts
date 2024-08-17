@@ -6,7 +6,12 @@ interface IShoppingCartItemProps {
         image: string
         cart: number
         price: number
+        moreDetail: {
+            label: string
+            value: number | string
+        }[]
     }
+    className?: string
 }
 
 export type { IShoppingCartItemProps }

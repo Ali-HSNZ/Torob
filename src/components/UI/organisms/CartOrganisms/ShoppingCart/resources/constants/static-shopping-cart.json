@@ -1,34 +1,54 @@
 [
     {
         "id": 0,
-        "cart": 5,
-        "price": 54700,
-        "title": "Honor X9a 5G phone Memory 256 RAM 8 GB Honor X9a 5G 256/8 GB",
+        "cart": 1,
+        "price": 15445,
+        "title": "Canon EF 50mm f/1.8 STM lens",
         "category": "Smart Phone",
-        "image": "https://image.torob.com/base/images/8M/kE/8MkEEIamcOiAnvWq.jpg_/280x280.webp"
+        "image": "https://image.torob.com/base/images/8M/kE/8MkEEIamcOiAnvWq.jpg_/280x280.webp",
+        "moreDetail": [
+            {
+                "label": "color",
+                "value": "Black"
+            },
+            {
+                "label": "primary service",
+                "value": "7 days return guarantee"
+            },
+            {
+                "label": "delivery",
+                "value": "torob, seller"
+            },
+            {
+                "label": "guarantee",
+                "value": "Guarantee of authenticity and physical health of goods"
+            }
+        ]
     },
     {
         "id": 1,
-        "cart": 7,
-        "price": 5200,
-        "title": "Honor 90 5G phone 256 RAM 8 GB Honor 90 5G 256/8 GB",
-        "category": "Honor",
-        "image": "https://image.torob.com/base/images/75/oc/75oc0q_8HBb3TJh9.jpg_/280x280.webp"
-    },
-    {
-        "id": 2,
         "cart": 1,
-        "price": 14.2,
-        "title": "Samsung S23 FE 5G | Memory 256 RAM 8 GB Samsung Galaxy S23 FE 5G 256/8 GB",
-        "category": "Samsung",
-        "image": "https://image.torob.com/base/images/1r/zA/1rzAzolj0AhxkIdv.jpg_/280x280.webp"
-    },
-    {
-        "id": 3,
-        "cart": 3,
-        "price": 240,
-        "title": "Banda KM-99 RGB gaming keyboard and mouse Banda KM-99 RGB",
-        "category": "Keyboard and mouse",
-        "image": "https://image.torob.com/base/images/ts/km/tskmQChL9vBJ_4QW.jpg_/280x280.webp"
+        "price": 54700,
+        "title": "Honor X9a 5G phone Memory 256 RAM 8 GB Honor X9a 5G 256/8 GB",
+        "category": "Smart Phone",
+        "image": "https://image.torob.com/base/images/8M/kE/8MkEEIamcOiAnvWq.jpg_/280x280.webp",
+        "moreDetail": [
+            {
+                "label": "color",
+                "value": "Black"
+            },
+            {
+                "label": "primary service",
+                "value": "7 days return guarantee"
+            },
+            {
+                "label": "delivery",
+                "value": "torob, seller"
+            },
+            {
+                "label": "guarantee",
+                "value": "Guarantee of authenticity and physical health of goods"
+            }
+        ]
     }
 ]
