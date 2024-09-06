@@ -1,5 +1,6 @@
 'use client'
-import { memo } from 'react'
+
+import { type FC, memo } from 'react'
 import { useWindowScroll } from '@mantine/hooks'
 import { IconChevronUp, IconHeart, IconShare } from '@tabler/icons-react'
 import { IconBell, IconBuildingStore, IconMessage, IconProgressAlert } from '@tabler/icons-react'
@@ -9,7 +10,9 @@ import { CTooltip } from '@atoms/Tooltip'
 
 import { scrollToSection } from '@core/utils/common/scrollToSection'
 
-const ProductDetailSidebar = () => {
+import { type IProductDetailSidebarProps } from './resources'
+
+const ProductDetailSidebar: FC<IProductDetailSidebarProps> = ({ className = '' }) => {
     const [, scrollTo] = useWindowScroll()
 
     const backToTop = () => {
@@ -17,7 +20,9 @@ const ProductDetailSidebar = () => {
     }
 
     return (
-        <div className=' flex sm:sticky top-0  bg-white sm:h-screen p-4 gap-y-4 justify-between w-full sm:w-fit sm:justify-start sm:flex-col items-center'>
+        <div
+            className={`${className} flex sm:sticky top-0  bg-white sm:h-screen p-4 gap-y-4 justify-between w-full sm:w-fit sm:justify-start sm:flex-col items-center `}
+        >
             <div className='flex sm:flex-col justify-around sm:justify-normal gap-y-4 w-1/2 sm:w-fit'>
                 {/* Share */}
                 <CTooltip label='Share' withArrow color='#383838' arrowSize={7} position='left'>

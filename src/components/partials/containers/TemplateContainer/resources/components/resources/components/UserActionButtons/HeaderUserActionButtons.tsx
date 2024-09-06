@@ -33,16 +33,18 @@ const HeaderUserActionButtons = () => {
                     </CButton>
                 </CMenu.Target>
                 <CMenu.Dropdown className='text-center sm:text-base'>
-                    {/* Label */}
-                    <CMenu.Label classNames={{ label: 'text-left' }}>Application</CMenu.Label>
+                    <CMenu.Label classNames={{ label: 'text-left' }}>Admin</CMenu.Label>
 
                     <CMenu.Item
                         className='text-sm'
+                        component={Link}
                         leftSection={<IconAdjustmentsAlt stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         href={APP_ROUTES.AdminPanel}
                     >
                         Control Panel
                     </CMenu.Item>
+
+                    <CMenu.Label classNames={{ label: 'text-left' }}>Application</CMenu.Label>
 
                     <CMenu.Item
                         className='text-sm'
