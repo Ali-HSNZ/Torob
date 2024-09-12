@@ -3,10 +3,10 @@ import { useMediaQuery } from '@mantine/hooks'
 import {
     IconAdjustmentsAlt,
     IconChevronDown,
-    IconHistory,
     IconLogout2,
     IconTruckDelivery,
     IconUser,
+    IconUserCircle,
 } from '@tabler/icons-react'
 import { IconHeart } from '@tabler/icons-react'
 
@@ -57,15 +57,6 @@ const HeaderUserActionButtons = () => {
 
                     <CMenu.Item
                         className='text-sm'
-                        leftSection={<IconHistory stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
-                        component={Link}
-                        href={APP_ROUTES.Recent}
-                    >
-                        Recent
-                    </CMenu.Item>
-
-                    <CMenu.Item
-                        className='text-sm'
                         leftSection={<IconTruckDelivery stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
                         component={Link}
                         href={APP_ROUTES.Orders}
@@ -75,6 +66,15 @@ const HeaderUserActionButtons = () => {
 
                     {/* Authentication */}
                     <CMenu.Label classNames={{ label: 'text-left' }}>Auth</CMenu.Label>
+
+                    <CMenu.Item
+                        className='text-sm'
+                        leftSection={<IconUserCircle stroke={1.2} size={smMatchesMediaQuery ? 20 : 17} />}
+                        component={Link}
+                        href={APP_ROUTES.Orders}
+                    >
+                        Your profile
+                    </CMenu.Item>
 
                     <CMenu.Item
                         color='red'
